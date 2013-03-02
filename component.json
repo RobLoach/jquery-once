@@ -1,0 +1,10 @@
+{
+  "name": "jquery-once",
+  "description": "jQuery Once Plugin",
+  "version": "1.2.0",
+  "keywords": ["jquery"],
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "scripts": ["jquery.once.js"]
+}
