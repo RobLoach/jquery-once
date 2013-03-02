@@ -1,7 +1,8 @@
 jQuery Once
 ===========
 
-Filters out all elements that had the same filter applied on them before. It can be used to ensure that a function is only applied once to an element.
+Filters out all elements that had the same filter applied on them before. It can
+be used to ensure that a function is only applied once to an element.
 
 Usage
 -----

@@ -1,4 +1,3 @@
-
 /**
  * jQuery Once Plugin v1.2
  * http://plugins.jquery.com/project/once
