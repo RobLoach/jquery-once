@@ -1,0 +1,37 @@
+{
+    "name": "jquery-once",
+    "title": "jQuery Once",
+    "description": "Filters out all elements that had the same filter applied on them before. It can be used to ensure that a function is only applied once to an element.",
+    "keywords": [
+        "jquery",
+        "once"
+    ],
+    "version": "1.2.0",
+    "author": {
+        "name": "Konstantin Kafer",
+        "url": "http://kkaefer.com"
+    },
+    "maintainers": [
+        {
+            "name": "Rob Loach",
+            "email": "robloach@gmail.com",
+            "url": "http://robloach.net"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GPL-2.0",
+            "url": "http://opensource.org/licenses/gpl-2.0.php"
+        },
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "https://github.com/RobLoach/jquery-once/issues",
+    "homepage": "https://github.com/RobLoach/jquery-once",
+    "download": "https://github.com/RobLoach/jquery-once/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
