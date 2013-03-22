@@ -1,0 +1,27 @@
+{
+  "name": "jquery-once",
+  "description": "jQuery Once Plugin.",
+  "version": "1.2.0",
+  "keywords": [
+    "jquery"
+  ],
+  "homepage": "http://github.com/robloach/jquery-once",
+  "author": "Konstantin Kafer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobLoach/jquery-once.git"
+  },
+  "licenses": [
+    {
+      "type": "GPL-2.0",
+      "url": "http://opensource.org/licenses/gpl-2.0.php"
+    },
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.8.0"
+  }
+}
