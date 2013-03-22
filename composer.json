@@ -8,5 +8,15 @@
     ],
     "require": {
         "components/jquery": "*"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "jquery.once.js"
+            ],
+            "shim": {
+                "deps": ["jquery"]
+            }
+        }
     }
 }
