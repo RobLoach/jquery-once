@@ -6,10 +6,7 @@
     "jquery"
   ],
   "dependencies": {
-    "component/jquery": "*"
+    "jquery": "~1.8.0"
   },
-  "main": "jquery.once.js",
-  "scripts": [
-    "jquery.once.js"
-  ]
+  "main": "jquery.once.js"
 }
