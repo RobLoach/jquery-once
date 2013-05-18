@@ -1,5 +1,5 @@
 /**
- * jQuery Once Plugin v1.2
+ * jQuery Once Plugin v1.2.1
  * http://plugins.jquery.com/project/once
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -7,7 +7,17 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 
-(function ($) {
+(function (factory) {
+  'use strict';
+  if (typeof exports === 'object') {
+    factory(require('jquery'));
+  } else if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else {
+    factory(jQuery);
+  }
+}(function ($) {
+  'use strict';
   var cache = {}, uuid = 0;
 
   /**
@@ -36,7 +46,7 @@
    *   iteration.
    */
   $.fn.once = function (id, fn) {
-    if (typeof id != 'string') {
+    if (typeof id !== 'string') {
       // Generate a numeric ID if the id passed can't be used as a CSS class.
       if (!(id in cache)) {
         cache[id] = ++uuid;
@@ -75,4 +85,4 @@
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };
-})(jQuery);
+}));

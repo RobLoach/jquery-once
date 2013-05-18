@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="../jquery.once.js"></script>
+    </head>
+    <body>
+        <h1>jQuery Once</h1>
+        <p>This is some text, which is turned green only once.</p>
+        <script>
+          $('p').once('greenify', function() {
+            $(this).css('color', 'green');
+          });
+        </script>
+    </body>
+</html>

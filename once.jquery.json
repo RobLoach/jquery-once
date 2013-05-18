@@ -6,7 +6,7 @@
         "jquery",
         "once"
     ],
-    "version": "1.2.0",
+    "version": "1.2.1",
     "author": {
         "name": "Konstantin Kafer",
         "url": "http://kkaefer.com"
@@ -14,7 +14,6 @@
     "maintainers": [
         {
             "name": "Rob Loach",
-            "email": "robloach@gmail.com",
             "url": "http://robloach.net"
         }
     ],

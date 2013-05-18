@@ -39,4 +39,5 @@ Dual licensed under the MIT and GPL licenses.
 Credits
 -------
 
-Written by Konstantin Käfer.
+* [Konstantin Käfer](http://kkaefer.com)
+* [Rob Loach](http://robloach.net)
