@@ -31,6 +31,17 @@ $('div.calendar').once(function() {
 });
 ```
 
+Development
+-----------
+
+Leverage [npm](http://npmjs.org), [grunt](http://gruntjs.com), and [qunit](http://qunitjs.com):
+
+``` bash
+$ npm install
+$ npm test
+$ grunt release
+```
+
 License
 -------
 

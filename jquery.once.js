@@ -1,5 +1,5 @@
 /**
- * jQuery Once Plugin v1.2.2
+ * jQuery Once Plugin 1.2.3
  * http://plugins.jquery.com/once/
  *
  * Dual licensed under the MIT and GPL licenses:
