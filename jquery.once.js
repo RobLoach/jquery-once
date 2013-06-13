@@ -1,6 +1,6 @@
 /**
- * jQuery Once Plugin v1.2.1
- * http://plugins.jquery.com/project/once
+ * jQuery Once Plugin v1.2.2
+ * http://plugins.jquery.com/once/
  *
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
@@ -8,7 +8,7 @@
  */
 
 (function (factory) {
-  'use strict';
+  "use strict";
   if (typeof exports === 'object') {
     factory(require('jquery'));
   } else if (typeof define === 'function' && define.amd) {
@@ -17,7 +17,7 @@
     factory(jQuery);
   }
 }(function ($) {
-  'use strict';
+  "use strict";
   var cache = {}, uuid = 0;
 
   /**
@@ -44,6 +44,8 @@
    *   logic as $.each(). Returning true will continue to the next matched
    *   element in the set, while returning false will entirely break the
    *   iteration.
+   *
+   * @api public
    */
   $.fn.once = function (id, fn) {
     if (typeof id !== 'string') {
@@ -78,6 +80,8 @@
    *   logic as $.each(). Returning true will continue to the next matched
    *   element in the set, while returning false will entirely break the
    *   iteration.
+   *
+   * @api public
    */
   $.fn.removeOnce = function (id, fn) {
     var name = id + '-processed';
