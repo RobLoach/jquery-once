@@ -6,7 +6,7 @@
     "jquery"
   ],
   "dependencies": {
-    "component/jquery": "*"
+    "jquery": "*"
   },
   "main": "jquery.once.js",
   "scripts": [
