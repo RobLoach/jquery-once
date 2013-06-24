@@ -43,3 +43,19 @@ test("Apply the class correctly", function() {
   hasClass = $('#test3 span').hasClass('test3-processed');
   ok(hasClass, 'The processed class is properly applied after once().');
 });
+
+test("Remove the class correctly", function() {
+  // Create one once() call.
+  $('#test4 span').once('test4', function() {
+    // Do nothing.
+  });
+
+  // Verify the class is applied.
+  var hasClass = $('#test4 span').hasClass('test4-processed');
+  ok(hasClass, 'The processed class is properly applied after once().');
+
+  // Remove the once property.
+  $('#test4 span').removeOnce('test4');
+  hasClass = $('#test4 span').hasClass('test4-processed');
+  ok(!hasClass, 'The processed class is properly removed when called removeOnce().');
+});
