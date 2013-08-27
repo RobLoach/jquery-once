@@ -15,6 +15,9 @@
             "scripts": [
                 "jquery.once.js"
             ],
+            "files": [
+                "jquery.once.min.js"
+            ],
             "shim": {
                 "deps": ["jquery"]
             }

@@ -11,5 +11,8 @@
   "main": "jquery.once.js",
   "scripts": [
     "jquery.once.js"
+  ],
+  "files": [
+    "jquery.once.min.js"
   ]
 }
