@@ -1,12 +1,21 @@
 {
   "name": "jquery-once",
+  "homepage": "http://github.com/robloach/jquery-once",
   "description": "jQuery Once Plugin",
   "version": "1.2.3",
+  "main": "jquery.once.js"
+  "ignore": [
+    "*.json",
+    "test",
+    "example",
+    ".travis.yml",
+    ".gitignore",
+    "Gruntfile.js"
+  ],
   "keywords": [
     "jquery"
   ],
   "dependencies": {
     "jquery": ">=1.8.0"
   },
-  "main": "jquery.once.js"
 }

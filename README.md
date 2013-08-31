@@ -4,6 +4,7 @@ jQuery Once
 Filters out all elements that had the same filter applied on them before. It can
 be used to ensure that a function is only applied once to an element.
 
+
 Usage
 -----
 
@@ -31,10 +32,12 @@ $('div.calendar').once(function() {
 });
 ```
 
+
 Development
 -----------
 
-Leverage [npm](http://npmjs.org), [grunt](http://gruntjs.com), and [qunit](http://qunitjs.com):
+Leverage [npm](http://npmjs.org), [grunt](http://gruntjs.com), and
+[qunit](http://qunitjs.com):
 
 ``` bash
 $ npm install
@@ -42,10 +45,12 @@ $ npm test
 $ grunt release
 ```
 
+
 License
 -------
 
 Dual licensed under the MIT and GPL licenses.
+
 
 Credits
 -------

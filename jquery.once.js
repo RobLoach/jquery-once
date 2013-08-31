@@ -1,6 +1,6 @@
 /**
  * jQuery Once Plugin 1.2.3
- * http://plugins.jquery.com/once/
+ * http://github.com/robloach/jquery-once
  *
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
