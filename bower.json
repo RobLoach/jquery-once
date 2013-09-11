@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "homepage": "http://github.com/robloach/jquery-once",
   "description": "jQuery Once Plugin",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "main": "jquery.once.js",
   "ignore": [
     "*.json",
@@ -17,5 +17,5 @@
   ],
   "dependencies": {
     "jquery": ">=1.8.0"
-  },
+  }
 }
