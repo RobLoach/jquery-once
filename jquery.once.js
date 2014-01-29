@@ -57,20 +57,14 @@
       if (!fn) {
         fn = id;
       }
-      id = 'jquery-once-' + cache[id];
+      id = cache[id];
     }
 
-    /**
-     * Adds the ID at the end of attribute value.
-     */
-    function addID (index, value) {
-      return $.trim((value || '') + ' ' + id);
-    }
-
-    var elements = this
-      // Remove elements from the set that have already been processed.
-      .not('[data-jquery-once~="' + id + '"]')
-      .attr('data-jquery-once', addID);
+    // Filter the elements by which do not have the data yet.
+    var name = 'jquery-once-' + id;
+    var elements = this.filter(function() {
+      return $(this).data(name) !== true;
+    }).data(name, true);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };
@@ -93,19 +87,11 @@
    * @api public
    */
   $.fn.removeOnce = function (id, fn) {
-    /**
-     * Removes the ID from the attribute value.
-     */
-    function removeID (index, value) {
-      return $.trim(value.replace(id, ''))
-        // Split and join to keep the value clean.
-        .split(/\s+/g)
-        .join(' ');
-    }
-
-    var elements = this
-      .filter('[data-jquery-once~="' + id + '"]')
-      .attr('data-jquery-once', removeID);
+    // Filter the elements by which do have the data.
+    var name = 'jquery-once-' + id;
+    var elements = this.filter(function() {
+      return $(this).data(name) === true;
+    }).removeData(name);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };

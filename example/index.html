@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="../jquery.once.min.js"></script>
+        <script src="../jquery.once.js"></script>
     </head>
     <body>
         <h1>jQuery Once</h1>
@@ -11,6 +11,7 @@
           $('p').once('greenify', function() {
             $(this).css('color', 'green');
           });
+          $('p').once('bluify').css('color', 'blue');
         </script>
     </body>
 </html>
