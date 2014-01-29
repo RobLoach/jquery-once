@@ -59,9 +59,18 @@
       }
       id = 'jquery-once-' + cache[id];
     }
-    // Remove elements from the set that have already been processed.
-    var name = id + '-processed';
-    var elements = this.not('.' + name).addClass(name);
+
+    /**
+     * Adds the ID at the end of attribute value.
+     */
+    function addID (index, value) {
+      return $.trim((value || '') + ' ' + id);
+    }
+
+    var elements = this
+      // Remove elements from the set that have already been processed.
+      .not('[data-jquery-once~="' + id + '"]')
+      .attr('data-jquery-once', addID);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };
@@ -84,8 +93,19 @@
    * @api public
    */
   $.fn.removeOnce = function (id, fn) {
-    var name = id + '-processed';
-    var elements = this.filter('.' + name).removeClass(name);
+    /**
+     * Removes the ID from the attribute value.
+     */
+    function removeID (index, value) {
+      return $.trim(value.replace(id, ''))
+        // Split and join to keep the value clean.
+        .split(/\s+/g)
+        .join(' ');
+    }
+
+    var elements = this
+      .filter('[data-jquery-once~="' + id + '"]')
+      .attr('data-jquery-once', removeID);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };
