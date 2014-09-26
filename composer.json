@@ -7,7 +7,7 @@
        "GPL-2.0"
     ],
     "require": {
-        "components/jquery": ">=1.5"
+        "components/jquery": ">=2.1.1"
     },
     "extra": {
         "component": {

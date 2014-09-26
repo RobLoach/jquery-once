@@ -1,5 +1,5 @@
 /**
- * jQuery Once Plugin 1.2.6
+ * jQuery Once Plugin 2.0.0-alpha.1
  * http://github.com/robloach/jquery-once
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -24,20 +24,16 @@
    * Filters elements by whether they have not yet been processed.
    *
    * @param id
-   *   (Optional) If this is a string, then it will be used as the CSS class
-   *   name that is applied to the elements for determining whether it has
-   *   already been processed. The elements will get a class in the form of
-   *   "id-processed".
+   *   (Optional) If this is a string, then it will be the data ID used
+   *   to determine whether it has already been processed or not.
    *
    *   If the id parameter is a function, it will be passed off to the fn
    *   parameter and the id will become a unique identifier, represented as a
    *   number.
    *
    *   When the id is neither a string or a function, it becomes a unique
-   *   identifier, depicted as a number. The element's class will then be
-   *   represented in the form of "jquery-once-#-processed".
-   *
-   *   Take note that the id must be valid for usage as an element's class name.
+   *   identifier, depicted as a number. The element's data ID will then be
+   *   represented in the form of "jquery-once-#".
    * @param fn
    *   (Optional) If given, this function will be called for each element that
    *   has not yet been processed. The function's return value follows the same
@@ -57,11 +53,14 @@
       if (!fn) {
         fn = id;
       }
-      id = 'jquery-once-' + cache[id];
+      id = cache[id];
     }
-    // Remove elements from the set that have already been processed.
-    var name = id + '-processed';
-    var elements = this.not('.' + name).addClass(name);
+
+    // Filter the elements by which do not have the data yet.
+    var name = 'jquery-once-' + id;
+    var elements = this.filter(function() {
+      return $(this).data(name) !== true;
+    }).data(name, true);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };
@@ -70,7 +69,7 @@
    * Filters elements that have been processed once already.
    *
    * @param id
-   *   A required string representing the name of the class which should be used
+   *   A required string representing the name of the data id which should be used
    *   when filtering the elements. This only filters elements that have already
    *   been processed by the once function. The id should be the same id that
    *   was originally passed to the once() function.
@@ -84,8 +83,11 @@
    * @api public
    */
   $.fn.removeOnce = function (id, fn) {
-    var name = id + '-processed';
-    var elements = this.filter('.' + name).removeClass(name);
+    // Filter the elements by which do have the data.
+    var name = 'jquery-once-' + id;
+    var elements = this.filter(function() {
+      return $(this).data(name) === true;
+    }).removeData(name);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };
