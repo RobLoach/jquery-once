@@ -14,10 +14,10 @@ $('div.calendar').once('calendar', function() {
   // code segment is executed repeatedly.
 });
 $('div.calendar').once('calendar').click(function() {
-  // .once('calendar') filters out all elements which already have the
-  // class 'calendar'. It applies that class to the remaining elements
-  // and leaves them in the jQuery object.
-  // The previous set of elements can be restored with .end()
+  // .once('calendar') filters out all elements which already have been
+  // filtered with once(), and the elements that haven't been filtered
+  // yet remain. The previous set of elements can be restored with
+  // .end().
 });
 ```
 
@@ -27,8 +27,8 @@ It also works without supplying a name:
 $('div.calendar').once(function() {
   // This function is only executed once for each div, even if this
   // code segment is executed repeatedly. Other scripts can't refer
-  // to this `once` method and the class names used are in the form
-  // of jquery-once-1 and so on.
+  // to this `once` method. The once data used to store execution are
+  // in the form "jquery-once-1", "jquery-once-2", etc.
 });
 ```
 
@@ -49,7 +49,7 @@ $ grunt release
 License
 -------
 
-Dual licensed under the MIT and GPL licenses.
+Dual licensed under the [MIT and GPL licenses](LICENSE).
 
 
 Credits
