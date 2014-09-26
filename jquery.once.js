@@ -57,11 +57,14 @@
       if (!fn) {
         fn = id;
       }
-      id = 'jquery-once-' + cache[id];
+      id = cache[id];
     }
-    // Remove elements from the set that have already been processed.
-    var name = id + '-processed';
-    var elements = this.not('.' + name).addClass(name);
+
+    // Filter the elements by which do not have the data yet.
+    var name = 'jquery-once-' + id;
+    var elements = this.filter(function() {
+      return $(this).data(name) !== true;
+    }).data(name, true);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };
@@ -84,8 +87,11 @@
    * @api public
    */
   $.fn.removeOnce = function (id, fn) {
-    var name = id + '-processed';
-    var elements = this.filter('.' + name).removeClass(name);
+    // Filter the elements by which do have the data.
+    var name = 'jquery-once-' + id;
+    var elements = this.filter(function() {
+      return $(this).data(name) === true;
+    }).removeData(name);
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };

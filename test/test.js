@@ -26,36 +26,36 @@ test("Called only once", function() {
 
   // Verify that it was only called once.
   var count = $('#test2 span').data('count');
-  ok(count === 1);
+  ok(count === 1, 'It was called ' + count + ' times.');
 });
 
-test("Apply the class correctly", function() {
+test("Apply the value to data correctly", function() {
   // Verify that the element starts without the class.
-  var hasClass = $('#test3 span').hasClass('test3-processed');
-  ok(!hasClass, 'Processed class not applied in the beginning.');
+  var hasData = $('#test3 span').data('jquery-once-test3');
+  ok(!hasData, 'Value not applied in the beginning.');
 
   // Create one once() call.
   $('#test3 span').once('test3', function() {
     // Do nothing.
   });
 
-  // Verify the class is applied.
-  hasClass = $('#test3 span').hasClass('test3-processed');
-  ok(hasClass, 'The processed class is properly applied after once().');
+  // Verify the data is applied.
+  hasData = $('#test3 span').data('jquery-once-test3');
+  ok(hasData, 'The value is properly applied after once().');
 });
 
-test("Remove the class correctly", function() {
+test("Remove the value from attribute correctly", function() {
   // Create one once() call.
   $('#test4 span').once('test4', function() {
     // Do nothing.
   });
 
-  // Verify the class is applied.
-  var hasClass = $('#test4 span').hasClass('test4-processed');
-  ok(hasClass, 'The processed class is properly applied after once().');
+  // Verify the data is applied.
+  var hasData = $('#test4 span').data('jquery-once-test4');
+  ok(hasData, 'The value is properly applied after once().');
 
   // Remove the once property.
   $('#test4 span').removeOnce('test4');
-  hasClass = $('#test4 span').hasClass('test4-processed');
-  ok(!hasClass, 'The processed class is properly removed when called removeOnce().');
+  hasData = $('#test4 span').data('jquery-once-test4');
+  ok(!hasData, 'The value is properly removed when called removeOnce().');
 });
