@@ -1,12 +1,10 @@
-jQuery Once
-===========
+# jQuery Once [![Build Status](https://travis-ci.org/RobLoach/jquery-once.svg?branch=master)](https://travis-ci.org/RobLoach/jquery-once)
 
 Filters out all elements that had the same filter applied on them before. It can
 be used to ensure that a function is only applied once to an element.
 
 
-Usage
------
+## Usage
 
 ``` javascript
 $('div.calendar').once('calendar', function() {
@@ -33,8 +31,7 @@ $('div.calendar').once(function() {
 ```
 
 
-Development
------------
+## Development
 
 Leverage [npm](http://npmjs.org), [grunt](http://gruntjs.com), and
 [qunit](http://qunitjs.com):
@@ -46,14 +43,12 @@ $ grunt release
 ```
 
 
-License
--------
+## License
 
 Dual licensed under the [MIT and GPL licenses](LICENSE).
 
 
-Credits
--------
+## Credits
 
 * [Konstantin Käfer](http://kkaefer.com)
 * [Rob Loach](http://robloach.net)
