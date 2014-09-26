@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="../jquery.once.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../jquery.once.js"></script>
     </head>
     <body>
         <h1>jQuery Once</h1>
-        <p>This is some text, which is turned green only once.</p>
+        <p>This is some text, which should stay green.</p>
         <script>
-          $('p').once('greenify', function() {
+          // Change the color of the text to green.
+          $('p').once('changecolor', function() {
             $(this).css('color', 'green');
+          });
+
+          // Attempt to change the color again.
+          $('p').once('changecolor', function() {
+            $(this).css('color', 'red');
           });
         </script>
     </body>
