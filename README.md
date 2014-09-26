@@ -1,4 +1,16 @@
-# jQuery Once [![Build Status](https://travis-ci.org/RobLoach/jquery-once.svg?branch=master)](https://travis-ci.org/RobLoach/jquery-once)
+
+<!-- TITLE/ -->
+
+# jQuery Once
+
+<!-- /TITLE -->
+
+
+<!-- BADGES/ -->
+
+[![Build Status](https://travis-ci.org/RobLoach/jquery-once.svg?branch=master)](https://travis-ci.org/RobLoach/jquery-once)
+
+<!-- /BADGES -->
 
 Filters out all elements that had the same filter applied on them before. It can
 be used to ensure that a function is only applied once to an element.
@@ -43,12 +55,27 @@ $ grunt release
 ```
 
 
+<!-- HISTORY/ -->
+
+## History
+[Discover the change history by heading on over to the `HISTORY.md` file.](HISTORY.md)
+
+<!-- /HISTORY -->
+
+
+<!-- LICENSE/ -->
+
 ## License
 
 Dual licensed under the [MIT and GPL licenses](LICENSE).
 
+<!-- /LICENSE -->
+
+<!-- BACKERS/ -->
 
 ## Credits
 
 * [Konstantin Käfer](http://kkaefer.com)
 * [Rob Loach](http://robloach.net)
+
+<!-- /BACKERS -->
