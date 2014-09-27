@@ -8,12 +8,53 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](https://travis-ci.org/RobLoach/jquery-once.svg?branch=master)](https://travis-ci.org/RobLoach/jquery-once)
+[![Build Status](http://img.shields.io/travis-ci/robloach/jquery-once.png?branch=master)](http://travis-ci.org/robloach/jquery-once "Check this project's build status on TravisCI")
+[![NPM version](http://badge.fury.io/js/jquery-once.png)](https://npmjs.org/package/jquery-once "View this project on NPM")
+[![Dependency Status](https://david-dm.org/robloach/jquery-once.png?theme=shields.io)](https://david-dm.org/robloach/jquery-once)
+[![Development Dependency Status](https://david-dm.org/robloach/jquery-once/dev-status.png?theme=shields.io)](https://david-dm.org/robloach/jquery-once#info=devDependencies)<br/>
+[![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
 
 <!-- /BADGES -->
 
+
+<!-- DESCRIPTION/ -->
+
+Act on jQuery elements only once.
+
+<!-- /DESCRIPTION -->
+
+
 Filters out all elements that had the same filter applied on them before. It can
 be used to ensure that a function is only applied once to an element.
+
+<!-- /DESCRIPTION -->
+
+<!-- INSTALL/ -->
+
+## Install
+
+### [NPM](http://npmjs.org/)
+- Use: `require('jquery-once')`
+- Install: `npm install --save jquery-once`
+
+### [Browserify](http://browserify.org/)
+- Use: `require('jquery-once')`
+- Install: `npm install --save jquery-once`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.2`
+
+### [Ender](http://ender.jit.su/)
+- Use: `require('jquery-once')`
+- Install: `ender add jquery-once`
+
+### [Component](http://github.com/component/component)
+- Use: `require('jquery-once')`
+- Install: `component install robloach/jquery-once`
+
+### [Bower](http://bower.io/)
+- Use: `require('jquery-once')`
+- Install: `bower install jquery-once`
+
+<!-- /INSTALL -->
 
 
 ## Usage
@@ -43,22 +84,23 @@ $('div.calendar').once(function() {
 ```
 
 
-## Development
+## Develop
 
-Leverage [npm](http://npmjs.org), [grunt](http://gruntjs.com), and
-[qunit](http://qunitjs.com):
+Leverage [npm](http://npmjs.org), [grunt](http://gruntjs.com),
+[qunit](http://qunitjs.com) and [projectz](http://github.com/bevry/projectz):
 
 ``` bash
 $ npm install
 $ npm test
 $ grunt release
+$ npm run-script projectz
 ```
 
 
 <!-- HISTORY/ -->
 
 ## History
-[Discover the change history by heading on over to the `HISTORY.md` file.](HISTORY.md)
+[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/robloach/jquery-once/blob/master/HISTORY.md#files)
 
 <!-- /HISTORY -->
 
@@ -67,15 +109,42 @@ $ grunt release
 
 ## License
 
-Dual licensed under the [MIT and GPL licenses](LICENSE).
+Licensed under:
+
+- [GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
+- the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://opensource.org/licenses/MIT)
+
+Copyright &copy; Rob Loach <robloach@gmail.com> (http://github.com/robloach)
 
 <!-- /LICENSE -->
 
+
 <!-- BACKERS/ -->
 
-## Credits
+## Backers
 
-* [Konstantin Käfer](http://kkaefer.com)
-* [Rob Loach](http://robloach.net)
+### Maintainers
+
+These amazing people are maintaining this project:
+
+- Rob Loach <robloach@gmail.com> (https://github.com/robloach)
+
+### Sponsors
+
+No sponsors yet! Will you be the first?
+
+[![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
+
+### Contributors
+
+These amazing people have contributed code to this project:
+
+- [JohnAlbin](https://github.com/JohnAlbin) — [view contributions](https://github.com/robloach/jquery-once/commits?author=JohnAlbin)
+- [RobLoach](https://github.com/RobLoach) — [view contributions](https://github.com/robloach/jquery-once/commits?author=RobLoach)
+- [theodoreb](https://github.com/theodoreb) — [view contributions](https://github.com/robloach/jquery-once/commits?author=theodoreb)
+
+[Become a contributor!](https://github.com/robloach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
+
+

@@ -1,10 +1,9 @@
-jQuery Once is released under two licenses: GPL-2.0, and MIT. You may pick the
-license that best suits your development needs. The text of both licenses are
-provided below.
+# License
+
+jQuery Once is released under two licenses: GPL-2.0, and MIT. You may pick the license that best suits your development needs. The text of both licenses are provided below.
 
 
-GPL-2.0 License:
-----------------
+## GPL-2.0 License
 
                     GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
@@ -348,8 +347,7 @@ Public License instead of this License.
 
 
 
-MIT License
------------
+## MIT License
 
 Copyright (c) 2013, Rob Loach
 
