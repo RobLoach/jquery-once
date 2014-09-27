@@ -6,17 +6,11 @@
         "jquery",
         "once"
     ],
-    "version": "2.0.0-alpha.1",
+    "version": "2.0.0-alpha.2",
     "author": {
-        "name": "Konstantin Kafer",
-        "url": "http://kkaefer.com"
+        "name": "Rob Loach",
+        "url": "http://robloach.net"
     },
-    "maintainers": [
-        {
-            "name": "Rob Loach",
-            "url": "http://robloach.net"
-        }
-    ],
     "licenses": [
         {
             "type": "GPL-2.0",
