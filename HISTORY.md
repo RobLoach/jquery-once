@@ -1,5 +1,8 @@
 # History
 
+## v2.0.0-alpha.2 September 27, 2014
+- Updated documentation
+
 ## v2.0.0-alpha.1 September 26, 2014
 - Updated tests
 - Updated documentation
