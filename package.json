@@ -17,12 +17,12 @@
   "homepage": "https://github.com/RobLoach/jquery-once",
   "author": "Rob Loach <robloach@gmail.com> (http://github.com/robloach)",
   "maintainers": [
-    "Rob Loach <robloach@gmail.com> (https://github.com/robloach)"
+    "Rob Loach (https://github.com/robloach)"
   ],
   "main": "jquery.once.js",
   "contributors": [
     "JohnAlbin (https://github.com/JohnAlbin)",
-    "Rob Loach <robloach@gmail.com> (https://github.com/robloach)",
+    "Rob Loach <robloach@gmail.com> (https://github.com/RobLoach)",
     "theodoreb (https://github.com/theodoreb)"
   ],
   "repository": {

@@ -127,7 +127,7 @@ Copyright &copy; Rob Loach <robloach@gmail.com> (http://github.com/robloach)
 
 These amazing people are maintaining this project:
 
-- Rob Loach <robloach@gmail.com> (https://github.com/robloach)
+- Rob Loach (https://github.com/robloach)
 
 ### Sponsors
 
@@ -140,7 +140,7 @@ No sponsors yet! Will you be the first?
 These amazing people have contributed code to this project:
 
 - [JohnAlbin](https://github.com/JohnAlbin) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=JohnAlbin)
-- [Rob Loach](https://github.com/robloach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=robloach)
+- [Rob Loach](https://github.com/RobLoach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=RobLoach)
 - [theodoreb](https://github.com/theodoreb) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=theodoreb)
 
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
