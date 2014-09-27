@@ -8,10 +8,10 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](http://img.shields.io/travis-ci/robloach/jquery-once.png?branch=master)](http://travis-ci.org/robloach/jquery-once "Check this project's build status on TravisCI")
+[![Build Status](http://img.shields.io/travis-ci/RobLoach/jquery-once.png?branch=master)](http://travis-ci.org/RobLoach/jquery-once "Check this project's build status on TravisCI")
 [![NPM version](http://badge.fury.io/js/jquery-once.png)](https://npmjs.org/package/jquery-once "View this project on NPM")
-[![Dependency Status](https://david-dm.org/robloach/jquery-once.png?theme=shields.io)](https://david-dm.org/robloach/jquery-once)
-[![Development Dependency Status](https://david-dm.org/robloach/jquery-once/dev-status.png?theme=shields.io)](https://david-dm.org/robloach/jquery-once#info=devDependencies)<br/>
+[![Dependency Status](https://david-dm.org/RobLoach/jquery-once.png?theme=shields.io)](https://david-dm.org/RobLoach/jquery-once)
+[![Development Dependency Status](https://david-dm.org/RobLoach/jquery-once/dev-status.png?theme=shields.io)](https://david-dm.org/RobLoach/jquery-once#info=devDependencies)<br/>
 [![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
 
 <!-- /BADGES -->
@@ -48,7 +48,7 @@ be used to ensure that a function is only applied once to an element.
 
 ### [Component](http://github.com/component/component)
 - Use: `require('jquery-once')`
-- Install: `component install robloach/jquery-once`
+- Install: `component install RobLoach/jquery-once`
 
 ### [Bower](http://bower.io/)
 - Use: `require('jquery-once')`
@@ -100,7 +100,7 @@ $ npm run-script projectz
 <!-- HISTORY/ -->
 
 ## History
-[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/robloach/jquery-once/blob/master/HISTORY.md#files)
+[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/RobLoach/jquery-once/blob/master/HISTORY.md#files)
 
 <!-- /HISTORY -->
 
@@ -139,11 +139,11 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-- [JohnAlbin](https://github.com/JohnAlbin) — [view contributions](https://github.com/robloach/jquery-once/commits?author=JohnAlbin)
-- [RobLoach](https://github.com/RobLoach) — [view contributions](https://github.com/robloach/jquery-once/commits?author=RobLoach)
-- [theodoreb](https://github.com/theodoreb) — [view contributions](https://github.com/robloach/jquery-once/commits?author=theodoreb)
+- [JohnAlbin](https://github.com/JohnAlbin) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=JohnAlbin)
+- [Rob Loach](https://github.com/robloach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=robloach)
+- [theodoreb](https://github.com/theodoreb) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=theodoreb)
 
-[Become a contributor!](https://github.com/robloach/jquery-once/blob/master/CONTRIBUTING.md#files)
+[Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
 

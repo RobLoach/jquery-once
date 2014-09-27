@@ -13,7 +13,8 @@
     "daviddev": true,
     "gittip": "robloach"
   },
-  "homepage": "http://github.com/robloach/jquery-once",
+  "repo": "RobLoach/jquery-once",
+  "homepage": "https://github.com/RobLoach/jquery-once",
   "author": "Rob Loach <robloach@gmail.com> (http://github.com/robloach)",
   "maintainers": [
     "Rob Loach <robloach@gmail.com> (https://github.com/robloach)"
@@ -21,7 +22,7 @@
   "main": "jquery.once.js",
   "contributors": [
     "JohnAlbin (https://github.com/JohnAlbin)",
-    "RobLoach (https://github.com/RobLoach)",
+    "Rob Loach <robloach@gmail.com> (https://github.com/robloach)",
     "theodoreb (https://github.com/theodoreb)"
   ],
   "repository": {
@@ -29,7 +30,7 @@
     "url": "https://github.com/RobLoach/jquery-once.git"
   },
   "bugs": {
-    "url": "https://github.com/robloach/jquery-once/issues"
+    "url": "https://github.com/RobLoach/jquery-once/issues"
   },
   "licenses": [
     {

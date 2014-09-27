@@ -1,6 +1,24 @@
-components
-vendor
-node_modules
-composer.lock
-bower_components
-npm-debug.log
+# v1.3.10 December 10, 2013
+# https://github.com/bevry/base
+
+# Temp Files
+**/*.log
+**/.docpad.db
+
+# Build Files
+build/
+components/
+bower_components/
+node_modules/
+out/
+
+# Private Files
+.env
+
+
+# =====================================
+# CUSTOM MODIFICATIONS
+
+Cakefile
+CONTRIBUTING.md
+coffeelint.json
