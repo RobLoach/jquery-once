@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "homepage": "http://github.com/robloach/jquery-once",
   "description": "jQuery Once Plugin",
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0-alpha.3",
   "main": "jquery.once.js",
   "ignore": [
     "*.json",
@@ -23,6 +23,6 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-qunit": "~0.5.2",
     "grunt-contrib-uglify": "~0.6.0",
-    "projectz": "^0.3.15"
+    "projectz": "~0.3.15"
   }
 }
