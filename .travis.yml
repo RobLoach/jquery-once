@@ -10,7 +10,6 @@ install:
   - npm install
 script: "npm test"
 node_js:
-  - "0.8"
   - "0.10"
 cache:
   directories:
