@@ -1,5 +1,9 @@
 # History
 
+## v2.0.0-alpha.3 October 1, 2014
+- Updated version dependency on Projectz
+- Updated documentation
+- 
 ## v2.0.0-alpha.2 September 27, 2014
 - Updated documentation
 
