@@ -1,12 +1,12 @@
 {
     "name": "once",
     "title": "jQuery Once",
-    "description": "Filters out all elements that had the same filter applied on them before. It can be used to ensure that a function is only applied once to an element.",
+    "description": "Act on jQuery elements only once.",
     "keywords": [
         "jquery",
         "once"
     ],
-    "version": "2.0.0-alpha.2",
+    "version": "2.0.0-alpha.4",
     "author": {
         "name": "Rob Loach",
         "url": "http://robloach.net"

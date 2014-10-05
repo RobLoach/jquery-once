@@ -40,7 +40,7 @@ be used to ensure that a function is only applied once to an element.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.3`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.4`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -120,7 +120,7 @@ Licensed under:
 - [GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
 - the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://opensource.org/licenses/MIT)
 
-Copyright &copy; Rob Loach <robloach@gmail.com> (http://github.com/robloach)
+Copyright &copy; Rob Loach (http://github.com/robloach)
 
 <!-- /LICENSE -->
 
@@ -146,7 +146,7 @@ No sponsors yet! Will you be the first?
 These amazing people have contributed code to this project:
 
 - [JohnAlbin](https://github.com/JohnAlbin) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=JohnAlbin)
-- [Rob Loach](https://github.com/robloach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=robloach)
+- [Rob Loach](https://github.com/RobLoach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=RobLoach)
 - [theodoreb](https://github.com/theodoreb) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=theodoreb)
 
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)

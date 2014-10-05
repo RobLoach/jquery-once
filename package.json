@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "title": "jQuery Once",
   "description": "Act on jQuery elements only once.",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "keywords": [
     "jquery"
   ],
@@ -15,14 +15,14 @@
   },
   "repo": "RobLoach/jquery-once",
   "homepage": "https://github.com/RobLoach/jquery-once",
-  "author": "Rob Loach <robloach@gmail.com> (http://github.com/robloach)",
+  "author": "Rob Loach (http://github.com/robloach)",
   "maintainers": [
     "Rob Loach (https://github.com/robloach)"
   ],
   "main": "jquery.once.js",
   "contributors": [
     "JohnAlbin (https://github.com/JohnAlbin)",
-    "Rob Loach <robloach@gmail.com> (https://github.com/robloach)",
+    "Rob Loach <robloach@gmail.com> (https://github.com/RobLoach)",
     "theodoreb (https://github.com/theodoreb)"
   ],
   "repository": {
@@ -57,6 +57,7 @@
   },
   "scripts": {
     "test": "grunt jshint qunit",
-    "projectz": "node_modules/.bin/projectz compile"
+    "projectz": "node_modules/.bin/projectz compile",
+    "release": "grunt release"
   }
 }

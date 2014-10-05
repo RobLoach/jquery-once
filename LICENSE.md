@@ -3,7 +3,7 @@
 
 # License
 
-Copyright &copy; Rob Loach <robloach@gmail.com> (http://github.com/robloach)
+Copyright &copy; Rob Loach (http://github.com/robloach)
 
 ## GPL-2.0
 [GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
