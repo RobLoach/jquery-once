@@ -27,7 +27,6 @@ Act on jQuery elements only once.
 Filters out all elements that had the same filter applied on them before. It can
 be used to ensure that a function is only applied once to an element.
 
-<!-- /DESCRIPTION -->
 
 <!-- INSTALL/ -->
 
@@ -59,6 +58,8 @@ be used to ensure that a function is only applied once to an element.
 
 ## Usage
 
+### `.once()`
+
 ``` javascript
 $('div.calendar').once('calendar', function() {
   // This function is only executed once for each div, even if this
@@ -83,12 +84,26 @@ $('div.calendar').once(function() {
 });
 ```
 
-To find once'd elements later on, use the `.findOnce()` function:
+### `.findOnce()`
+
+After `.once()` is used and you need to retrieve all elements that have already
+been executed with `.once()`, you can use the `.findOnce() function:
 
 ``` javascript
 $('div.calendar').findOnce('calendar', function() {
   // This function is called for each element that was already called "once"
   // with the "calendar" ID.
+});
+```
+
+### `.removeOnce()`
+
+It is possible to remove the `.once()` data, and iterate through each element
+whose once state is removed:
+
+``` javascript
+$('div.calendar').removeOnce('calendar', function() {
+  // This function is called for each element whose once() data is removed.
 });
 ```
 
@@ -110,6 +125,10 @@ Build the project with [Grunt](http://gruntjs.com):
 Update project documentation with [Projectz](https://github.com/bevry/projectz):
 
     npm run-script projectz
+
+Generate code documentation with [JSDoc](http://usejsdoc.org):
+
+    npm run-script jsdoc
 
 
 <!-- HISTORY/ -->

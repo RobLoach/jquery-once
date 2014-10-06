@@ -1,10 +1,21 @@
 /*!
- * jQuery Once Plugin 2.0.0-alpha.5
- * http://github.com/robloach/jquery-once
+ * @file jQuery Once
+ * @description Act on jQuery elements only once.
+ * @version 2.0.0-alpha.5
+ * @link http://github.com/robloach/jquery-once
  *
- * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
+ * @example
+ * // Change the color to green only once.
+ * $('p').once('changecolor', function() {
+ *   $(this).css('color', 'green');
+ * });
+ *
+ * @see once
+ * @see removeOnce
+ * @see findOnce
+ *
+ * @author Rob Loach (http://robloach.net)
+ * @license MIT, GPL-2.0
  */
 
 (function (factory) {
@@ -23,7 +34,7 @@
   /**
    * Filters elements by whether they have not yet been processed.
    *
-   * @param id
+   * @param {(string|function)} [id]
    *   (Optional) If this is a string, then it will be the data ID used
    *   to determine whether it has already been processed or not.
    *
@@ -34,14 +45,16 @@
    *   When the id is neither a string or a function, it becomes a unique
    *   identifier, depicted as a number. The element's data ID will then be
    *   represented in the form of "jquery-once-#".
-   * @param fn
+   * @param {function} [fn]
    *   (Optional) If given, this function will be called for each element that
    *   has not yet been processed. The function's return value follows the same
    *   logic as $.each(). Returning true will continue to the next matched
    *   element in the set, while returning false will entirely break the
    *   iteration.
+   * @returns jQuery element collection of elements that have now run once.
    *
-   * @api public
+   * @public
+   * @global
    */
   $.fn.once = function (id, fn) {
     if (typeof id !== 'string') {
@@ -68,19 +81,22 @@
   /**
    * Removes the once data from the given elements, based on the given ID.
    *
-   * @param id
+   * @param {string} id
    *   A required string representing the name of the data id which should be used
    *   when filtering the elements. This only filters elements that have already
    *   been processed by the once function. The id should be the same id that
    *   was originally passed to the once() function.
-   * @param fn
+   * @param {function} [fn]
    *   (Optional) If given, this function will be called for each element that
    *   whose element's once data was removed. The function's return value
    *   follows the same logic as $.each(). Returning true will continue to the
    *   next matched element in the set, while returning false will entirely
    *   break the iteration.
+   * @returns jQuery element collection of elements that now have their once
+   *   data removed.
    *
-   * @api public
+   * @public
+   * @global
    */
   $.fn.removeOnce = function (id, fn) {
     // Filter through the elements to find the once'd elements.
@@ -95,19 +111,21 @@
   /**
    * Filters elements that have already been processed once.
    *
-   * @param id
+   * @param {string} id
    *   A required string representing the name of the data id which should be used
    *   when filtering the elements. This only filters elements that have already
    *   been processed by the once function. The id should be the same id that
    *   was originally passed to the once() function.
-   * @param fn
+   * @param {function} [fn]
    *   (Optional) If given, this function will be called for each element that
    *   has not yet been processed. The function's return value follows the same
    *   logic as $.each(). Returning true will continue to the next matched
    *   element in the set, while returning false will entirely break the
    *   iteration.
+   * @returns jQuery element collection of elements that have been run once.
    *
-   * @api public
+   * @public
+   * @global
    */
   $.fn.findOnce = function (id, fn) {
     // Filter the elements by which do have the data.

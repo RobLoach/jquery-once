@@ -2,6 +2,7 @@
 
 ## v2.0.0-alpha.5 October 5, 2014
 - Added findOnce() to allow filtering once'd elements
+- Added inline JavaScript code documentation
 
 ## v2.0.0-alpha.4 October 4, 2014
 - Updated documentation
