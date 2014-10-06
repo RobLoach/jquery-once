@@ -59,3 +59,23 @@ test("Remove the value from attribute correctly", function() {
   hasData = $('#test4 span').data('jquery-once-test4');
   ok(!hasData, 'The value is properly removed when called removeOnce().');
 });
+
+test("Finding elements correctly through findOnce()", function() {
+  // Create one once() call.
+  $('#test5 span').once('test5', function() {
+    // Do nothing.
+  });
+
+  // Find the once'd element through the callback.
+  var elements = $('span').findOnce('test5', function() {
+    var hasData = $(this).data('jquery-once-test5');
+    ok(hasData, 'Finding the correct span element after once() through callback.');
+  });
+
+  // Find the once'd element without the callback.
+  elements = $('span').findOnce('test5');
+  elements.each(function() {
+    var hasData = $(this).data('jquery-once-test5');
+    ok(hasData, 'Finding the correct span element after once().');
+  });
+});

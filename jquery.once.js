@@ -1,5 +1,5 @@
 /*!
- * jQuery Once Plugin 2.0.0-alpha.4
+ * jQuery Once Plugin 2.0.0-alpha.5
  * http://github.com/robloach/jquery-once
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -66,7 +66,34 @@
   };
 
   /**
-   * Filters elements that have been processed once already.
+   * Removes the once data from the given elements, based on the given ID.
+   *
+   * @param id
+   *   A required string representing the name of the data id which should be used
+   *   when filtering the elements. This only filters elements that have already
+   *   been processed by the once function. The id should be the same id that
+   *   was originally passed to the once() function.
+   * @param fn
+   *   (Optional) If given, this function will be called for each element that
+   *   whose element's once data was removed. The function's return value
+   *   follows the same logic as $.each(). Returning true will continue to the
+   *   next matched element in the set, while returning false will entirely
+   *   break the iteration.
+   *
+   * @api public
+   */
+  $.fn.removeOnce = function (id, fn) {
+    // Filter through the elements to find the once'd elements.
+    var elements = this.findOnce(id);
+
+    // Remove the once data from the elements.
+    elements.removeData('jquery-once-' + id);
+
+    return $.isFunction(fn) ? elements.each(fn) : elements;
+  };
+
+  /**
+   * Filters elements that have already been processed once.
    *
    * @param id
    *   A required string representing the name of the data id which should be used
@@ -82,12 +109,12 @@
    *
    * @api public
    */
-  $.fn.removeOnce = function (id, fn) {
+  $.fn.findOnce = function (id, fn) {
     // Filter the elements by which do have the data.
     var name = 'jquery-once-' + id;
     var elements = this.filter(function() {
       return $(this).data(name) === true;
-    }).removeData(name);
+    });
 
     return $.isFunction(fn) ? elements.each(fn) : elements;
   };

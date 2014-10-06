@@ -83,6 +83,15 @@ $('div.calendar').once(function() {
 });
 ```
 
+To find once'd elements later on, use the `.findOnce()` function:
+
+``` javascript
+$('div.calendar').findOnce('calendar', function() {
+  // This function is called for each element that was already called "once"
+  // with the "calendar" ID.
+});
+```
+
 
 ## Development
 
@@ -152,5 +161,3 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
-
-
