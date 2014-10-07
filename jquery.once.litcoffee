@@ -11,17 +11,17 @@ Act on jQuery elements only once.
 [UMD](https://github.com/umdjs/umd) pattern in order to allow loading jQuery,
 and jQuery Once, in a number of different ways.
 
-		((factory) ->
-		  if typeof exports is "object"
-		    factory require("jquery")
-		  else if typeof define is "function" and define.amd
-		    define ["jquery"], factory
-		  else
-		    factory jQuery
-		  return
-		) ($) ->
-			cache = {}
-			uuid = 0
+    ((factory) ->
+      if typeof exports is "object"
+        factory require("jquery")
+      else if typeof define is "function" and define.amd
+        define ["jquery"], factory
+      else
+        factory jQuery
+      return
+    ) ($) ->
+      cache = {}
+      uuid = 0
 
 
 ### `.once()`
@@ -40,16 +40,16 @@ number. The element's data id will then be represented in the form of
 jQuery element collection of elements that have now run once by
 the given id.
 
-	  $.fn.once = (id) ->
-	    if typeof id isnt "string"
-	      # Generate a numeric ID if the id passed is not a string.
-	      cache[id] = ++uuid  unless id of cache
-	      id = cache[id]
-	    # Filter the elements by which do not have the data yet.
-	    name = "jquery-once-" + id
-	    @filter(->
-	      $(this).data(name) isnt true
-	    ).data name, true
+      $.fn.once = (id) ->
+        if typeof id isnt "string"
+          # Generate a numeric ID if the id passed is not a string.
+          cache[id] = ++uuid  unless id of cache
+          id = cache[id]
+        # Filter the elements by which do not have the data yet.
+        name = "jquery-once-" + id
+        @filter(->
+          $(this).data(name) isnt true
+        ).data name, true
 
 
 ### `.removeOnce()`
@@ -68,9 +68,9 @@ was originally passed to the once() function.
 jQuery element collection of elements that now have their once
 data removed.
 
-			$.fn.removeOnce = (id) ->
-				# Filter through the elements to find the once'd elements.
-				@findOnce(id).removeData "jquery-once-" + id
+      $.fn.removeOnce = (id) ->
+        # Filter through the elements to find the once'd elements.
+        @findOnce(id).removeData "jquery-once-" + id
 
 
 ### `.findOnce()`
@@ -88,10 +88,10 @@ was originally passed to the `.once()` function.
 
 jQuery element collection of elements that have been run once.
 
-			$.fn.findOnce = (id) ->
-				# Filter the elements by which do have the data.
-				name = "jquery-once-" + id
-				@filter ->
-					$(this).data(name) is true
+      $.fn.findOnce = (id) ->
+        # Filter the elements by which do have the data.
+        name = "jquery-once-" + id
+        @filter ->
+          $(this).data(name) is true
 
-			return
+      return
