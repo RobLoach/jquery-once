@@ -1,5 +1,8 @@
 # History
 
+## v2.0.0-alpha.6 October 5, 2014
+- Removed function callback in order to promote jQuery chaining standards
+
 ## v2.0.0-alpha.5 October 5, 2014
 - Added findOnce() to allow filtering once'd elements
 - Added inline JavaScript code documentation
