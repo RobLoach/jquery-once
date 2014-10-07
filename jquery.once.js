@@ -9,16 +9,12 @@
       factory(jQuery);
     }
   })(function($) {
-    var cache, uuid;
-    cache = {};
+    var uuid;
     uuid = 0;
     $.fn.once = function(id) {
       var name;
-      if (typeof id !== "string") {
-        if (!(id in cache)) {
-          cache[id] = ++uuid;
-        }
-        id = cache[id];
+      if (!id) {
+        id = ++uuid;
       }
       name = "jquery-once-" + id;
       return this.filter(function() {

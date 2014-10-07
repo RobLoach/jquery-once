@@ -20,7 +20,6 @@ and jQuery Once, in a number of different ways.
         factory jQuery
       return
     ) ($) ->
-      cache = {}
       uuid = 0
 
 
@@ -50,15 +49,13 @@ $('p').once('changecolor').css('color', 'green');
 #### Source
 
       $.fn.once = (id) ->
-        if typeof id isnt "string"
-          # Generate a numeric ID if the id passed is not a string.
-          cache[id] = ++uuid  unless id of cache
-          id = cache[id]
+        # Generate a numeric id if the id doesn't exist.
+        id = ++uuid if !id
         # Filter the elements by which do not have the data yet.
         name = "jquery-once-" + id
-        @filter(->
+        @filter ->
           $(this).data(name) isnt true
-        ).data name, true
+        .data name, true
 
 
 ### `.removeOnce()`
