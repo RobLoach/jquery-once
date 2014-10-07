@@ -21,16 +21,17 @@
   var cache = {}, uuid = 0;
 
   /**
-   * Filters elements by whether they have not yet been processed.
+   * Filter elements by whether they have not yet been processed.
    *
    * @param {string} [id]
-   *   (Optional) If this is a string, then it will be the data ID used
-   *   to determine whether it has already been processed or not.
+   *   (Optional) The data id used to determine whether the given elements have
+   *   already been processed or not.
    *
-   *   When the id is not passed, it becomes a unique identifier, depicted as a
-   *   number. The element's data ID will then be represented in the form of
+   *   When id is not provided, it becomes a unique identifier, depicted as a
+   *   number. The element's data id will then be represented in the form of
    *   "jquery-once-#".
-   * @returns jQuery element collection of elements that have now run once.
+   * @returns jQuery element collection of elements that have now run once by
+   *   the given id.
    *
    * @example
    * // Change the color to green only once.
@@ -112,6 +113,7 @@
   $.fn.findOnce = function (id) {
     // Filter the elements by which do have the data.
     var name = 'jquery-once-' + id;
+
     return this.filter(function() {
       return $(this).data(name) === true;
     });

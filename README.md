@@ -60,6 +60,8 @@ be used to ensure that a function is only applied once to an element.
 
 ### `.once()`
 
+Filter elements by whether they have not yet been processed.
+
 ``` javascript
 $('div.calendar').once('calendar').each(function() {
   // This function is only executed once for each div, even if this
@@ -73,7 +75,7 @@ $('div.calendar').once('calendar').click(function() {
 });
 ```
 
-It also works without supplying a name:
+It is also possible to use `.once()` without supplying a name:
 
 ``` javascript
 $('div.calendar').once().each(function() {
@@ -180,5 +182,3 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
-
-
