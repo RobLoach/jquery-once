@@ -150,7 +150,7 @@ Licensed under:
 - [GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
 - the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://opensource.org/licenses/MIT)
 
-Copyright &copy; Rob Loach (http://github.com/robloach)
+Copyright &copy; Rob Loach (http://github.com/RobLoach)
 
 <!-- /LICENSE -->
 
@@ -163,7 +163,7 @@ Copyright &copy; Rob Loach (http://github.com/robloach)
 
 These amazing people are maintaining this project:
 
-- Rob Loach (https://github.com/robloach)
+- Rob Loach (https://github.com/RobLoach)
 
 ### Sponsors
 
@@ -182,3 +182,5 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
+
+
