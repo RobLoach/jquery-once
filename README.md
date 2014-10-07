@@ -39,7 +39,7 @@ be used to ensure that a function is only applied once to an element.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.5`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.6`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -61,7 +61,7 @@ be used to ensure that a function is only applied once to an element.
 ### `.once()`
 
 ``` javascript
-$('div.calendar').once('calendar', function() {
+$('div.calendar').once('calendar').each(function() {
   // This function is only executed once for each div, even if this
   // code segment is executed repeatedly.
 });
@@ -76,7 +76,7 @@ $('div.calendar').once('calendar').click(function() {
 It also works without supplying a name:
 
 ``` javascript
-$('div.calendar').once(function() {
+$('div.calendar').once().each(function() {
   // This function is only executed once for each div, even if this
   // code segment is executed repeatedly. Other scripts can't refer
   // to this `once` method. The once data used to store execution are
@@ -90,7 +90,7 @@ After `.once()` is used and you need to retrieve all elements that have already
 been executed with `.once()`, you can use the `.findOnce() function:
 
 ``` javascript
-$('div.calendar').findOnce('calendar', function() {
+$('div.calendar').findOnce('calendar').each(function() {
   // This function is called for each element that was already called "once"
   // with the "calendar" ID.
 });
@@ -102,7 +102,7 @@ It is possible to remove the `.once()` data, and iterate through each element
 whose once state is removed:
 
 ``` javascript
-$('div.calendar').removeOnce('calendar', function() {
+$('div.calendar').removeOnce('calendar').each(function() {
   // This function is called for each element whose once() data is removed.
 });
 ```
@@ -174,7 +174,7 @@ No sponsors yet! Will you be the first?
 These amazing people have contributed code to this project:
 
 - [JohnAlbin](https://github.com/JohnAlbin) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=JohnAlbin)
-- [Rob Loach](https://github.com/robloach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=robloach)
+- [Rob Loach](https://github.com/RobLoach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=RobLoach)
 - [theodoreb](https://github.com/theodoreb) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=theodoreb)
 
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)

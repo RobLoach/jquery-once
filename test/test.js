@@ -1,8 +1,6 @@
 test("Properly executed", function() {
   // Create one once() call.
-  $('#test1 span').once(function() {
-    $(this).data('test1', 'foobar');
-  });
+  $('#test1 span').once().data('test1', 'foobar');
 
   var data = $('#test1 span').data('test1');
   ok(data === "foobar");
@@ -21,7 +19,7 @@ test("Called only once", function() {
 
   // Call once() a bunch of times.
   for (var i = 0; i < 10; i++) {
-    $('#test2 span').once('count', callback);
+    $('#test2 span').once('count').each(callback);
   }
 
   // Verify that it was only called once.
@@ -35,9 +33,7 @@ test("Apply the value to data correctly", function() {
   ok(!hasData, 'Value not applied in the beginning.');
 
   // Create one once() call.
-  $('#test3 span').once('test3', function() {
-    // Do nothing.
-  });
+  $('#test3 span').once('test3');
 
   // Verify the data is applied.
   hasData = $('#test3 span').data('jquery-once-test3');
@@ -46,9 +42,7 @@ test("Apply the value to data correctly", function() {
 
 test("Remove the value from attribute correctly", function() {
   // Create one once() call.
-  $('#test4 span').once('test4', function() {
-    // Do nothing.
-  });
+  $('#test4 span').once('test4');
 
   // Verify the data is applied.
   var hasData = $('#test4 span').data('jquery-once-test4');
@@ -62,12 +56,10 @@ test("Remove the value from attribute correctly", function() {
 
 test("Finding elements correctly through findOnce()", function() {
   // Create one once() call.
-  $('#test5 span').once('test5', function() {
-    // Do nothing.
-  });
+  $('#test5 span').once('test5');
 
   // Find the once'd element through the callback.
-  var elements = $('span').findOnce('test5', function() {
+  var elements = $('span').findOnce('test5').each(function() {
     var hasData = $(this).data('jquery-once-test5');
     ok(hasData, 'Finding the correct span element after once() through callback.');
   });
