@@ -24,10 +24,6 @@ Act on jQuery elements only once.
 <!-- /DESCRIPTION -->
 
 
-Filters out all elements that had the same filter applied on them before. It can
-be used to ensure that a function is only applied once to an element.
-
-
 <!-- INSTALL/ -->
 
 ## Install
@@ -58,57 +54,7 @@ be used to ensure that a function is only applied once to an element.
 
 ## Usage
 
-### `.once()`
-
-Filter elements by whether they have not yet been processed.
-
-``` javascript
-$('div.calendar').once('calendar').each(function() {
-  // This function is only executed once for each div, even if this
-  // code segment is executed repeatedly.
-});
-$('div.calendar').once('calendar').click(function() {
-  // .once('calendar') filters out all elements which already have been
-  // filtered with once(), and the elements that haven't been filtered
-  // yet remain. The previous set of elements can be restored with
-  // .end().
-});
-```
-
-It is also possible to use `.once()` without supplying a name:
-
-``` javascript
-$('div.calendar').once().each(function() {
-  // This function is only executed once for each div, even if this
-  // code segment is executed repeatedly. Other scripts can't refer
-  // to this `once` method. The once data used to store execution are
-  // in the form "jquery-once-1", "jquery-once-2", etc.
-});
-```
-
-### `.findOnce()`
-
-After `.once()` is used and you need to retrieve all elements that have already
-been executed with `.once()`, you can use the `.findOnce() function:
-
-``` javascript
-$('div.calendar').findOnce('calendar').each(function() {
-  // This function is called for each element that was already called "once"
-  // with the "calendar" ID.
-});
-```
-
-### `.removeOnce()`
-
-It is possible to remove the `.once()` data, and iterate through each element
-whose once state is removed:
-
-``` javascript
-$('div.calendar').removeOnce('calendar').each(function() {
-  // This function is called for each element whose once() data is removed.
-});
-```
-
+[See the `jquery.once.litcoffee` for documentation.](jquery.once.litcoffee)
 
 ## Development
 
@@ -182,5 +128,3 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
-
-

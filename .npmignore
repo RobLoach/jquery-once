@@ -36,4 +36,4 @@ bower.json
 # =====================================
 # CUSTOM MODIFICATIONS
 
-# None
+*.litcoffee
