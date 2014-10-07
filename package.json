@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "title": "jQuery Once",
   "description": "Act on jQuery elements only once.",
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0-alpha.6",
   "keywords": [
     "jquery"
   ],
@@ -22,7 +22,7 @@
   "main": "jquery.once.js",
   "contributors": [
     "JohnAlbin (https://github.com/JohnAlbin)",
-    "Rob Loach <robloach@gmail.com> (https://github.com/robloach)",
+    "Rob Loach <robloach@gmail.com> (https://github.com/RobLoach)",
     "theodoreb (https://github.com/theodoreb)"
   ],
   "repository": {
