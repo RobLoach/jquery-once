@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="../jquery.once.js"></script>
-    </head>
-    <body>
-        <h1>jQuery Once</h1>
-        <p>This is some text, which should stay green.</p>
-        <script>
-          // Change the color of the text to green.
-          $('p').once('changecolor').css('color', 'green');
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../jquery.once.js"></script>
+  </head>
+  <body>
+    <h1>jQuery Once</h1>
+    <p>This is some text, which should stay green.</p>
+    <script>
+      // Change the color of the text to green.
+      $('p').once('changecolor').css('color', 'green');
 
-          // Attempt to change the color again.
-          $('p').once('changecolor').css('color', 'red');
+      // Attempt to change the color again.
+      $('p').once('changecolor').css('color', 'red');
 
-          // Now change the background color.
-          $('p').once().css('background-color', 'black');
+      // Now change the background color.
+      $('p').once().css('background-color', 'black');
 
-          // Change it again.
-          $('p').once().css('background-color', 'yellow');
-        </script>
-    </body>
+      // Change it again.
+      $('p').once().css('background-color', 'yellow');
+    </script>
+  </body>
 </html>

@@ -1,10 +1,10 @@
 /*!
- * @file jQuery Once
- * @description Act on jQuery elements only once.
- * @version 2.0.0-alpha.6
- * @link http://github.com/robloach/jquery-once
- * @author Rob Loach (http://robloach.net)
- * @license MIT, GPL-2.0
+ * jQuery Once 2.0.0-alpha.6
+ * http://github.com/robloach/jquery-once
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
  */
 
 (function (factory) {
@@ -30,6 +30,7 @@
    *   When id is not provided, it becomes a unique identifier, depicted as a
    *   number. The element's data id will then be represented in the form of
    *   "jquery-once-#".
+   *
    * @returns jQuery element collection of elements that have now run once by
    *   the given id.
    *
