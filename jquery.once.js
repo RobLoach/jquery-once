@@ -18,7 +18,7 @@
   }
 }(function ($) {
   "use strict";
-  var cache = {}, uuid = 0;
+  var uuid = 0;
 
   /**
    * Filter elements by whether they have not yet been processed.
@@ -44,17 +44,11 @@
    * @global
    */
   $.fn.once = function (id) {
-    if (typeof id !== 'string') {
-      // Generate a numeric ID if the id passed is not a string.
-      if (!(id in cache)) {
-        cache[id] = ++uuid;
-      }
-      id = cache[id];
-    }
+    // Build the name for the data identifier. Generate a new unique id if the
+    // id parameter is not provided.
+    var name = 'jquery-once-' + (id || ++uuid);
 
     // Filter the elements by which do not have the data yet.
-    var name = 'jquery-once-' + id;
-
     return this.filter(function() {
       return $(this).data(name) !== true;
     }).data(name, true);

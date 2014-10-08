@@ -1,5 +1,8 @@
 # History
 
+## v2.0.0-alpha.7 October 8, 2014
+- Removed unneeded cache variable
+
 ## v2.0.0-alpha.6 October 5, 2014
 - Removed function callback in order to promote jQuery chaining standards
 

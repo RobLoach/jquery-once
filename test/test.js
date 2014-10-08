@@ -1,12 +1,27 @@
-test("Properly executed", function() {
+test(".once() properly executed", function() {
   // Create one once() call.
-  $('#test1 span').once().data('test1', 'foobar');
+  $('#test1 span').once().data('test1', 'foo');
+
+  // Create another once() call.
+  $('#test1 span').once().data('test1', 'bar');
 
   var data = $('#test1 span').data('test1');
-  ok(data === "foobar");
+  ok(data === "bar");
 });
 
-test("Called only once", function() {
+test(".once('test1-2') properly executed", function() {
+  // Create one once('test1-2') call.
+  $('#test1 span').once('test1-2').data('test1-2', 'foo');
+
+  // Create another once('test1-2') call.
+  $('#test1 span').once('test1-2').data('test1-2', 'bar');
+
+  // The data should result to the first once() call.
+  var data = $('#test1 span').data('test1-2');
+  ok(data === "foo");
+});
+
+test("Called only once, counted", function() {
   // Count the number of times once() was called.
   $('#test2 span').data('count', 0);
 
