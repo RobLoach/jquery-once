@@ -21,8 +21,12 @@
     "no-underscore-dangle": 2,
     "no-new": 2,
     "no-alert": 2,
+    "no-caller": 2,
     "no-use-before-define": 2,
     "consistent-return": 2,
-    "no-constant-condition": 2
+    "no-constant-condition": 2,
+    "no-extra-strict": 2,
+    "strict": 2,
+    "valid-typeof": 2
   }
 }
