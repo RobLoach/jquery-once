@@ -1,7 +1,6 @@
 /*jshint node:true*/
 
 module.exports = function(grunt) {
-  "use strict";
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
@@ -15,74 +14,29 @@ module.exports = function(grunt) {
       },
       all: {
         files: {
-          'jquery.once.min.js': ['jquery.once.js']
+          'jquery.once.min.js': [
+            'jquery.once.js'
+          ]
         }
       }
     },
     qunit: {
-      files: ['test/index.html']
-    },
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        eqnull: true,
-        browser: true,
-        globals: {
-          jQuery: true,
-          $: true,
-          console: true,
-          require: true,
-          define: true
-        }
-      },
       files: [
+        'test/index.html'
+      ]
+    },
+    eslint: {
+      target: [
         'jquery.once.js'
-      ],
-      test: {
-        options: {
-          globals: {
-            jQuery: true,
-            $: true,
-            QUnit: true,
-            module: true,
-            test: true,
-            start: true,
-            stop: true,
-            expect: true,
-            ok: true,
-            equal: true,
-            deepEqual: true,
-            strictEqual: true
-          }
-        },
-        files: {
-          src: [
-            'test/test.js'
-          ]
-        }
-      },
-      grunt: {
-        files: {
-          src: [
-            'Gruntfile.js'
-          ]
-        }
-      }
+      ]
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-eslint');
 
-  grunt.registerTask('default', ['jshint', 'qunit']);
+  grunt.registerTask('default', ['eslint', 'qunit']);
   grunt.registerTask('release', ['default', 'uglify']);
 
 };

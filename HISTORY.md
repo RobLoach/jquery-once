@@ -3,6 +3,7 @@
 ## v2.0.0-alpha.8 October 9, 2014
 - Update documentation
 - Fix whitespace
+- Switch from JSHint to ESLint
 
 ## v2.0.0-alpha.7 October 8, 2014
 - Removed unneeded cache variable

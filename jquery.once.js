@@ -18,12 +18,12 @@
  */
 (function (factory) {
   "use strict";
-  if (typeof exports === 'object') {
+  if (typeof exports === "object") {
     // CommonJS
-    factory(require('jquery'));
-  } else if (typeof define === 'function' && define.amd) {
+    factory(require("jquery"));
+  } else if (typeof define === "function" && define.amd) {
     // AMD
-    define(['jquery'], factory);
+    define(["jquery"], factory);
   } else {
     // Global object
     factory(jQuery);
@@ -60,7 +60,7 @@
   $.fn.once = function (id) {
     // Build the name for the data identifier. Generate a new unique id if the
     // id parameter is not provided.
-    var name = 'jquery-once-' + (id || ++uuid);
+    var name = "jquery-once-" + (id || ++uuid);
 
     // Filter the elements by which do not have the data yet.
     return this.filter(function() {
@@ -94,7 +94,7 @@
    */
   $.fn.removeOnce = function (id) {
     // Filter through the elements to find the once'd elements.
-    return this.findOnce(id).removeData('jquery-once-' + id);
+    return this.findOnce(id).removeData("jquery-once-" + id);
   };
 
   /**
@@ -122,7 +122,7 @@
    */
   $.fn.findOnce = function (id) {
     // Filter the elements by which do have the data.
-    var name = 'jquery-once-' + id;
+    var name = "jquery-once-" + id;
 
     return this.filter(function() {
       return $(this).data(name) === true;
