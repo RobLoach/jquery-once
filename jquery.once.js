@@ -1,5 +1,5 @@
 /*!
- * jQuery Once 2.0.0-alpha.6
+ * jQuery Once 2.0.0-alpha.8
  * http://github.com/robloach/jquery-once
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -7,13 +7,25 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
 
+/**
+ * Universal Module Definition
+ *
+ * jQuery is a dependency, so we wrap the code with a UMD pattern in order to
+ * allow loading jQuery and jQuery Once through a module definition like
+ * CommonJS, AMD, or otherwise.
+ *
+ * @see {@link http://github.com/umdjs/umd}
+ */
 (function (factory) {
   "use strict";
   if (typeof exports === 'object') {
+    // CommonJS
     factory(require('jquery'));
   } else if (typeof define === 'function' && define.amd) {
+    // AMD
     define(['jquery'], factory);
   } else {
+    // Global object
     factory(jQuery);
   }
 }(function ($) {
@@ -40,9 +52,10 @@
    *
    * @see removeOnce
    * @see findOnce
+   * @this jQuery
    *
-   * @public
    * @global
+   * @public
    */
   $.fn.once = function (id) {
     // Build the name for the data identifier. Generate a new unique id if the
@@ -74,9 +87,10 @@
    * });
    *
    * @see once
+   * @this jQuery
    *
-   * @public
    * @global
+   * @public
    */
   $.fn.removeOnce = function (id) {
     // Filter through the elements to find the once'd elements.
@@ -101,9 +115,10 @@
    * });
    *
    * @see once
+   * @this jQuery
    *
-   * @public
    * @global
+   * @public
    */
   $.fn.findOnce = function (id) {
     // Filter the elements by which do have the data.

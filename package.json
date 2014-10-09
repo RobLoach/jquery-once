@@ -59,6 +59,6 @@
     "test": "grunt jshint qunit",
     "projectz": "node_modules/.bin/projectz compile",
     "release": "grunt release",
-    "jsdoc": "npm install jsdoc && node_modules/.bin/jsdoc jquery.once.js"
+    "jsdoc": "jsdoc jquery.once.js README.md"
   }
 }
