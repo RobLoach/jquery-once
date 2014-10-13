@@ -13,10 +13,7 @@
     uuid = 0;
     $.fn.once = function(id) {
       var name;
-      if (!id) {
-        id = ++uuid;
-      }
-      name = "jquery-once-" + id;
+      name = "jquery-once-" + (id || ++uuid);
       return this.filter(function() {
         return $(this).data(name) !== true;
       }).data(name, true);

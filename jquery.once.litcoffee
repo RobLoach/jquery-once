@@ -49,10 +49,11 @@ $('p').once('changecolor').css('color', 'green');
 #### Source
 
       $.fn.once = (id) ->
-        # Generate a numeric id if the id doesn't exist.
-        id = ++uuid if !id
+        # Build the name for the data identifier. Generate a new unique id if
+        # the id parameter is not provided.
+        name = "jquery-once-" + (id or ++uuid)
+
         # Filter the elements by which do not have the data yet.
-        name = "jquery-once-" + id
         @filter ->
           $(this).data(name) isnt true
         .data name, true
