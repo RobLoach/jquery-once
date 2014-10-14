@@ -1,6 +1,6 @@
 /*!
  * jQuery Once 2.0.0-alpha.8
- * http://github.com/robloach/jquery-once
+ * http://plugins.jquery.com/once/
  *
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
