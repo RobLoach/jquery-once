@@ -1,14 +1,3 @@
-test(".once() properly executed", function() {
-  // Create one once() call.
-  $('#test1 span').once().data('test1', 'foo');
-
-  // Create another once() call.
-  $('#test1 span').once().data('test1', 'bar');
-
-  var data = $('#test1 span').data('test1');
-  ok(data === "bar");
-});
-
 test(".once('test1-2') properly executed", function() {
   // Create one once('test1-2') call.
   $('#test1 span').once('test1-2').data('test1-2', 'foo');

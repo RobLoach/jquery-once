@@ -30,18 +30,13 @@
   }
 }(function ($) {
   "use strict";
-  var uuid = 0;
 
   /**
    * Filter elements by whether they have not yet been processed.
    *
    * @param {string} [id]
-   *   (Optional) The data id used to determine whether the given elements have
-   *   already been processed or not.
-   *
-   *   When id is not provided, it becomes a unique identifier, depicted as a
-   *   number. The element's data id will then be represented in the form of
-   *   "jquery-once-#".
+   *   The data id used to determine whether the given elements have already
+   *   been processed or not.
    *
    * @returns jQuery element collection of elements that have now run once by
    *   the given id.
@@ -58,9 +53,12 @@
    * @public
    */
   $.fn.once = function (id) {
+    if (!id) {
+      throw new Error("An ID is required when calling jQuery.once()");
+    }
     // Build the name for the data identifier. Generate a new unique id if the
     // id parameter is not provided.
-    var name = "jquery-once-" + (id || ++uuid);
+    var name = "jquery-once-" + id;
 
     // Filter the elements by which do not have the data yet.
     return this.filter(function() {
