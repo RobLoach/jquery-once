@@ -1,12 +1,11 @@
-test(".once() properly executed", function() {
-  // Create one once() call.
-  $('#test1 span').once().data('test1', 'foo');
-
-  // Create another once() call.
-  $('#test1 span').once().data('test1', 'bar');
-
-  var data = $('#test1 span').data('test1');
-  ok(data === "bar");
+test("ID required", function() {
+  expect(1);
+  try {
+    $("#test1 span").once();
+  }
+  catch (e) {
+    ok(e, "Error is triggered when ID is missing.");
+  }
 });
 
 test(".once('test1-2') properly executed", function() {
