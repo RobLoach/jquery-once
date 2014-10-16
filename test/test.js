@@ -1,3 +1,13 @@
+test("ID required", function() {
+  expect(1);
+  try {
+    $("#test1 span").once();
+  }
+  catch (e) {
+    ok(e, "Error is triggered when ID is missing.");
+  }
+});
+
 test(".once('test1-2') properly executed", function() {
   // Create one once('test1-2') call.
   $('#test1 span').once('test1-2').data('test1-2', 'foo');
