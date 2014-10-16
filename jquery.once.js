@@ -34,7 +34,7 @@
   /**
    * Filter elements by whether they have not yet been processed.
    *
-   * @param {string} [id]
+   * @param {string} id
    *   The data id used to determine whether the given elements have already
    *   been processed or not.
    *

@@ -1,5 +1,9 @@
 # History
 
+## v2.0.0-alpha.9 October 16, 2014
+- `id` parameter of `.once()` now a required parameter
+  - From [@theodoreb](http://github.com/theodoreb)
+
 ## v2.0.0-alpha.8 October 9, 2014
 - Update documentation
 - Fix whitespace

@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "homepage": "http://github.com/robloach/jquery-once",
   "description": "jQuery Once",
-  "version": "2.0.0-alpha.8",
+  "version": "2.0.0-alpha.9",
   "main": "jquery.once.js",
   "ignore": [
     "*.json",

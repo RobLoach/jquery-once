@@ -39,7 +39,7 @@ be used to ensure that a function is only applied once to an element.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.8`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.9`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -75,16 +75,6 @@ $('div.calendar').once('calendar').click(function() {
 });
 ```
 
-It is also possible to use `.once()` without supplying a name:
-
-``` javascript
-$('div.calendar').once().each(function() {
-  // This function is only executed once for each div, even if this
-  // code segment is executed repeatedly. Other scripts can't refer
-  // to this `once` method. The once data used to store execution are
-  // in the form "jquery-once-1", "jquery-once-2", etc.
-});
-```
 
 ### `.findOnce()`
 
