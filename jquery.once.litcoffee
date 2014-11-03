@@ -29,10 +29,8 @@ Filter elements by whether they have not yet been processed.
 
 #### Parameters
 
-* `id` *(string)* The optional data id used to determine whether the given
-  elements have  already been processed or not. When id is not provided, it
-  becomes a unique identifier, depicted as a number. The element's data id will
-  then be represented in the form of `jquery-once-#`.
+* `id` The data id used to determine whether the given elements have already
+been processed or not.
 
 #### Returns
 
@@ -49,9 +47,11 @@ $('p').once('changecolor').css('color', 'green');
 #### Source
 
       $.fn.once = (id) ->
-        # Build the name for the data identifier. Generate a new unique id if
-        # the id parameter is not provided.
-        name = "jquery-once-" + (id or ++uuid)
+        # The id parameter is required.
+        throw new Error("An ID is required when calling jQuery.once()") if not id
+
+        # Build the name for the data identifier.
+        name = "jquery-once-" + id
 
         # Filter the elements by which do not have the data yet.
         @filter ->

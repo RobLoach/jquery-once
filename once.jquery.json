@@ -1,30 +1,30 @@
 {
-    "name": "once",
-    "title": "jQuery Once",
-    "description": "Act on jQuery elements only once.",
-    "keywords": [
-        "jquery",
-        "once"
-    ],
-    "version": "2.0.0-alpha.6",
-    "author": {
-        "name": "Rob Loach",
-        "url": "http://robloach.net"
+  "name": "once",
+  "title": "jQuery Once",
+  "description": "Act on jQuery elements only once.",
+  "keywords": [
+    "jquery",
+    "once"
+  ],
+  "version": "2.0.0-alpha.9",
+  "author": {
+    "name": "Rob Loach",
+    "url": "http://robloach.net"
+  },
+  "licenses": [
+    {
+      "type": "GPL-2.0",
+      "url": "http://opensource.org/licenses/gpl-2.0.php"
     },
-    "licenses": [
-        {
-            "type": "GPL-2.0",
-            "url": "http://opensource.org/licenses/gpl-2.0.php"
-        },
-        {
-            "type": "MIT",
-            "url": "http://opensource.org/licenses/MIT"
-        }
-    ],
-    "bugs": "https://github.com/RobLoach/jquery-once/issues",
-    "homepage": "https://github.com/RobLoach/jquery-once",
-    "download": "https://github.com/RobLoach/jquery-once/archive/master.zip",
-    "dependencies": {
-        "jquery": "~2.1.1"
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
     }
+  ],
+  "bugs": "https://github.com/RobLoach/jquery-once/issues",
+  "homepage": "https://github.com/RobLoach/jquery-once",
+  "download": "https://github.com/RobLoach/jquery-once/archive/master.zip",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
 }

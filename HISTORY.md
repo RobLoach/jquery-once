@@ -1,5 +1,20 @@
 # History
 
+## v2.0.0-alpha.10 November 2, 2014
+- Switch to [CoffeeScript](http://coffeescript.org)
+
+## v2.0.0-alpha.9 October 16, 2014
+- `id` parameter of `.once()` now a required parameter
+  - From [@theodoreb](http://github.com/theodoreb)
+
+## v2.0.0-alpha.8 October 9, 2014
+- Update documentation
+- Fix whitespace
+- Switch from JSHint to ESLint
+
+## v2.0.0-alpha.7 October 8, 2014
+- Removed unneeded cache variable
+
 ## v2.0.0-alpha.6 October 5, 2014
 - Removed function callback in order to promote jQuery chaining standards
 

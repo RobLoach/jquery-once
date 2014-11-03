@@ -35,7 +35,7 @@ Act on jQuery elements only once.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.6`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.9`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -54,7 +54,7 @@ Act on jQuery elements only once.
 
 ## Usage
 
-[See the `jquery.once.litcoffee` for documentation.](jquery.once.litcoffee)
+[See `jquery.once.litcoffee` for documentation.](jquery.once.litcoffee)
 
 ## Development
 
@@ -62,21 +62,13 @@ Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Use [Grunt](http://gruntjs.com) to run [qunit](http://qunitjs.com) tests:
+Run the following command to run tests:
 
-    grunt jshint qunit
+    npm run-script test
 
-Build the project with [Grunt](http://gruntjs.com):
+Build the project with:
 
-    grunt release
-
-Update project documentation with [Projectz](https://github.com/bevry/projectz):
-
-    npm run-script projectz
-
-Generate code documentation with [JSDoc](http://usejsdoc.org):
-
-    npm run-script jsdoc
+    npm run-script release
 
 
 <!-- HISTORY/ -->

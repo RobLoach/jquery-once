@@ -1,12 +1,26 @@
-test("Properly executed", function() {
-  // Create one once() call.
-  $('#test1 span').once().data('test1', 'foobar');
-
-  var data = $('#test1 span').data('test1');
-  ok(data === "foobar");
+test("ID required", function() {
+  expect(1);
+  try {
+    $("#test1 span").once();
+  }
+  catch (e) {
+    ok(e, "Error is triggered when ID is missing.");
+  }
 });
 
-test("Called only once", function() {
+test(".once('test1-2') properly executed", function() {
+  // Create one once('test1-2') call.
+  $('#test1 span').once('test1-2').data('test1-2', 'foo');
+
+  // Create another once('test1-2') call.
+  $('#test1 span').once('test1-2').data('test1-2', 'bar');
+
+  // The data should result to the first once() call.
+  var data = $('#test1 span').data('test1-2');
+  ok(data === "foo");
+});
+
+test("Called only once, counted", function() {
   // Count the number of times once() was called.
   $('#test2 span').data('count', 0);
 

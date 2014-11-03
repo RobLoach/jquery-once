@@ -1,25 +1,26 @@
 {
-    "name": "robloach/jquery-once",
-    "description": "Act on jQuery elements only once.",
-    "type": "component",
-    "license": [
-       "MIT",
-       "GPL-2.0"
-    ],
-    "require": {
-        "components/jquery": ">=2.1.1"
-    },
-    "extra": {
-        "component": {
-            "scripts": [
-                "jquery.once.js"
-            ],
-            "files": [
-                "jquery.once.min.js"
-            ],
-            "shim": {
-                "deps": ["jquery"]
-            }
-        }
+  "name": "robloach/jquery-once",
+  "description": "Act on jQuery elements only once.",
+  "type": "component",
+  "license": [
+    "MIT",
+    "GPL-2.0"
+  ],
+  "require": {
+    "components/jquery": ">=2.1.1"
+  },
+  "extra": {
+    "component": {
+      "scripts": [
+        "jquery.once.js"
+      ],
+      "files": [
+        "jquery.once.min.js",
+        "jquery.once.js.map"
+      ],
+      "shim": {
+        "deps": ["jquery"]
+      }
     }
+  }
 }

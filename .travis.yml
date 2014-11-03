@@ -6,7 +6,6 @@ language: node_js
 # ensure dev dependencies are installed (handled via npm install)
 # ensure test dependencies are installed (handled via cake install)
 install:
-  - npm install grunt-cli -g
   - npm install
 script: "npm test"
 node_js:

@@ -13,7 +13,10 @@
     uuid = 0;
     $.fn.once = function(id) {
       var name;
-      name = "jquery-once-" + (id || ++uuid);
+      if (!id) {
+        throw new Error("An ID is required when calling jQuery.once()");
+      }
+      name = "jquery-once-" + id;
       return this.filter(function() {
         return $(this).data(name) !== true;
       }).data(name, true);
