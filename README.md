@@ -35,7 +35,7 @@ Act on jQuery elements only once.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.9`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.10`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -62,11 +62,11 @@ Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Run the following command to run tests:
+Compile and run tests with the test command:
 
-    npm run-script test
+    npm test
 
-Build the project with:
+Build the project for release with:
 
     npm run-script release
 
@@ -120,3 +120,5 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
+
+

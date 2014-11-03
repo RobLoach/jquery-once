@@ -24,11 +24,6 @@ module.exports = function(grunt) {
       files: [
         'test/index.html'
       ]
-    },
-    eslint: {
-      target: [
-        'jquery.once.js'
-      ]
     }
   });
 

@@ -68,12 +68,11 @@ Removes the once data from the given elements, based on the given ID.
 * `id` *string* A required string representing the name of the data id which
 should be used when filtering the elements. This only filters elements that
 have already been processed by the once function. The id should be the same id
-that was originally passed to the once() function.
+that was originally passed to the `.once()` function.
 
 #### Returns
 
-jQuery element collection of elements that now have their once
-data removed.
+jQuery element collection that had their `once` data removed.
 
 #### Example
 
