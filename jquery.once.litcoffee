@@ -1,15 +1,22 @@
-# [jQuery Once](http://github.com/robloach/jquery-once) `2.0.0-alpha.6`
+# [jQuery Once](http://github.com/robloach/jquery-once)
 
 Act on jQuery elements only once.
 
 
-## Usage
+## API
 
-### Universal Module Definition
+* [Universal Module Definition](#universal-module-definition)
+* [`once()`](#once)
+* [`findOnce()`](#findonce)
+* [`removeOnce()`](#removeonce)
+
+
+## Universal Module Definition
 
 [jQuery](http://jquery.com) is a dependency, so we wrap the code with a
 [UMD](https://github.com/umdjs/umd) pattern in order to allow loading jQuery,
-and jQuery Once, in a number of different ways.
+and jQuery Once, using [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD),
+[CommonJS](http://en.wikipedia.org/wiki/CommonJS), or as a global variable.
 
     ((factory) ->
       if typeof exports is "object"
@@ -23,28 +30,28 @@ and jQuery Once, in a number of different ways.
       uuid = 0
 
 
-### `.once()`
+## `.once()`
 
 Filter elements by whether they have not yet been processed.
 
-#### Parameters
+### Parameters
 
 * `id` The data id used to determine whether the given elements have already
 been processed or not.
 
-#### Returns
+### Returns
 
 jQuery element collection of elements that have now run once by
 the given id.
 
-#### Example
+### Example
 
 ``` javascript
 // Change the color of the text to green.
 $('p').once('changecolor').css('color', 'green');
 ```
 
-#### Source
+### Source
 
       $.fn.once = (id) ->
         # The id parameter is required.
@@ -59,22 +66,22 @@ $('p').once('changecolor').css('color', 'green');
         .data name, true
 
 
-### `.removeOnce()`
+## `.removeOnce()`
 
 Removes the once data from the given elements, based on the given ID.
 
-#### Parameters
+### Parameters
 
 * `id` *string* A required string representing the name of the data id which
 should be used when filtering the elements. This only filters elements that
 have already been processed by the once function. The id should be the same id
 that was originally passed to the `.once()` function.
 
-#### Returns
+### Returns
 
 jQuery element collection that had their `once` data removed.
 
-#### Example
+### Example
 
 ``` javascript
 // Remove the once
@@ -83,29 +90,29 @@ $('p').removeOnce('changecolor').each(function() {
 });
 ```
 
-#### Source
+### Source
 
       $.fn.removeOnce = (id) ->
         # Filter through the elements to find the once'd elements.
         @findOnce(id).removeData "jquery-once-" + id
 
 
-### `.findOnce()`
+## `.findOnce()`
 
 Filters elements that have already been processed once.
 
-#### Parameters
+### Parameters
 
 * `id` *string* A required string representing the name of the data id which
 should be used when filtering the elements. This only filters elements that have
 already been processed by the once function. The id should be the same id that
 was originally passed to the `.once()` function.
 
-#### Returns
+### Returns
 
 jQuery element collection of elements that have been run once.
 
-#### Example
+### Example
 
 ``` javascript
 // Remove the once
@@ -114,7 +121,7 @@ $('p').findOnce('changecolor').each(function() {
 });
 ```
 
-#### Source
+### Source
 
       $.fn.findOnce = (id) ->
         # Filter the elements by which do have the data.
