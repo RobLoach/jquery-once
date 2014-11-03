@@ -62,11 +62,15 @@ Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Compile and run tests with the test command:
+Compile the [Literate CoffeeScript](http://coffeescript.org/#literate) to JavaScript with:
+
+    npm run-script comiple
+
+Compile and run tests:
 
     npm test
 
-Build the project for release with:
+Prepare the project for for release with:
 
     npm run-script release
 
