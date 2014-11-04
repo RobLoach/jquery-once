@@ -1,7 +1,7 @@
 # History
 
-## v2.0.0-alpha.10 November 2, 2014
-- Switch to [CoffeeScript](http://coffeescript.org)
+## v2.0.0-alpha.10 November 3, 2014
+- Switch source to [CoffeeScript](http://coffeescript.org)
 
 ## v2.0.0-alpha.9 October 16, 2014
 - `id` parameter of `.once()` now a required parameter

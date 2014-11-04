@@ -58,8 +58,8 @@
     "qunitjs": "~1.15.0"
   },
   "scripts": {
-    "compile": "./node_modules/.bin/coffee -m -c *.litcoffee",
-    "coffeelint": "./node_modules/.bin/coffeelint *.litcoffee",
+    "compile": "./node_modules/.bin/coffee -m -c -b *.coffee",
+    "coffeelint": "./node_modules/.bin/coffeelint *.coffee",
     "test": "npm run-script coffeelint && npm run-script compile && npm run-script qunit",
     "projectz": "./node_modules/.bin/projectz compile",
     "release": "npm run-script test && npm run-script uglify && npm run-script projectz",
