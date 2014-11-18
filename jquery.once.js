@@ -1,6 +1,6 @@
 /*!
  * jQuery Once 2.0.0-alpha.8
- * http://plugins.jquery.com/once/
+ * http://npmjs.org/package/jquery-once
  *
  * Dual licensed under the MIT and GPL licenses:
  *   http://www.opensource.org/licenses/mit-license.php
