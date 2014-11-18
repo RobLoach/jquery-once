@@ -110,9 +110,9 @@ Use [Grunt](http://gruntjs.com) to run [qunit](http://qunitjs.com) tests:
 
     grunt jshint qunit
 
-Build the project with [Grunt](http://gruntjs.com):
+Build the project with:
 
-    grunt release
+    npm run-script release
 
 Update project documentation with [Projectz](https://github.com/bevry/projectz):
 
@@ -172,5 +172,3 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
-
-

@@ -1,10 +1,8 @@
 /*!
- * jQuery Once 2.0.0-alpha.9
- * http://github.com/robloach/jquery-once
- *
- * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
+ * jQuery Once v2.0.0-alpha.9 - http://github.com/robloach/jquery-once
+ * @license MIT, GPL-2.0
+ *   http://opensource.org/licenses/MIT
+ *   http://opensource.org/licenses/GPL-2.0
  */
 
 /**
