@@ -24,10 +24,6 @@ Act on jQuery elements only once.
 <!-- /DESCRIPTION -->
 
 
-Filters out all elements that had the same filter applied on them before. It can
-be used to ensure that a function is only applied once to an element.
-
-
 <!-- INSTALL/ -->
 
 ## Install
@@ -39,7 +35,7 @@ be used to ensure that a function is only applied once to an element.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.9`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-alpha.10`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -58,47 +54,7 @@ be used to ensure that a function is only applied once to an element.
 
 ## Usage
 
-### `.once()`
-
-Filter elements by whether they have not yet been processed.
-
-``` javascript
-$('div.calendar').once('calendar').each(function() {
-  // This function is only executed once for each div, even if this
-  // code segment is executed repeatedly.
-});
-$('div.calendar').once('calendar').click(function() {
-  // .once('calendar') filters out all elements which already have been
-  // filtered with once(), and the elements that haven't been filtered
-  // yet remain. The previous set of elements can be restored with
-  // .end().
-});
-```
-
-
-### `.findOnce()`
-
-After `.once()` is used and you need to retrieve all elements that have already
-been executed with `.once()`, you can use the `.findOnce() function:
-
-``` javascript
-$('div.calendar').findOnce('calendar').each(function() {
-  // This function is called for each element that was already called "once"
-  // with the "calendar" ID.
-});
-```
-
-### `.removeOnce()`
-
-It is possible to remove the `.once()` data, and iterate through each element
-whose once state is removed:
-
-``` javascript
-$('div.calendar').removeOnce('calendar').each(function() {
-  // This function is called for each element whose once() data is removed.
-});
-```
-
+[See `jquery.once.litcoffee` for documentation.](jquery.once.litcoffee)
 
 ## Development
 
@@ -106,21 +62,17 @@ Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Use [Grunt](http://gruntjs.com) to run [qunit](http://qunitjs.com) tests:
+Compile the [Literate CoffeeScript](http://coffeescript.org/#literate) to JavaScript with:
 
-    grunt jshint qunit
+    npm run-script comiple
 
-Build the project with [Grunt](http://gruntjs.com):
+Compile and run tests:
 
-    grunt release
+    npm test
 
-Update project documentation with [Projectz](https://github.com/bevry/projectz):
+Prepare the project for for release with:
 
-    npm run-script projectz
-
-Generate code documentation with [JSDoc](http://usejsdoc.org):
-
-    npm run-script jsdoc
+    npm run-script release
 
 
 <!-- HISTORY/ -->

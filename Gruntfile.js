@@ -24,19 +24,13 @@ module.exports = function(grunt) {
       files: [
         'test/index.html'
       ]
-    },
-    eslint: {
-      target: [
-        'jquery.once.js'
-      ]
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-eslint');
 
-  grunt.registerTask('default', ['eslint', 'qunit']);
+  grunt.registerTask('default', ['qunit']);
   grunt.registerTask('release', ['default', 'uglify']);
 
 };

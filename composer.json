@@ -15,7 +15,9 @@
         "jquery.once.js"
       ],
       "files": [
-        "jquery.once.min.js"
+        "jquery.once.min.js",
+        "jquery.once.js.map",
+        "jquery.once.litcoffee"
       ],
       "shim": {
         "deps": ["jquery"]

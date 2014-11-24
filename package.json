@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "title": "jQuery Once",
   "description": "Act on jQuery elements only once.",
-  "version": "2.0.0-alpha.9",
+  "version": "2.0.0-alpha.10",
   "keywords": [
     "jquery",
     "jquery-plugin"
@@ -50,16 +50,21 @@
     "jquery": "~2.1.1"
   },
   "devDependencies": {
+    "coffee-script": "~1.8.0",
+    "coffeelint": "~1.6.1",
     "grunt": "~0.4.5",
     "grunt-contrib-qunit": "~0.5.2",
     "grunt-contrib-uglify": "~0.6.0",
-    "grunt-eslint": "~1.1.0",
-    "projectz": "~0.3.15"
+    "projectz": "~0.3.15",
+    "qunitjs": "~1.15.0"
   },
   "scripts": {
-    "test": "grunt",
-    "projectz": "node_modules/.bin/projectz compile",
-    "release": "grunt release",
-    "jsdoc": "jsdoc jquery.once.js README.md"
+    "compile": "./node_modules/.bin/coffee -m -c *.litcoffee",
+    "coffeelint": "./node_modules/.bin/coffeelint *.litcoffee",
+    "test": "npm run-script coffeelint && npm run-script compile && npm run-script qunit",
+    "projectz": "./node_modules/.bin/projectz compile",
+    "release": "npm run-script test && npm run-script uglify && npm run-script projectz",
+    "uglify": "grunt uglify",
+    "qunit": "grunt qunit"
   }
 }
