@@ -1,10 +1,10 @@
-test("ID required", function() {
+test("String ID required", function() {
   expect(1);
   try {
-    $("#test1 span").once();
+    $("#test1 span").once(function () {});
   }
   catch (e) {
-    ok(e, "Error is triggered when ID is missing.");
+    ok(e, "Error is triggered when ID is not a string.");
   }
 });
 
@@ -20,7 +20,7 @@ test(".once('test1-2') properly executed", function() {
   ok(data === "foo");
 });
 
-test("Called only once, counted", function() {
+test("Called only once with name, counted", function() {
   // Count the number of times once() was called.
   $('#test2 span').data('count', 0);
 
@@ -38,6 +38,27 @@ test("Called only once, counted", function() {
 
   // Verify that it was only called once.
   var count = $('#test2 span').data('count');
+  ok(count === 1, 'It was called ' + count + ' times.');
+});
+
+test("Called only once without name, counted", function() {
+  // Count the number of times once() was called.
+  $('#test2 span').data('once', 0);
+
+  // Create the once() callback.
+  var callback = function() {
+    var count = $('#test2 span').data('once');
+    count++;
+    $('#test2 span').data('once', count);
+  };
+
+  // Call once() a bunch of times.
+  for (var i = 0; i < 10; i++) {
+    $('#test2 span').once().each(callback);
+  }
+
+  // Verify that it was only called once.
+  var count = $('#test2 span').data('once');
   ok(count === 1, 'It was called ' + count + ' times.');
 });
 
