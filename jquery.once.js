@@ -51,8 +51,9 @@
    * @public
    */
   $.fn.once = function (id) {
-    if (!id) {
-      throw new Error("An ID is required when calling jQuery.once()");
+    id = id || "once";
+    if (typeof id !== "string") {
+      throw new Error("jQuery.once() parameter MUST be a string");
     }
     // Build the name for the data identifier. Generate a new unique id if the
     // id parameter is not provided.

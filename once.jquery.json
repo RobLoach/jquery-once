@@ -25,6 +25,6 @@
   "homepage": "https://github.com/RobLoach/jquery-once",
   "download": "https://github.com/RobLoach/jquery-once/archive/master.zip",
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "*"
   }
 }

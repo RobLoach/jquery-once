@@ -47,7 +47,7 @@
     "node": ">=0.10"
   },
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "*"
   },
   "devDependencies": {
     "eslint": "~0.9.2",
@@ -57,7 +57,8 @@
     "uglify-js": "~2.4.15"
   },
   "scripts": {
-    "test": "./node_modules/.bin/eslint jquery.once.js && grunt",
+    "pretest": "./node_modules/.bin/eslint jquery.once.js",
+    "test": "grunt",
     "projectz": "./node_modules/.bin/projectz compile",
     "release": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
     "jsdoc": "jsdoc jquery.once.js README.md"

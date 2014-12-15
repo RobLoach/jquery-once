@@ -16,7 +16,7 @@
     "jquery"
   ],
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "*"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
