@@ -53,7 +53,7 @@
   $.fn.once = function (id) {
     id = id || "once";
     if (typeof id !== "string") {
-      throw new Error("jQuery.once() parameter MUST be a string");
+      throw new Error("jQuery.once() parameter must be a string");
     }
     // Build the name for the data identifier. Generate a new unique id if the
     // id parameter is not provided.
