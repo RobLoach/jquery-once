@@ -7,7 +7,7 @@
     "GPL-2.0"
   ],
   "require": {
-    "components/jquery": ">=2.1.1"
+    "components/jquery": "*"
   },
   "extra": {
     "component": {
@@ -15,7 +15,8 @@
         "jquery.once.js"
       ],
       "files": [
-        "jquery.once.min.js"
+        "jquery.once.min.js",
+        "jquery.once.min.js.map"
       ],
       "shim": {
         "deps": ["jquery"]
