@@ -141,10 +141,9 @@ Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Use [Grunt](http://gruntjs.com) to test with [QUnit](http://qunitjs.com) and
-[ESLint](http://eslint.org):
+Use [Mocha](http://mochajs.org) to test with [ESLint](http://eslint.org) and
+[Mocha JSDom](https://github.com/rstacruz/mocha-jsdom):
 
-    npm install -g grunt-cli
     npm test
 
 Update project documentation with [Projectz](https://github.com/bevry/projectz):
