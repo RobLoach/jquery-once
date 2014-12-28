@@ -55,14 +55,12 @@
     "mocha": "*",
     "mocha-jsdom": "^0.2.0",
     "projectz": "~0.3.15",
-    "qunitjs": "~1.16.0",
     "uglify-js": "~2.4.15"
   },
   "scripts": {
     "pretest": "./node_modules/.bin/eslint jquery.once.js test/test.js",
     "test": "./node_modules/.bin/mocha",
     "projectz": "./node_modules/.bin/projectz compile",
-    "release": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
-    "jsdoc": "jsdoc jquery.once.js README.md"
+    "release": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle"
   }
 }

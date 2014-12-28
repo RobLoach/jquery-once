@@ -1,6 +1,9 @@
 var jsdom = require("mocha-jsdom");
 var assert = require("assert");
 
+/**
+ * Automated tests for jQuery Once.
+ */
 describe("jQuery Once", function() {
   "use strict";
 
@@ -22,10 +25,15 @@ describe("jQuery Once", function() {
     require("../jquery.once.js");
   });
 
-  it("should require ID to be a string", function () {
+  /**
+   * Before each test, reset the document body so that there is fresh data.
+   */
+  beforeEach(function() {
     // Build the body HTML.
-    document.body.innerHTML = "<p>This is <span>Test 1</span>.</p>";
+    document.body.innerHTML = "<p>This is the <span>Test</span>.</p>";
+  });
 
+  it("should require ID to be a string", function () {
     // Expect it to throw an error.
     assert.throws(function() {
       $("span").once(function () {
@@ -35,9 +43,6 @@ describe("jQuery Once", function() {
   });
 
   it("properly executes .once('test2')", function () {
-    // Prepare the document body.
-    document.body.innerHTML = "<p>This is <span>Test 2</span>.</p>";
-
     // Create one once('test2') call.
     $("span").once("test2").data("test2", "foo");
 
@@ -50,9 +55,6 @@ describe("jQuery Once", function() {
   });
 
   it("is called only once with an ID", function() {
-    // Prepare the document body.
-    document.body.innerHTML = "<p>This is <span>Test 3</span>.</p>";
-
     // Count the number of times once() was called.
     $("span").data("count", 0);
 
@@ -78,65 +80,57 @@ describe("jQuery Once", function() {
 
     // Create the once() callback.
     var callback = function() {
-      $("span").data("once", $("span").data('once') + 1);
+      $("span").data("once", $("span").data("once") + 1);
     };
 
     // Call once() a bunch of times.
     for (var i = 0; i < 10; i++) {
-      $('#test2 span').once().each(callback);
+      $("span").once().each(callback);
     }
 
     // Verify that it was only called once.
-    var count = $('#test2 span').data('once');
-    ok(count === 1, 'It was called ' + count + ' times.');
+    var count = $("span").data("once");
+    assert.equal(count, 1, "It was called " + count + " times.");
+  });
+
+  it("retrieves empty once data correctly", function() {
+    // Verify that the element starts without the class.
+    var hasData = $("span").data("jquery-once-test3");
+    assert(!hasData, "Value not applied in the beginning.");
+
+    // Create one once() call.
+    $("span").once("test3");
+
+    // Verify the data is applied.
+    hasData = $("span").data("jquery-once-test3");
+    assert(hasData, "The value is properly applied after once().");
+  });
+
+  it("calls removeOnce() correctly", function() {
+    // Create one once() call.
+    $("span").once("test4");
+
+    // Verify the data is applied.
+    var hasData = $("span").data("jquery-once-test4");
+    assert(hasData, "The value is properly applied after once().");
+
+    // Remove the once property.
+    $("span").removeOnce("test4");
+    hasData = $("span").data("jquery-once-test4");
+    assert(!hasData, "The value is properly removed when called removeOnce().");
+  });
+
+  it("calls findOnce() correctly", function() {
+    // Append an additional span to the end.
+    document.body.innerHTML += "<p>This is the <span>Test 2</span>.</p>";
+
+    // Create one once() call.
+    $("span").once("test5").data("foo", "bar");
+
+    // Find the once'd elements.
+    $("span").findOnce("test5").each(function() {
+      assert.equal($(this).data("foo"), "bar", "Found correct span data.");
+    });
   });
 
 });
-
-/*
-
-test("Apply the value to data correctly", function() {
-  // Verify that the element starts without the class.
-  var hasData = $('#test3 span').data('jquery-once-test3');
-  ok(!hasData, 'Value not applied in the beginning.');
-
-  // Create one once() call.
-  $('#test3 span').once('test3');
-
-  // Verify the data is applied.
-  hasData = $('#test3 span').data('jquery-once-test3');
-  ok(hasData, 'The value is properly applied after once().');
-});
-
-test("Remove the value from attribute correctly", function() {
-  // Create one once() call.
-  $('#test4 span').once('test4');
-
-  // Verify the data is applied.
-  var hasData = $('#test4 span').data('jquery-once-test4');
-  ok(hasData, 'The value is properly applied after once().');
-
-  // Remove the once property.
-  $('#test4 span').removeOnce('test4');
-  hasData = $('#test4 span').data('jquery-once-test4');
-  ok(!hasData, 'The value is properly removed when called removeOnce().');
-});
-
-test("Finding elements correctly through findOnce()", function() {
-  // Create one once() call.
-  $('#test5 span').once('test5');
-
-  // Find the once'd element through the callback.
-  var elements = $('span').findOnce('test5').each(function() {
-    var hasData = $(this).data('jquery-once-test5');
-    ok(hasData, 'Finding the correct span element after once() through callback.');
-  });
-
-  // Find the once'd element without the callback.
-  elements = $('span').findOnce('test5');
-  elements.each(function() {
-    var hasData = $(this).data('jquery-once-test5');
-    ok(hasData, 'Finding the correct span element after once().');
-  });
-});
-*/
