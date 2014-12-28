@@ -51,15 +51,16 @@
   },
   "devDependencies": {
     "eslint": "~0.11.0-alpha.0",
-    "grunt": "~0.4.5",
-    "grunt-contrib-qunit": "~0.5.2",
+    "jsdom": "^2.0.0",
+    "mocha": "*",
+    "mocha-jsdom": "^0.2.0",
     "projectz": "~0.3.15",
-    "uglify-js": "~2.4.15",
-    "qunitjs": "~1.16.0"
+    "qunitjs": "~1.16.0",
+    "uglify-js": "~2.4.15"
   },
   "scripts": {
-    "pretest": "./node_modules/.bin/eslint jquery.once.js",
-    "test": "grunt",
+    "pretest": "./node_modules/.bin/eslint jquery.once.js test/test.js",
+    "test": "./node_modules/.bin/mocha",
     "projectz": "./node_modules/.bin/projectz compile",
     "release": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
     "jsdoc": "jsdoc jquery.once.js README.md"

@@ -1,66 +1,99 @@
-test("String ID required", function() {
-  expect(1);
-  try {
-    $("#test1 span").once(function () {});
-  }
-  catch (e) {
-    ok(e, "Error is triggered when ID is not a string.");
-  }
-});
+var jsdom = require("mocha-jsdom");
+var assert = require("assert");
 
-test(".once('test1-2') properly executed", function() {
-  // Create one once('test1-2') call.
-  $('#test1 span').once('test1-2').data('test1-2', 'foo');
+describe("jQuery Once", function() {
+  "use strict";
 
-  // Create another once('test1-2') call.
-  $('#test1 span').once('test1-2').data('test1-2', 'bar');
+  /**
+   * The global instance of jQuery.
+   */
+  var $;
 
-  // The data should result to the first once() call.
-  var data = $('#test1 span').data('test1-2');
-  ok(data === "foo");
-});
+  /**
+   * Turn the Mocha test environment into a DOM environment with JSDom.
+   */
+  jsdom();
 
-test("Called only once with name, counted", function() {
-  // Count the number of times once() was called.
-  $('#test2 span').data('count', 0);
+  /**
+   * Before the tests initiate, load jQuery and jQuery Once.
+   */
+  before(function() {
+    $ = require("jquery");
+    require("../jquery.once.js");
+  });
 
-  // Create the once() callback.
-  var callback = function() {
-    var count = $('#test2 span').data('count');
-    count++;
-    $('#test2 span').data('count', count);
-  };
+  it("should require ID to be a string", function () {
+    // Build the body HTML.
+    document.body.innerHTML = "<p>This is <span>Test 1</span>.</p>";
 
-  // Call once() a bunch of times.
-  for (var i = 0; i < 10; i++) {
-    $('#test2 span').once('count').each(callback);
-  }
+    // Expect it to throw an error.
+    assert.throws(function() {
+      $("span").once(function () {
+        // Nothing.
+      });
+    });
+  });
 
-  // Verify that it was only called once.
-  var count = $('#test2 span').data('count');
-  ok(count === 1, 'It was called ' + count + ' times.');
-});
+  it("properly executes .once('test2')", function () {
+    // Prepare the document body.
+    document.body.innerHTML = "<p>This is <span>Test 2</span>.</p>";
 
-test("Called only once without name, counted", function() {
-  // Count the number of times once() was called.
-  $('#test2 span').data('once', 0);
+    // Create one once('test2') call.
+    $("span").once("test2").data("test2", "foo");
 
-  // Create the once() callback.
-  var callback = function() {
+    // Create another once('test2') call.
+    $("span").once("test2").data("test2", "bar");
+
+    // The data should result to the first once() call.
+    var data = $("span").data("test2");
+    assert.equal(data, "foo");
+  });
+
+  it("is called only once with an ID", function() {
+    // Prepare the document body.
+    document.body.innerHTML = "<p>This is <span>Test 3</span>.</p>";
+
+    // Count the number of times once() was called.
+    $("span").data("count", 0);
+
+    // Create the once() callback.
+    var callback = function() {
+      // Increment the count variable stored in the data.
+      $("span").data("count", $("span").data("count") + 1);
+    };
+
+    // Call once() a bunch of times.
+    for (var i = 0; i < 10; i++) {
+      $("span").once("count").each(callback);
+    }
+
+    // Verify that it was only called once.
+    var count = $("span").data("count");
+    assert.equal(count, 1, "It was called " + count + " times.");
+  });
+
+  it("is called only once without an ID", function() {
+    // Count the number of times once() was called.
+    $("span").data("once", 0);
+
+    // Create the once() callback.
+    var callback = function() {
+      $("span").data("once", $("span").data('once') + 1);
+    };
+
+    // Call once() a bunch of times.
+    for (var i = 0; i < 10; i++) {
+      $('#test2 span').once().each(callback);
+    }
+
+    // Verify that it was only called once.
     var count = $('#test2 span').data('once');
-    count++;
-    $('#test2 span').data('once', count);
-  };
+    ok(count === 1, 'It was called ' + count + ' times.');
+  });
 
-  // Call once() a bunch of times.
-  for (var i = 0; i < 10; i++) {
-    $('#test2 span').once().each(callback);
-  }
-
-  // Verify that it was only called once.
-  var count = $('#test2 span').data('once');
-  ok(count === 1, 'It was called ' + count + ' times.');
 });
+
+/*
 
 test("Apply the value to data correctly", function() {
   // Verify that the element starts without the class.
@@ -106,3 +139,4 @@ test("Finding elements correctly through findOnce()", function() {
     ok(hasData, 'Finding the correct span element after once().');
   });
 });
+*/
