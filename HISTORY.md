@@ -2,6 +2,7 @@
 
 ## v2.0.x
 - Update documentation
+- Switched to [Mocha](http://mochajs.org) for automated testing
 
 ## v2.0.0-beta.1 October 16, 2014
 - Less dependency on Grunt
