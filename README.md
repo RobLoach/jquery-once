@@ -141,17 +141,19 @@ Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Use [Grunt](http://gruntjs.com) to run [qunit](http://qunitjs.com) tests:
+Use [Grunt](http://gruntjs.com) to test with [QUnit](http://qunitjs.com) and
+[ESLint](http://eslint.org):
 
-    grunt jshint qunit
-
-Build the project with:
-
-    npm run-script release
+    npm install -g grunt-cli
+    npm test
 
 Update project documentation with [Projectz](https://github.com/bevry/projectz):
 
     npm run-script projectz
+
+Build the project with:
+
+    npm run-script release
 
 
 <!-- HISTORY/ -->
@@ -203,5 +205,3 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
-
-

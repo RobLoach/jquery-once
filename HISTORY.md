@@ -1,5 +1,13 @@
 # History
 
+## v2.0.x
+- Update documentation
+
+## v2.0.0-beta.1 October 16, 2014
+- Less dependency on Grunt
+- Faster tests from using local copies of dependencies
+- Update documentation
+
 ## v2.0.0-alpha.9 October 16, 2014
 - `id` parameter of `.once()` now a required parameter
   - From [@theodoreb](http://github.com/theodoreb)
