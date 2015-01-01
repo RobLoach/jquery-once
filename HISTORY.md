@@ -1,6 +1,6 @@
 # History
 
-## v2.0.x
+## v2.0.0-beta.2 December 31, 2014
 - Update documentation
 - Switched to [Mocha](http://mochajs.org) for automated testing
 
