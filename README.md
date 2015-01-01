@@ -154,6 +154,12 @@ Build the project with:
 
     npm run-script release
 
+Tag and publish the new versions to [npm](http://npmjs.com):
+
+    git tag 2.4.0
+    git push origin 2.4.0
+    npm publish
+
 
 <!-- HISTORY/ -->
 
@@ -204,5 +210,3 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
-
-
