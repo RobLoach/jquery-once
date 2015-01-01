@@ -39,7 +39,7 @@ be used to ensure that a function is only applied once to an element.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-beta.1`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-beta.2`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -204,3 +204,5 @@ These amazing people have contributed code to this project:
 [Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
+
+

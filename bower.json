@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "homepage": "http://github.com/robloach/jquery-once",
   "description": "jQuery Once",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "main": "jquery.once.js",
   "ignore": [
     "*.json",
@@ -17,5 +17,13 @@
   ],
   "dependencies": {
     "jquery": "*"
+  },
+  "devDependencies": {
+    "eslint": "~0.11.0-alpha.0",
+    "jsdom": "^2.0.0",
+    "mocha": "*",
+    "mocha-jsdom": "^0.2.0",
+    "projectz": "~0.3.15",
+    "uglify-js": "~2.4.15"
   }
 }

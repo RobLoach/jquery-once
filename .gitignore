@@ -14,6 +14,7 @@ out/
 
 # Private Files
 .env
+.idea
 
 
 # =====================================
@@ -22,3 +23,5 @@ out/
 Cakefile
 CONTRIBUTING.md
 coffeelint.json
+.jshintrc
+cyclic.js
