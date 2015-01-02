@@ -49,7 +49,7 @@
   };
 
   /**
-   * Filter elements by whether they have not yet been processed.
+   * Filter elements that have yet to be processed by the given data ID.
    *
    * @param {string} [id="once"]
    *   The data ID used to determine whether the given elements have already
