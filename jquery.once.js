@@ -91,7 +91,7 @@
     // ID parameter is not provided.
     var name = "jquery-once-" + checkId(id);
 
-    // Filter the elements by whi*ch do not have the data yet.
+    // Filter the elements by which do not have the data yet.
     return this.filter(function() {
       return $(this).data(name) !== true;
     }).data(name, true);
