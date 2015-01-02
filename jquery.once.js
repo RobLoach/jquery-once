@@ -30,11 +30,29 @@
   "use strict";
 
   /**
+   * Ensures that the given id is valid, returning "once" if one is not given.
+   *
+   * @param {string} [id]
+   *   A string representing the id to check. Defaults to "once".
+   *
+   * @returns The valid id name.
+   *
+   * @throws Error when an id is provided, but not a string.
+   */
+  var checkId = function(id) {
+    id = id || "once";
+    if (typeof id !== "string") {
+      throw new Error("The jQuery Once id parameter must be a string");
+    }
+    return id;
+  };
+
+  /**
    * Filter elements by whether they have not yet been processed.
    *
-   * @param {string} id
+   * @param {string} [id]
    *   The data id used to determine whether the given elements have already
-   *   been processed or not.
+   *   been processed or not. Defaults to "once".
    *
    * @returns jQuery element collection of elements that have now run once by
    *   the given id.
@@ -51,13 +69,9 @@
    * @public
    */
   $.fn.once = function (id) {
-    id = id || "once";
-    if (typeof id !== "string") {
-      throw new Error("jQuery.once() parameter must be a string");
-    }
     // Build the name for the data identifier. Generate a new unique id if the
     // id parameter is not provided.
-    var name = "jquery-once-" + id;
+    var name = "jquery-once-" + checkId(id);
 
     // Filter the elements by which do not have the data yet.
     return this.filter(function() {
@@ -68,11 +82,11 @@
   /**
    * Removes the once data from the given elements, based on the given ID.
    *
-   * @param {string} id
-   *   A required string representing the name of the data id which should be used
-   *   when filtering the elements. This only filters elements that have already
-   *   been processed by the once function. The id should be the same id that
-   *   was originally passed to the once() function.
+   * @param {string} [id]
+   *   A string representing the name of the data id which should be used when
+   *   filtering the elements. This only filters elements that have already been
+   *   processed by the once function. The id should be the same id that was
+   *   originally passed to the once() function. Defaults to "once".
    *
    * @returns jQuery element collection of elements that now have their once
    *   data removed.
@@ -91,17 +105,17 @@
    */
   $.fn.removeOnce = function (id) {
     // Filter through the elements to find the once'd elements.
-    return this.findOnce(id).removeData("jquery-once-" + id);
+    return this.findOnce(id).removeData("jquery-once-" + checkId(id));
   };
 
   /**
    * Filters elements that have already been processed once.
    *
-   * @param {string} id
-   *   A required string representing the name of the data id which should be used
-   *   when filtering the elements. This only filters elements that have already
+   * @param {string} [id]
+   *   A string representing the name of the data id which should be used when
+   *   filtering the elements. This only filters elements that have already
    *   been processed by the once function. The id should be the same id that
-   *   was originally passed to the once() function.
+   *   was originally passed to the once() function. Defaults to "once".
    *
    * @returns jQuery element collection of elements that have been run once.
    *
@@ -119,7 +133,7 @@
    */
   $.fn.findOnce = function (id) {
     // Filter the elements by which do have the data.
-    var name = "jquery-once-" + id;
+    var name = "jquery-once-" + checkId(id);
 
     return this.filter(function() {
       return $(this).data(name) === true;
