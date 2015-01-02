@@ -2,59 +2,90 @@
 
 **Functions**
 
-* [once(id)](#once)
-* [removeOnce(id)](#removeOnce)
-* [findOnce(id)](#findOnce)
+* [once([id])](#once)
+* [removeOnce([id])](#removeOnce)
+* [findOnce([id])](#findOnce)
  
 <a name="once"></a>
-#once(id)
+#once([id])
 Filter elements by whether they have not yet been processed.
 
 **Params**
 
-- id `string` - The data id used to determine whether the given elements have already
-  been processed or not.  
+- \[id="once"\] `string` - The data ID used to determine whether the given elements have already
+  been processed or not. Defaults to `"once"`.  
 
-**Returns**:  - jQuery element collection of elements that have now run once by
-  the given id.  
+**Returns**:  - jQuery collection of elements that have now run once by
+  the given ID.  
 **Example**  
-// Change the color to green only once.
-$('p').once('changecolor').css('color', 'green');
+``` javascript
+// The following will change the color of each paragraph to red, just once
+// for the "changecolor" key.
+$('p').once('changecolor').css('color', 'red');
+
+// .once() will return a set of elements that yet to have the once ID
+// associated with them. You can return to the original collection set by
+// using .end().
+$('p')
+  .once("changecolorblue")
+    .css("color", "blue")
+  .end()
+  .css("color", "red");
+
+// To execute a function on the once set, you can use jQuery's each().
+$('div.calendar').once().each(function() {
+  // Since there is no once ID provided here, the key will be "once".
+});
+```
 
 <a name="removeOnce"></a>
-#removeOnce(id)
-Removes the once data from the given elements, based on the given ID.
+#removeOnce([id])
+Removes the once data from elements, based on the given ID.
 
 **Params**
 
-- id `string` - A required string representing the name of the data id which should be used
-  when filtering the elements. This only filters elements that have already
-  been processed by the once function. The id should be the same id that
-  was originally passed to the once() function.  
+- \[id="once"\] `string` - A string representing the name of the data ID which should be used when
+  filtering the elements. This only filters elements that have already been
+  processed by the once function. The ID should be the same ID that was
+  originally passed to the once() function. Defaults to `"once"`.  
 
-**Returns**:  - jQuery element collection of elements that now have their once
-  data removed.  
+**Returns**:  - jQuery collection of elements that were acted upon to remove their
+   once data.  
 **Example**  
-// Remove once data with the "changecolor" ID.
-$('p').removeOnce('changecolor').each(function() {
-  // This function is called for all elements that had their once removed.
+``` javascript
+// Remove once data with the "changecolor" ID. The result set is the
+// elements that had their once data removed.
+$('p').removeOnce("changecolor").css("color", "");
+
+// Any jQuery function can be performed on the result set.
+$("div.calendar").removeOnce().each(function() {
+  // Remove the calendar behavior.
 });
+```
 
 <a name="findOnce"></a>
-#findOnce(id)
+#findOnce([id])
 Filters elements that have already been processed once.
 
 **Params**
 
-- id `string` - A required string representing the name of the data id which should be used
-  when filtering the elements. This only filters elements that have already
+- \[id="once"\] `string` - A string representing the name of the data id which should be used when
+  filtering the elements. This only filters elements that have already
   been processed by the once function. The id should be the same id that
-  was originally passed to the once() function.  
+  was originally passed to the once() function. Defaults to "once".  
 
-**Returns**:  - jQuery element collection of elements that have been run once.  
+**Returns**:  - jQuery collection of elements that have been run once.  
 **Example**  
-// Find all elements that have the changecolor'ed once.
+``` javascript
+// Find all elements that have been changecolor'ed once.
 $('p').findOnce('changecolor').each(function() {
   // This function is called for all elements that has already once'd.
 });
+
+// Find all elements that have been acted on with the default "once" key.
+$('p').findOnce().each(function() {
+  // This function is called for all elements that have been acted on with
+  // a "once" action.
+});
+```
 
