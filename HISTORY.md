@@ -1,5 +1,9 @@
 # History
 
+## v2.0.x
+- Added [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown) to
+  automatically generate API documentation
+
 ## v2.0.0-beta.2 December 31, 2014
 - Update documentation
 - Switched to [Mocha](http://mochajs.org) for automated testing
