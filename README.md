@@ -58,81 +58,7 @@ be used to ensure that a function is only applied once to an element.
 
 ## Usage
 
-### `.once(id)`
-
-Filter elements by whether they have not yet been processed.
-
-#### Parameters
-
-* `id` *string* (optional) The data id used to determine whether the given elements have
-already been processed or not. Default: `once`
-
-#### Returns
-
-jQuery element collection of elements that have now run once by the given id.
-
-#### Example
-
-``` javascript
-$('div.calendar').once('calendar').click(function() {
-  // .once('calendar') filters out all elements which already have been
-  // filtered with once('calendar'), and the elements that haven't been filtered
-  // yet remain. The previous set of elements can be restored with
-  // .end().
-});
-$('div.calendar').once().each(function() {
-  // This function is only executed once for each div, even if this
-  // code segment is executed repeatedly. Keyed by "once".
-});
-```
-
-
-### `.findOnce(id)`
-
-After `.once()` is used and you need to retrieve all elements that have already
-been executed with `.once()`, you can use the `.findOnce() function:
-
-#### Parameters
-
-* `id` *string* The data id used to determine whether the given elements have
-already been processed or not.
-
-#### Returns
-
-jQuery element collection of elements that have been run once.
-
-#### Example
-
-``` javascript
-$('div.calendar').findOnce('calendar').each(function() {
-  // This function is called for each element that was already called "once"
-  // with the "calendar" ID.
-});
-```
-
-### `.removeOnce(id)`
-
-A required string representing the name of the data id which should be used when
-filtering the elements. This only filters elements that have already been processed by
-the once function. The id should be the same id that was originally passed to the
-`once()` function.
-
-#### Parameters
-
-* `id` *string* The data id used to determine whether the given elements have
-already been processed or not.
-
-#### Returns
-
-jQuery element collection of elements that now have their once data removed.
-
-#### Example
-
-``` javascript
-$('div.calendar').removeOnce('calendar').each(function() {
-  // This function is called for each element whose once() data is removed.
-});
-```
+See the [API documentation](API.md) for details on how to use jQuery Once.
 
 
 ## Development
@@ -146,13 +72,15 @@ Use [Mocha](http://mochajs.org) to test with [ESLint](http://eslint.org) and
 
     npm test
 
-Update project documentation with [Projectz](https://github.com/bevry/projectz):
+Update project documentation with [Projectz](https://github.com/bevry/projectz)
+and [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown):
 
-    npm run-script projectz
+    npm run projectz
+    npm run docs
 
 Build the project with:
 
-    npm run-script release
+    npm run release
 
 Tag and publish the new versions to [npm](http://npmjs.com):
 
