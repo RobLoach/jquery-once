@@ -8,9 +8,9 @@
 /**
  * Universal Module Definition
  *
- * jQuery is a dependency, so we wrap the code with a UMD pattern in order to
- * allow loading jQuery and jQuery Once through a module definition like
- * CommonJS, AMD, or otherwise.
+ * jQuery Once has a dependency on jQuery, so we wrap the code with a UMD
+ * pattern in order to allow loading jQuery and jQuery Once through a module
+ * definition like CommonJS, AMD, or through a global object.
  *
  * @see {@link http://github.com/umdjs/umd}
  */
@@ -87,11 +87,10 @@
    * @public
    */
   $.fn.once = function (id) {
-    // Build the name for the data identifier. Generate a new unique ID if the
-    // ID parameter is not provided.
+    // Build the jQuery Once data name from the provided ID.
     var name = "jquery-once-" + checkId(id);
 
-    // Filter the elements by which do not have the data yet.
+    // Find elements that don't have the jQuery Once data applied to them yet.
     return this.filter(function() {
       return $(this).data(name) !== true;
     }).data(name, true);
