@@ -2,7 +2,11 @@
 
 ## v2.0.x
 - Added [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown) to
-  automatically generate API documentation
+  automatically build API documentation
+- Added type checking of the id argument across all jQuery Once functions
+  - From [@theodoreb](http://github.com/theodoreb)
+- Fixed inline code documentation
+  - From [@yched](http://github.com/yched)
 
 ## v2.0.0-beta.2 December 31, 2014
 - Update documentation

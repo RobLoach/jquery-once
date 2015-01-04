@@ -67,8 +67,8 @@ Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Use [Mocha](http://mochajs.org) to test with [ESLint](http://eslint.org) and
-[Mocha JSDom](https://github.com/rstacruz/mocha-jsdom):
+Test with [ESLint](http://eslint.org), [Mocha](http://mochajs.org) and [Mocha
+JSDom](https://github.com/rstacruz/mocha-jsdom):
 
     npm test
 
@@ -78,14 +78,15 @@ and [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown):
     npm run projectz
     npm run docs
 
-Build the project with:
+Build `jquery.once.min.js` with:
 
-    npm run release
+    npm run build
 
-Tag and publish the new versions to [npm](http://npmjs.com):
+Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
+Versioning](http://semver.org/):
 
-    git tag 2.4.0
-    git push origin 2.4.0
+    git tag 2.0.0-alpha.3
+    git push origin 2.0.0-alpha.3
     npm publish
 
 

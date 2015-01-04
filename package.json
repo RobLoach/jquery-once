@@ -63,6 +63,6 @@
     "test": "./node_modules/.bin/mocha",
     "projectz": "./node_modules/.bin/projectz compile",
     "docs": "./node_modules/.bin/jsdoc2md jquery.once.js > API.md",
-    "release": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle"
+    "build": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle"
   }
 }
