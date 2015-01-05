@@ -8,7 +8,7 @@
  
 <a name="once"></a>
 #once([id])
-Filter elements by whether they have not yet been processed.
+Filter elements that have yet to be processed by the given data ID.
 
 **Params**
 
