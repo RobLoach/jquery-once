@@ -59,7 +59,7 @@ be used to ensure that a function is only applied once to an element.
 
 ## Usage
 
-See the [API documentation](API.md) for details on how to use jQuery Once.
+[See the API documentation for details on how to use jQuery Once.](https://github.com/RobLoach/jquery-once/blob/master/API.md#readme)
 
 
 ## Development
