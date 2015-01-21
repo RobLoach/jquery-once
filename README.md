@@ -8,11 +8,12 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](http://img.shields.io/travis-ci/RobLoach/jquery-once.png?branch=master)](http://travis-ci.org/RobLoach/jquery-once "Check this project's build status on TravisCI")
-[![NPM version](http://badge.fury.io/js/jquery-once.png)](https://npmjs.org/package/jquery-once "View this project on NPM")
-[![Dependency Status](https://david-dm.org/RobLoach/jquery-once.png?theme=shields.io)](https://david-dm.org/RobLoach/jquery-once)
-[![Development Dependency Status](https://david-dm.org/RobLoach/jquery-once/dev-status.png?theme=shields.io)](https://david-dm.org/RobLoach/jquery-once#info=devDependencies)<br/>
-[![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
+[![Build Status](https://img.shields.io/travis/RobLoach/jquery-once/master.svg)](http://travis-ci.org/RobLoach/jquery-once "Check this project's build status on TravisCI")
+[![NPM version](https://img.shields.io/npm/v/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
+[![NPM downloads](https://img.shields.io/npm/dm/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
+[![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
+[![Dev Dependency Status](https://img.shields.io/david/dev/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once#info=devDependencies)<br/>
+
 
 <!-- /BADGES -->
 
@@ -39,7 +40,7 @@ be used to ensure that a function is only applied once to an element.
 ### [Browserify](http://browserify.org/)
 - Use: `require('jquery-once')`
 - Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0-beta.3`
+- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0`
 
 ### [Ender](http://ender.jit.su/)
 - Use: `require('jquery-once')`
@@ -85,8 +86,8 @@ Build `jquery.once.min.js` with:
 Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
 Versioning](http://semver.org/):
 
-    git tag 2.0.0-alpha.3
-    git push origin 2.0.0-alpha.3
+    git tag 2.0.0
+    git push origin 2.0.0
     npm publish
 
 
@@ -126,7 +127,7 @@ These amazing people are maintaining this project:
 
 No sponsors yet! Will you be the first?
 
-[![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
+
 
 ### Contributors
 

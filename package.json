@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "title": "jQuery Once",
   "description": "Act on jQuery elements only once.",
-  "version": "2.0.0-beta.3",
+  "version": "2.0.0",
   "keywords": [
     "jquery",
     "jquery-plugin"
@@ -12,7 +12,7 @@
     "npm": true,
     "david": true,
     "daviddev": true,
-    "gittip": "robloach"
+    "npmdownloads": true
   },
   "repo": "RobLoach/jquery-once",
   "homepage": "https://github.com/RobLoach/jquery-once",
@@ -50,19 +50,20 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "eslint": "~0.11.0-alpha.0",
-    "jsdoc-to-markdown": "^0.5.9",
-    "jsdom": "^2.0.0",
-    "mocha": "*",
-    "mocha-jsdom": "^0.2.0",
-    "projectz": "~0.3.15",
-    "uglify-js": "~2.4.15"
+    "eslint": "~0.12.0",
+    "jsdoc-to-markdown": "~0.6.2",
+    "jsdom": "~3.0.1",
+    "mocha": "~2.1.0",
+    "mocha-jsdom": "~0.2.0",
+    "projectz": "~0.3.17",
+    "uglify-js": "~2.4.16"
   },
   "scripts": {
     "pretest": "./node_modules/.bin/eslint jquery.once.js test/test.js",
     "test": "./node_modules/.bin/mocha",
     "projectz": "./node_modules/.bin/projectz compile",
     "docs": "./node_modules/.bin/jsdoc2md jquery.once.js > API.md",
-    "build": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle"
+    "build": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
+    "package": "npm install && npm run test && npm run projectz && npm run docs && npm run build"
   }
 }

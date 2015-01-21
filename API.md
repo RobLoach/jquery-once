@@ -1,22 +1,31 @@
-#Index
-
-**Functions**
-
-* [once([id])](#once)
-* [removeOnce([id])](#removeOnce)
-* [findOnce([id])](#findOnce)
- 
+##Globals
+<dl>
+<dt><a href="#once">once([id])</a>  </dt>
+<dd><p>Filter elements that have yet to be processed by the given data ID.</p>
+</dd>
+<dt><a href="#removeOnce">removeOnce([id])</a>  </dt>
+<dd><p>Removes the once data from elements, based on the given ID.</p>
+</dd>
+<dt><a href="#findOnce">findOnce([id])</a>  </dt>
+<dd><p>Filters elements that have already been processed once.</p>
+</dd>
+</dl>
 <a name="once"></a>
-#once([id])
+##once([id])  
 Filter elements that have yet to be processed by the given data ID.
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| \[id=<code>&quot;once&quot;</code>\] | <code>string</code> | The data ID used to determine whether the given elements have already   been processed or not. Defaults to `"once"`. |
 
-- \[id="once"\] `string` - The data ID used to determine whether the given elements have already
-  been processed or not. Defaults to `"once"`.  
-
-**Returns**:  - jQuery collection of elements that have now run once by
+**Returns**: jQuery collection of elements that have now run once by
   the given ID.  
+**Access:** public  
+**See**
+
+- removeOnce
+- findOnce
+
 **Example**  
 ``` javascript
 // The following will change the color of each paragraph to red, just once
@@ -37,20 +46,21 @@ $('div.calendar').once().each(function() {
   // Since there is no once ID provided here, the key will be "once".
 });
 ```
-
 <a name="removeOnce"></a>
-#removeOnce([id])
+##removeOnce([id])  
 Removes the once data from elements, based on the given ID.
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| \[id=<code>&quot;once&quot;</code>\] | <code>string</code> | A string representing the name of the data ID which should be used when   filtering the elements. This only filters elements that have already been   processed by the once function. The ID should be the same ID that was   originally passed to the once() function. Defaults to `"once"`. |
 
-- \[id="once"\] `string` - A string representing the name of the data ID which should be used when
-  filtering the elements. This only filters elements that have already been
-  processed by the once function. The ID should be the same ID that was
-  originally passed to the once() function. Defaults to `"once"`.  
-
-**Returns**:  - jQuery collection of elements that were acted upon to remove their
+**Returns**: jQuery collection of elements that were acted upon to remove their
    once data.  
+**Access:** public  
+**See**
+
+- once
+
 **Example**  
 ``` javascript
 // Remove once data with the "changecolor" ID. The result set is the
@@ -62,19 +72,20 @@ $("div.calendar").removeOnce().each(function() {
   // Remove the calendar behavior.
 });
 ```
-
 <a name="findOnce"></a>
-#findOnce([id])
+##findOnce([id])  
 Filters elements that have already been processed once.
 
-**Params**
+| Param | Type | Description |
+| ----- | ---- | ----------- |
+| \[id=<code>&quot;once&quot;</code>\] | <code>string</code> | A string representing the name of the data id which should be used when   filtering the elements. This only filters elements that have already   been processed by the once function. The id should be the same id that   was originally passed to the once() function. Defaults to "once". |
 
-- \[id="once"\] `string` - A string representing the name of the data id which should be used when
-  filtering the elements. This only filters elements that have already
-  been processed by the once function. The id should be the same id that
-  was originally passed to the once() function. Defaults to "once".  
+**Returns**: jQuery collection of elements that have been run once.  
+**Access:** public  
+**See**
 
-**Returns**:  - jQuery collection of elements that have been run once.  
+- once
+
 **Example**  
 ``` javascript
 // Find all elements that have been changecolor'ed once.
@@ -88,4 +99,3 @@ $('p').findOnce().each(function() {
   // a "once" action.
 });
 ```
-
