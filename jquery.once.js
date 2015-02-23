@@ -32,7 +32,7 @@
   /**
    * Ensures that the given ID is valid, returning "once" if one is not given.
    *
-   * @param {string} [id="once"]
+   * @param {string} [id=once]
    *   A string representing the ID to check. Defaults to `"once"`.
    *
    * @returns The valid ID name.
@@ -51,7 +51,7 @@
   /**
    * Filter elements that have yet to be processed by the given data ID.
    *
-   * @param {string} [id="once"]
+   * @param {string} [id=once]
    *   The data ID used to determine whether the given elements have already
    *   been processed or not. Defaults to `"once"`.
    *
@@ -99,7 +99,7 @@
   /**
    * Removes the once data from elements, based on the given ID.
    *
-   * @param {string} [id="once"]
+   * @param {string} [id=once]
    *   A string representing the name of the data ID which should be used when
    *   filtering the elements. This only filters elements that have already been
    *   processed by the once function. The ID should be the same ID that was
@@ -134,7 +134,7 @@
   /**
    * Filters elements that have already been processed once.
    *
-   * @param {string} [id="once"]
+   * @param {string} [id=once]
    *   A string representing the name of the data id which should be used when
    *   filtering the elements. This only filters elements that have already
    *   been processed by the once function. The id should be the same id that

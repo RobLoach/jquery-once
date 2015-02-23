@@ -42,7 +42,7 @@ be used to ensure that a function is only applied once to an element.
 - Install: `npm install --save jquery-once`
 - CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0`
 
-### [Ender](http://ender.jit.su/)
+### [Ender](http://enderjs.com)
 - Use: `require('jquery-once')`
 - Install: `ender add jquery-once`
 

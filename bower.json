@@ -1,8 +1,9 @@
 {
   "name": "jquery-once",
   "homepage": "http://github.com/robloach/jquery-once",
-  "description": "jQuery Once",
+  "description": "Act on jQuery elements only once.",
   "version": "2.0.0",
+  "license": "GPL-2.0",
   "main": "jquery.once.js",
   "ignore": [
     "*.json",
@@ -13,7 +14,8 @@
     "Gruntfile.js"
   ],
   "keywords": [
-    "jquery"
+    "jquery",
+    "jquery-plugin"
   ],
   "dependencies": {
     "jquery": "*"

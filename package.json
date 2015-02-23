@@ -50,20 +50,20 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "eslint": "~0.13.0",
-    "jsdoc-to-markdown": "~0.6.2",
-    "jsdom": "~3.0.1",
+    "eslint": "^0.13.0",
+    "jsdoc-to-markdown": "^0.6.4",
+    "jsdom": "^3.0.3",
     "mocha": "~2.1.0",
-    "mocha-jsdom": "~0.2.0",
-    "projectz": "~0.3.17",
+    "mocha-jsdom": "^0.2.1",
+    "projectz": "^0.4.3",
     "uglify-js": "~2.4.16"
   },
   "scripts": {
-    "pretest": "./node_modules/.bin/eslint jquery.once.js test/test.js",
-    "test": "./node_modules/.bin/mocha",
-    "projectz": "./node_modules/.bin/projectz compile",
-    "docs": "./node_modules/.bin/jsdoc2md jquery.once.js > API.md",
-    "build": "./node_modules/.bin/uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
+    "pretest": "eslint jquery.once.js test/test.js",
+    "test": "mocha",
+    "projectz": "projectz compile",
+    "docs": "jsdoc2md jquery.once.js > API.md",
+    "build": "uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
     "package": "npm install && npm run test && npm run projectz && npm run docs && npm run build"
   }
 }

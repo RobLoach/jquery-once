@@ -1,4 +1,4 @@
-##Globals
+## Functions
 <dl>
 <dt><a href="#once">once([id])</a>  </dt>
 <dd><p>Filter elements that have yet to be processed by the given data ID.</p>
@@ -11,20 +11,23 @@
 </dd>
 </dl>
 <a name="once"></a>
-##once([id])  
+## once([id])  
 Filter elements that have yet to be processed by the given data ID.
 
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| \[id=<code>&quot;once&quot;</code>\] | <code>string</code> | The data ID used to determine whether the given elements have already   been processed or not. Defaults to `"once"`. |
-
+**Scope**: global function  
 **Returns**: jQuery collection of elements that have now run once by
   the given ID.  
+**this**: jQuery  
 **Access:** public  
 **See**
 
 - removeOnce
 - findOnce
+
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [id] | <code>string</code> | <code>&quot;once&quot;</code> | The data ID used to determine whether the given elements have already   been processed or not. Defaults to `"once"`. |
 
 **Example**  
 ``` javascript
@@ -47,19 +50,19 @@ $('div.calendar').once().each(function() {
 });
 ```
 <a name="removeOnce"></a>
-##removeOnce([id])  
+## removeOnce([id])  
 Removes the once data from elements, based on the given ID.
 
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| \[id=<code>&quot;once&quot;</code>\] | <code>string</code> | A string representing the name of the data ID which should be used when   filtering the elements. This only filters elements that have already been   processed by the once function. The ID should be the same ID that was   originally passed to the once() function. Defaults to `"once"`. |
-
+**Scope**: global function  
 **Returns**: jQuery collection of elements that were acted upon to remove their
    once data.  
+**this**: jQuery  
 **Access:** public  
-**See**
+**See**: once  
 
-- once
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [id] | <code>string</code> | <code>&quot;once&quot;</code> | A string representing the name of the data ID which should be used when   filtering the elements. This only filters elements that have already been   processed by the once function. The ID should be the same ID that was   originally passed to the once() function. Defaults to `"once"`. |
 
 **Example**  
 ``` javascript
@@ -73,18 +76,18 @@ $("div.calendar").removeOnce().each(function() {
 });
 ```
 <a name="findOnce"></a>
-##findOnce([id])  
+## findOnce([id])  
 Filters elements that have already been processed once.
 
-| Param | Type | Description |
-| ----- | ---- | ----------- |
-| \[id=<code>&quot;once&quot;</code>\] | <code>string</code> | A string representing the name of the data id which should be used when   filtering the elements. This only filters elements that have already   been processed by the once function. The id should be the same id that   was originally passed to the once() function. Defaults to "once". |
-
+**Scope**: global function  
 **Returns**: jQuery collection of elements that have been run once.  
+**this**: jQuery  
 **Access:** public  
-**See**
+**See**: once  
 
-- once
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [id] | <code>string</code> | <code>&quot;once&quot;</code> | A string representing the name of the data id which should be used when   filtering the elements. This only filters elements that have already   been processed by the once function. The id should be the same id that   was originally passed to the once() function. Defaults to "once". |
 
 **Example**  
 ``` javascript
