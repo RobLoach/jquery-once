@@ -1,6 +1,9 @@
 # History
 
-## v2.0.0 January 20th, 2014
+## v2.0.x Unreleased
+- Updated development dependencies
+
+## v2.0.0 January 20th, 2015
 - Fixed type checking of the `id` parameter of `.once()` as optional
   - From [@theodoreb](http://github.com/theodoreb)
 - Added performance improvement through [`.data()`](http://api.jquery.com/data/)
