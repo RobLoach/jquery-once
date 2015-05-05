@@ -1,6 +1,6 @@
 # History
 
-## v2.0.x Unreleased
+## v2.0.1 May 5th, 2015
 - Updated development dependencies
 - Updated documentation
 
