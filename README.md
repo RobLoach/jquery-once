@@ -1,35 +1,15 @@
-
-<!-- TITLE/ -->
-
 # jQuery Once
-
-<!-- /TITLE -->
-
-
-<!-- BADGES/ -->
 
 [![Build Status](https://img.shields.io/travis/RobLoach/jquery-once/master.svg)](http://travis-ci.org/RobLoach/jquery-once "Check this project's build status on TravisCI")
 [![NPM version](https://img.shields.io/npm/v/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 [![NPM downloads](https://img.shields.io/npm/dm/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 [![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
-[![Dev Dependency Status](https://img.shields.io/david/dev/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once#info=devDependencies)<br/>
+[![Dev Dependency Status](https://img.shields.io/david/dev/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once#info=devDependencies)
 
-
-<!-- /BADGES -->
-
-
-<!-- DESCRIPTION/ -->
-
-Act on jQuery elements only once.
-
-<!-- /DESCRIPTION -->
-
+Act on [jQuery](http://jquery.com) elements only once.
 
 Filters out all elements that had the same filter applied on them before. It can
 be used to ensure that a function is only applied once to an element.
-
-
-<!-- INSTALL/ -->
 
 ## Install
 
@@ -54,12 +34,30 @@ be used to ensure that a function is only applied once to an element.
 - Use: `require('jquery-once')`
 - Install: `bower install jquery-once`
 
-<!-- /INSTALL -->
-
 
 ## Usage
 
-[See the API documentation for details on how to use jQuery Once.](https://github.com/RobLoach/jquery-once/blob/master/API.md#readme)
+``` javascript
+// The following will change the color of each paragraph to red, just once
+// for the "changecolor" key.
+$('p').once('changecolor').css('color', 'red');
+
+// .once() will return a set of elements that yet to have the once ID
+// associated with them. You can return to the original collection set by
+// using .end().
+$('p')
+  .once("changecolorblue")
+    .css("color", "blue")
+  .end()
+  .css("color", "red");
+
+// To execute a function on the once set, you can use jQuery's each().
+$('div.calendar').once().each(function() {
+  // Since there is no once ID provided here, the key will be "once".
+});
+```
+
+[See the API documentation for more information on how to use jQuery Once.](https://github.com/RobLoach/jquery-once/blob/master/API.md#readme)
 
 
 ## Development
@@ -73,15 +71,13 @@ JSDom](https://github.com/rstacruz/mocha-jsdom):
 
     npm test
 
-Update project documentation with [Projectz](https://github.com/bevry/projectz)
-and [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown):
-
-    npm run projectz
-    npm run docs
-
 Build `jquery.once.min.js` with:
 
     npm run build
+
+Update API documentation with [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown):
+
+    npm run docs
 
 Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
 Versioning](http://semver.org/):
@@ -91,15 +87,9 @@ Versioning](http://semver.org/):
     npm publish
 
 
-<!-- HISTORY/ -->
-
 ## History
-[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/RobLoach/jquery-once/blob/master/HISTORY.md#files)
+[Discover the change history by heading on over to the `HISTORY.md` file.](HISTORY.md)
 
-<!-- /HISTORY -->
-
-
-<!-- LICENSE/ -->
 
 ## License
 
@@ -108,37 +98,4 @@ Licensed under:
 - [GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
 - the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://opensource.org/licenses/MIT)
 
-Copyright &copy; Rob Loach (http://github.com/RobLoach)
-
-<!-- /LICENSE -->
-
-
-<!-- BACKERS/ -->
-
-## Backers
-
-### Maintainers
-
-These amazing people are maintaining this project:
-
-- Rob Loach (https://github.com/RobLoach)
-
-### Sponsors
-
-No sponsors yet! Will you be the first?
-
-
-
-### Contributors
-
-These amazing people have contributed code to this project:
-
-- [JohnAlbin](https://github.com/JohnAlbin) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=JohnAlbin)
-- [Rob Loach](https://github.com/RobLoach) <robloach@gmail.com> — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=RobLoach)
-- [theodoreb](https://github.com/theodoreb) — [view contributions](https://github.com/RobLoach/jquery-once/commits?author=theodoreb)
-
-[Become a contributor!](https://github.com/RobLoach/jquery-once/blob/master/CONTRIBUTING.md#files)
-
-<!-- /BACKERS -->
-
-
+Copyright &copy; [Rob Loach](http://github.com/RobLoach)

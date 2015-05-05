@@ -14,7 +14,6 @@
     "daviddev": true,
     "npmdownloads": true
   },
-  "repo": "RobLoach/jquery-once",
   "homepage": "https://github.com/RobLoach/jquery-once",
   "author": "Rob Loach (http://github.com/RobLoach)",
   "maintainers": [
@@ -50,18 +49,16 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "eslint": "^0.17.1",
-    "jsdoc-to-markdown": "^0.6.4",
-    "jsdom": "^4.0.4",
-    "mocha": "~2.2.1",
-    "mocha-jsdom": "^0.2.1",
-    "projectz": "^0.5.0",
-    "uglify-js": "~2.4.16"
+    "eslint": "^0.20.0",
+    "jsdoc-to-markdown": "^1.0.3",
+    "jsdom": "~3.1.2",
+    "mocha": "~2.2.4",
+    "mocha-jsdom": "~0.3.0",
+    "uglify-js": "~2.4.21"
   },
   "scripts": {
     "pretest": "eslint jquery.once.js test/test.js",
     "test": "mocha",
-    "projectz": "projectz compile",
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
     "package": "npm install && npm run test && npm run projectz && npm run docs && npm run build"

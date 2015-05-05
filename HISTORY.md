@@ -2,6 +2,7 @@
 
 ## v2.0.x Unreleased
 - Updated development dependencies
+- Updated documentation
 
 ## v2.0.0 January 20th, 2015
 - Fixed type checking of the `id` parameter of `.once()` as optional

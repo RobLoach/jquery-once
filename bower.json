@@ -19,14 +19,5 @@
   ],
   "dependencies": {
     "jquery": "*"
-  },
-  "devDependencies": {
-    "eslint": "~0.12.0",
-    "jsdoc-to-markdown": "~0.6.2",
-    "jsdom": "~3.0.1",
-    "mocha": "~2.1.0",
-    "mocha-jsdom": "~0.2.0",
-    "projectz": "~0.3.17",
-    "uglify-js": "~2.4.16"
   }
 }
