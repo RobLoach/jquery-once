@@ -65,5 +65,10 @@
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
     "package": "npm install && npm run test && npm run projectz && npm run docs && npm run build"
-  }
+  },
+  "files": [
+    "jquery.once.js",
+    "jquery.once.min.js",
+    "jquery.once.min.js.map"
+  ]
 }
