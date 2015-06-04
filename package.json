@@ -67,5 +67,15 @@
     "jquery.once.js",
     "jquery.once.min.js",
     "jquery.once.min.js.map"
-  ]
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/RobLoach/jquery-once.git",
+    "basePath": "",
+    "files": [
+      "jquery.once.js",
+      "jquery.once.min.js",
+      "jquery.once.min.js.map"
+    ]
+  }
 }
