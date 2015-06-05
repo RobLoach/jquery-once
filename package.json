@@ -32,6 +32,7 @@
   "bugs": {
     "url": "https://github.com/RobLoach/jquery-once/issues"
   },
+  "license": "(GPL-2.0 OR MIT)",
   "licenses": [
     {
       "type": "GPL-2.0",
