@@ -7,13 +7,6 @@
     "jquery",
     "jquery-plugin"
   ],
-  "badges": {
-    "travis": true,
-    "npm": true,
-    "david": true,
-    "daviddev": true,
-    "npmdownloads": true
-  },
   "homepage": "https://github.com/RobLoach/jquery-once",
   "author": "Rob Loach (http://github.com/RobLoach)",
   "maintainers": [
@@ -50,11 +43,11 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "eslint": "^0.20.0",
+    "eslint": "^0.22.1",
     "jsdoc-to-markdown": "^1.0.3",
     "jsdom": "~3.1.2",
     "mocha": "~2.2.4",
-    "mocha-jsdom": "~0.3.0",
+    "mocha-jsdom": "~0.4.0",
     "uglify-js": "~2.4.21"
   },
   "scripts": {
