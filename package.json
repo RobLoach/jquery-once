@@ -52,10 +52,12 @@
   },
   "scripts": {
     "pretest": "eslint jquery.once.js test/test.js",
-    "test": "mocha",
+    "test": "mocha test/test.js",
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
-    "package": "npm install && npm run test && npm run projectz && npm run docs && npm run build"
+    "package": "npm install && npm run test && npm run docs && npm run build",
+    "coverage": "npm i istanbul && istanbul cover test",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
   },
   "files": [
     "jquery.once.js",

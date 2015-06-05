@@ -1,28 +1,5 @@
-# v1.3.10 December 10, 2013
-# https://github.com/bevry/base
-
-# Temp Files
 **/*.log
-**/.docpad.db
-
-# Build Files
-build/
-components/
-bower_components/
-node_modules/
-out/
-
-# Private Files
-.env
-.idea
-.cake_task_cache
-
-
-# =====================================
-# CUSTOM MODIFICATIONS
-
-Cakefile
-CONTRIBUTING.md
-coffeelint.json
-.jshintrc
-cyclic.js
+/components
+/bower_components
+/node_modules
+/coverage
