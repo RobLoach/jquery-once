@@ -57,7 +57,7 @@
     "build": "uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
     "package": "npm install && npm run test && npm run docs && npm run build",
     "coverage": "npm i istanbul && istanbul cover test",
-    "coveralls": "npm run coverage && && npm i coveralls && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run coverage && npm i coveralls && cat ./coverage/lcov.info | coveralls"
   },
   "files": [
     "jquery.once.js",
