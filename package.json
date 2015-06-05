@@ -63,16 +63,5 @@
     "jquery.once.js",
     "jquery.once.min.js",
     "jquery.once.min.js.map"
-  ],
-  "npmName": "jquery-once",
-  "npmFileMap": [
-    {
-      "basePath": "/",
-      "files": [
-        "jquery.once.js",
-        "jquery.once.min.js",
-        "jquery.once.min.js.map"
-      ]
-    }
   ]
 }
