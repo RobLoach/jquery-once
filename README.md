@@ -4,13 +4,12 @@
 [![NPM version](https://img.shields.io/npm/v/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 [![NPM downloads](https://img.shields.io/npm/dm/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 [![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
-[![Dev Dependency Status](https://img.shields.io/david/dev/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once#info=devDependencies)
 [![Coverage Status](https://coveralls.io/repos/RobLoach/jquery-once/badge.svg)](https://coveralls.io/r/RobLoach/jquery-once)
 
 Act on [jQuery](http://jquery.com) elements only once.
 
-Filters out all elements that had the same filter applied on them before. It can
-be used to ensure that a function is only applied once to an element.
+Filters out all elements that had the same filter applied on them before. It
+can be used to ensure that a function is only applied once to an element.
 
 ## Install
 
@@ -38,6 +37,8 @@ be used to ensure that a function is only applied once to an element.
 
 ## Usage
 
+[See the API documentation for more information on how to use jQuery Once.](https://github.com/RobLoach/jquery-once/blob/master/API.md#readme)
+
 ``` javascript
 // The following will change the color of each paragraph to red, just once
 // for the "changecolor" key.
@@ -57,8 +58,6 @@ $('div.calendar').once().each(function() {
   // Since there is no once ID provided here, the key will be "once".
 });
 ```
-
-[See the API documentation for more information on how to use jQuery Once.](https://github.com/RobLoach/jquery-once/blob/master/API.md#readme)
 
 
 ## Development

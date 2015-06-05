@@ -1,5 +1,10 @@
 # History
 
+## v2.0.2 June 5th, 2015
+- Added code coverage
+- Added [jsDelivr CDN](http://www.jsdelivr.com/#!jquery-once) automated support
+- Added [cdnjs](https://github.com/cdnjs/cdnjs) automated support
+
 ## v2.0.1 May 5th, 2015
 - Updated development dependencies
 - Updated documentation
