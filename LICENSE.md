@@ -3,7 +3,8 @@
 Copyright &copy; [Rob Loach](http://github.com/RobLoach)
 
 ## GPL-2.0
-[GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
+
+> [GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
 
 ## The MIT License
 
