@@ -6,34 +6,21 @@
 [![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
 [![Coverage Status](https://coveralls.io/repos/RobLoach/jquery-once/badge.svg)](https://coveralls.io/r/RobLoach/jquery-once)
 
-Act on [jQuery](http://jquery.com) elements only once.
+> Act on [jQuery](http://jquery.com) elements only once.
 
 Filters out all elements that had the same filter applied on them before. It
 can be used to ensure that a function is only applied once to an element.
 
 ## Install
 
-### [NPM](http://npmjs.org/)
-- Use: `require('jquery-once')`
-- Install: `npm install --save jquery-once`
-
-### [Browserify](http://browserify.org/)
-- Use: `require('jquery-once')`
-- Install: `npm install --save jquery-once`
-- CDN URL: `//wzrd.in/bundle/jquery-once@2.0.0`
-
-### [Ender](http://enderjs.com)
-- Use: `require('jquery-once')`
-- Install: `ender add jquery-once`
-
-### [Component](http://github.com/component/component)
-- Use: `require('jquery-once')`
-- Install: `component install RobLoach/jquery-once`
-
-### [Bower](http://bower.io/)
-- Use: `require('jquery-once')`
-- Install: `bower install jquery-once`
-
+Method | Installation
+------ | ------------
+[npm](http://npmjs.com/package/jquery-once) | `npm install jquery-once --save`
+[Composer](https://packagist.org/packages/robloach/jquery-once) | `composer require jquery-once`
+[Bower](http://bower.io/search/?q=jquery-once) | `bower install jquery-once`
+[Component](https://github.com/componentjs/component) | `component install RobLoach/jquery-once`
+[jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/jquery.once/2.0.2/jquery.once.min.js`
+[cdnjs](https://cdnjs.com/libraries/jquery-once) | `//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.0.2/jquery.once.js`
 
 ## Usage
 
@@ -93,7 +80,7 @@ Versioning](http://semver.org/):
 
 ## License
 
-Licensed under:
+Dual licensed under:
 
 - [GPL-2.0](http://opensource.org/licenses/gpl-2.0.php)
 - the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://opensource.org/licenses/MIT)
