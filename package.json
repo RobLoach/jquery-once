@@ -64,6 +64,7 @@
     "jquery.once.min.js",
     "jquery.once.min.js.map"
   ],
+  "browser": "./jquery.once.min.js",
   "browserPackage": {
     "files": [
       "jquery.once.js",
