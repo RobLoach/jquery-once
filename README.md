@@ -72,10 +72,8 @@ Versioning](http://semver.org/):
     git push origin 2.0.0
     npm publish
 
-
-## History
-[Discover the change history by heading on over to the `HISTORY.md` file.](HISTORY.md)
-
+## Change Log
+[Discover the change history by heading on over to the `CHANGELOG.md` file.](CHANGELOG.md)
 
 ## License
 
