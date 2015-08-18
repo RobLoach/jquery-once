@@ -10,14 +10,14 @@
     "jquery-plugin"
   ],
   "dependencies": {
-    "component/jquery": "*"
+    "components/jquery": "*"
   },
   "main": "jquery.once.js",
   "scripts": [
     "jquery.once.js"
   ],
   "files": [
-    "jquery.once.min.js"
+    "jquery.once.js"
   ],
   "demo": "http://github.com/robloach/jquery-once"
 }
