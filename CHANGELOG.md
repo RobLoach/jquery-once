@@ -4,7 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 ### Changed
+- Nothing so far
+
+## [2.1.0] - August 31, 2015
+### Changed
 - Switched to [Keep a CHANGELOG](http://keepachangelog.com) in CHANGELOG.md
+- Moved to [JavaScript Semi-Standard Coding Style](http://npm.im/semistandard)
+- Updated development dependencies
 
 ## [2.0.2] - June 5th, 2015
 ### Added
@@ -65,7 +71,8 @@ automatically build API documentation
 ### Added
 - Added jQuery Once
 
-[unreleased]: https://github.com/RobLoach/jquery-once/compare/2.0.2...HEAD
+[unreleased]: https://github.com/RobLoach/jquery-once/compare/2.1.0...HEAD
+[2.1.0]: https://github.com/RobLoach/jquery-once/compare/2.0.2...2.1.0
 [2.0.2]: https://github.com/RobLoach/jquery-once/compare/2.0.1...2.0.2
 [2.0.1]: https://github.com/RobLoach/jquery-once/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/RobLoach/jquery-once/compare/1.2.6...2.0.0

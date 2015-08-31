@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "title": "jQuery Once",
   "description": "Act on jQuery elements only once.",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "keywords": [
     "jquery",
     "jquery-plugin"
@@ -36,22 +36,19 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "engines": {
-    "node": ">=0.10"
-  },
   "dependencies": {
     "jquery": "*"
   },
   "devDependencies": {
-    "eslint": "^0.22.1",
-    "jsdoc-to-markdown": "^1.0.3",
-    "jsdom": "~3.1.2",
-    "mocha": "~2.2.4",
-    "mocha-jsdom": "~0.4.0",
-    "uglify-js": "~2.4.21"
+    "jsdoc-to-markdown": "^1.1.1",
+    "jsdom": "~6.3.0",
+    "mocha": "~2.3.0",
+    "mocha-jsdom": "~1.0.0",
+    "semistandard": "^7.0.2",
+    "uglify-js": "~2.4.24"
   },
   "scripts": {
-    "pretest": "eslint jquery.once.js test/test.js",
+    "pretest": "semistandard",
     "test": "mocha test/test.js",
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",

@@ -45,34 +45,37 @@ $('div.calendar').once().each(function() {
 });
 ```
 
-
 ## Development
 
-Install dependencies through [npm](http://npmjs.org):
+1. Ensure you are using [io.js](http://iojs.org) >= 3.2.0:
+
+    node --version
+
+2. Install dependencies through [npm](http://npmjs.org):
 
     npm install
 
-Test with [ESLint](http://eslint.org), [Mocha](http://mochajs.org) and [Mocha
-JSDom](https://github.com/rstacruz/mocha-jsdom):
+3. Check coding style standard, and automated testing:
 
     npm test
 
-Build `jquery.once.min.js` with:
+4. Build `jquery.once.min.js` with:
 
     npm run build
 
-Update API documentation with [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown):
+5. Update API documentation:
 
     npm run docs
 
-Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
+6. Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
 Versioning](http://semver.org/):
 
-    git tag 2.0.0
-    git push origin 2.0.0
+    git tag 2.1.0
+    git push origin 2.1.0
     npm publish
 
 ## Change Log
+
 [Discover the change history by heading on over to the `CHANGELOG.md` file.](CHANGELOG.md)
 
 ## License
