@@ -48,31 +48,37 @@ $('div.calendar').once().each(function() {
 ## Development
 
 1. Ensure you are using [io.js](http://iojs.org) >= 3.2.0:
-
-    node --version
+  ```
+  node --version
+  ```
 
 2. Install dependencies through [npm](http://npmjs.org):
-
-    npm install
+  ```
+  npm install
+  ```
 
 3. Check coding style standard, and automated testing:
-
-    npm test
+  ```
+  npm test
+  ```
 
 4. Build `jquery.once.min.js` with:
-
-    npm run build
+  ```
+  npm run build
+  ```
 
 5. Update API documentation:
-
-    npm run docs
+  ```
+  npm run docs
+  ```
 
 6. Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
 Versioning](http://semver.org/):
-
-    git tag 2.1.0
-    git push origin 2.1.0
-    npm publish
+  ```
+  git tag 2.1.0
+  git push origin 2.1.0
+  npm publish
+  ```
 
 ## Change Log
 
