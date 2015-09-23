@@ -131,5 +131,4 @@ describe('jQuery Once', function () {
       assert.equal($(this).data('foo'), 'bar', 'Found correct span data.');
     });
   });
-
 });

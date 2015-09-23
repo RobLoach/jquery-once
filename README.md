@@ -47,7 +47,7 @@ $('div.calendar').once().each(function() {
 
 ## Development
 
-1. Ensure you are using [io.js](http://iojs.org) >= 3.2.0:
+1. Ensure you are using [node](http://nodejs.org) >= 4.1.1:
   ```
   node --version
   ```
