@@ -41,11 +41,11 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^1.2.0",
-    "jsdom": "~6.5.1",
+    "jsdom": "~7.0.2",
     "mocha": "~2.3.3",
     "mocha-jsdom": "~1.0.0",
     "semistandard": "^7.0.2",
-    "uglify-js": "~2.4.24"
+    "uglify-js": "~2.6.1"
   },
   "scripts": {
     "posttest": "semistandard",
