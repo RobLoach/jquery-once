@@ -15,7 +15,7 @@ can be used to ensure that a function is only applied once to an element.
 Method | Installation
 ------ | ------------
 [npm](http://npmjs.com/package/jquery-once) | `npm install jquery-once --save`
-[Composer](https://packagist.org/packages/robloach/jquery-once) | `composer require jquery-once`
+[Composer](https://packagist.org/packages/robloach/jquery-once) | `composer require robloach/jquery-once`
 [Bower](http://bower.io/search/?q=jquery-once) | `bower install jquery-once`
 [Component](https://github.com/componentjs/component) | `component install RobLoach/jquery-once`
 [jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/jquery.once/2.0.2/jquery.once.min.js`
