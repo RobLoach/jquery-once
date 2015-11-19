@@ -29,6 +29,7 @@ describe('jQuery Once', function () {
    */
   beforeEach(function () {
     // Build the body HTML.
+    /* globals document */
     document.body.innerHTML = '<p>This is the <span>Test</span>.</p>';
   });
 
