@@ -29,7 +29,7 @@
     /* globals jQuery */
     factory(jQuery);
   }
-}(function ($) {
+})(function ($) {
   'use strict';
 
   /**
@@ -173,4 +173,4 @@
       return $(this).data(name) === true;
     });
   };
-}));
+});
