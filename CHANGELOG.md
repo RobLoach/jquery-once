@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased][unreleased]
 ### Changed
 - Updated development dependencies
+- Switched from [`semistandard`](https://www.npmjs.com/package/semistandard) to [`xo`](http://npmjs.com/package/xo) for coding standards
 
 ## [2.1.1] - August 31st, 2015
 ### Fixed
