@@ -26,27 +26,19 @@
     "url": "https://github.com/RobLoach/jquery-once/issues"
   },
   "license": "(GPL-2.0 OR MIT)",
-  "licenses": [
-    {
-      "type": "GPL-2.0",
-      "url": "http://opensource.org/licenses/gpl-2.0.php"
-    },
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "engines": {
+    "node": ">=4"
+  },
   "dependencies": {
     "jquery": "*"
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^1.2.0",
-    "jsdom": "~7.1.0",
+    "jsdom": "~7.2.2",
     "mocha": "~2.3.3",
     "mocha-jsdom": "~1.0.0",
-    "parse5": "^1.5.1",
     "uglify-js": "~2.6.1",
-    "xo": "^0.11.2"
+    "xo": "^0.12.1"
   },
   "scripts": {
     "test": "mocha test/test.js && xo --space",
