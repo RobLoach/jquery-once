@@ -34,14 +34,15 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^1.2.0",
-    "jsdom": "~8.0.2",
+    "jsdom": "~8.1.0",
     "mocha": "~2.4.5",
-    "mocha-jsdom": "~1.0.0",
+    "mocha-jsdom": "~1.1.0",
     "uglify-js": "~2.6.1",
-    "xo": "^0.12.1"
+    "xo": "^0.13.0"
   },
   "scripts": {
-    "test": "mocha test/test.js && xo --space",
+    "test": "mocha test/test.js",
+    "posttest": "xo --space",
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs jquery.once.js -o jquery.once.min.js --comments --source-map jquery.once.min.js.map --mangle",
     "package": "npm install && npm run test && npm run docs && npm run build",
