@@ -41,6 +41,7 @@
     "xo": "^0.13.0"
   },
   "scripts": {
+    "pretest": "npm install",
     "test": "mocha test/test.js",
     "posttest": "xo --space",
     "docs": "jsdoc2md jquery.once.js > API.md",

@@ -1,0 +1,6 @@
+node:
+  image: node:4
+  command: npm test
+  volumes:
+  - .:/app
+  working_dir: /app

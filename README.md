@@ -80,6 +80,14 @@ Versioning](http://semver.org/):
   npm publish
   ```
 
+### Docker
+
+It is possible to run tests through [Docker Compose](https://docs.docker.com/compose/):
+
+```
+docker-compose up
+```
+
 ## Change Log
 
 [Discover the change history by heading on over to the `CHANGELOG.md` file.](CHANGELOG.md)
