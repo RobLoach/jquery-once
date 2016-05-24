@@ -1,5 +1,5 @@
-var jsdom = require('mocha-jsdom');
 var assert = require('assert');
+var jsdom = require('mocha-jsdom');
 
 /**
  * Automated tests for jQuery Once.

@@ -34,11 +34,11 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^1.2.0",
-    "jsdom": "~8.1.0",
-    "mocha": "~2.4.5",
+    "jsdom": "~9.1.0",
+    "mocha": "~2.5.1",
     "mocha-jsdom": "~1.1.0",
     "uglify-js": "~2.6.1",
-    "xo": "^0.13.0"
+    "xo": "^0.15.1"
   },
   "scripts": {
     "test": "mocha test/test.js",

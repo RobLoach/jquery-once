@@ -1,8 +1,8 @@
 /**
  * Mocha test runner.
  */
-var Mocha = require('mocha');
 var path = require('path');
+var Mocha = require('mocha');
 
 // Create our mocha instance.
 var mocha = new Mocha();
@@ -13,6 +13,6 @@ mocha.addFile(path.join(__dirname, 'test.js'));
 // Run the tests.
 mocha.run(function (failures) {
   process.on('exit', function () {
-    process.exit(failures);
+    throw new Error(failures);
   });
 });
