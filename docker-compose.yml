@@ -1,5 +1,5 @@
 node:
-  image: node:4
+  image: node:5-slim
   command: npm test
   volumes:
   - .:/app
