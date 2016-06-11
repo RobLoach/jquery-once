@@ -1,5 +1,5 @@
-# v1.3.18 June 8, 2014
-# https://github.com/bevry/base
+# EditorConfig
+# http://editorconfig.org
 root = true
 
 [*]

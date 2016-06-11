@@ -18,8 +18,8 @@ Method | Installation
 [Composer](https://packagist.org/packages/robloach/jquery-once) | `composer require robloach/jquery-once`
 [Bower](http://bower.io/search/?q=jquery-once) | `bower install jquery-once`
 [Component](https://github.com/componentjs/component) | `component install RobLoach/jquery-once`
-[jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/jquery.once/2.0.2/jquery.once.min.js`
-[cdnjs](https://cdnjs.com/libraries/jquery-once) | `//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.0.2/jquery.once.js`
+[jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/jquery.once/2.1.1/jquery.once.min.js`
+[cdnjs](https://cdnjs.com/libraries/jquery-once) | `//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.1/jquery.once.js`
 
 ## Usage
 
@@ -75,8 +75,8 @@ $('div.calendar').once().each(function() {
 6. Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
 Versioning](http://semver.org/):
   ```
-  git tag 2.1.0
-  git push origin 2.1.0
+  git tag 2.1.1
+  git push origin 2.1.1
   npm publish
   ```
 

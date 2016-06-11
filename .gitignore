@@ -1,7 +1,15 @@
+# Gitignore
+# https://git-scm.com/docs/gitignore
+
+# Log files
 **/*.log
+
+# Vendor packages
 /components
 /bower_components
 /node_modules
-/coverage
 /vendor
 /composer.lock
+
+# Code coverage with Istanbul
+/coverage

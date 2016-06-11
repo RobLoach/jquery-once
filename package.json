@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^1.2.0",
-    "jsdom": "~9.1.0",
+    "jsdom": "~9.2.1",
     "mocha": "~2.5.1",
     "mocha-jsdom": "~1.1.0",
     "uglify-js": "~2.6.1",

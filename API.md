@@ -1,4 +1,5 @@
 ## Functions
+
 <dl>
 <dt><a href="#once">once([id])</a> ⇒</dt>
 <dd><p>Filter elements that have yet to be processed by the given data ID.</p>
@@ -10,7 +11,9 @@
 <dd><p>Filters elements that have already been processed once.</p>
 </dd>
 </dl>
+
 <a name="once"></a>
+
 ## once([id]) ⇒
 Filter elements that have yet to be processed by the given data ID.
 
@@ -50,6 +53,7 @@ $('div.calendar').once().each(function () {
 });
 ```
 <a name="removeOnce"></a>
+
 ## removeOnce([id]) ⇒
 Removes the once data from elements, based on the given ID.
 
@@ -76,6 +80,7 @@ $('div.calendar').removeOnce().each(function () {
 });
 ```
 <a name="findOnce"></a>
+
 ## findOnce([id]) ⇒
 Filters elements that have already been processed once.
 
