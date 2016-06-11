@@ -47,7 +47,7 @@ $('div.calendar').once().each(function() {
 
 ## Development
 
-1. Ensure you are using [node](http://nodejs.org) >= 4.1.1:
+1. Ensure you are using [node](http://nodejs.org) >= 4:
   ```
   node --version
   ```
@@ -75,8 +75,10 @@ $('div.calendar').once().each(function() {
 6. Tag and publish the new versions to [npm](http://npmjs.com) with [Semantic
 Versioning](http://semver.org/):
   ```
-  git tag 2.1.1
-  git push origin 2.1.1
+  git add -A
+  git commit -m "2.1.2"
+  git tag 2.1.2
+  git push origin 2.1.2
   npm publish
   ```
 

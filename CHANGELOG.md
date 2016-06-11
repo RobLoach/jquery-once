@@ -2,11 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased][unreleased]
+## [2.1.2] - June 11th, 2016
 ### Changed
 - Updated development dependencies
-- Switched from [`semistandard`](https://www.npmjs.com/package/semistandard) to [`xo`](http://npmjs.com/package/xo) for coding standards
 - Updated documentation
+- Switched from [`semistandard`](http://npm.im/semistandard) to [`xo`](http://npm.im/xo) for coding standards
 - Tested in [jQuery 3.0](https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/)
 
 ## [2.1.1] - August 31st, 2015
@@ -78,7 +78,8 @@ automatically build API documentation
 ### Added
 - Added jQuery Once
 
-[unreleased]: https://github.com/RobLoach/jquery-once/compare/2.1.1...HEAD
+[unreleased]: https://github.com/RobLoach/jquery-once/compare/2.1.2...HEAD
+[2.1.2]: https://github.com/RobLoach/jquery-once/compare/2.1.1...2.1.2
 [2.1.1]: https://github.com/RobLoach/jquery-once/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/RobLoach/jquery-once/compare/2.0.2...2.1.0
 [2.0.2]: https://github.com/RobLoach/jquery-once/compare/2.0.1...2.0.2
