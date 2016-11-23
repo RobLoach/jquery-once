@@ -21,7 +21,7 @@ describe('jQuery Once', function () {
    */
   before(function () {
     $ = require('jquery');
-    require('../jquery.once.js');
+    $.once = require('../jquery.once.js');
   });
 
   /**
