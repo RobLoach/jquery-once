@@ -12,6 +12,7 @@
   "maintainers": [
     "Rob Loach (https://github.com/RobLoach)"
   ],
+  "types": "jquery.once.d.ts",
   "main": "jquery.once.js",
   "contributors": [
     "JohnAlbin (https://github.com/JohnAlbin)",
@@ -30,6 +31,7 @@
     "node": ">=4"
   },
   "dependencies": {
+    "@types/jquery": "^2.0.39",
     "jquery": "*"
   },
   "devDependencies": {
@@ -52,6 +54,7 @@
   },
   "files": [
     "jquery.once.js",
+    "jquery.once.d.ts",
     "jquery.once.min.js",
     "jquery.once.min.js.map"
   ],
