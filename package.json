@@ -33,15 +33,14 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^2.0.1",
-    "jsdom": "~9.9.1",
+    "jsdoc-to-markdown": "^3.0.0",
+    "jsdom": "~9.12.0",
     "mocha": "~3.2.0",
     "mocha-jsdom": "~1.1.0",
-    "uglify-js": "~2.7.5",
+    "uglify-js": "~2.8.13",
     "xo": "^0.17.1"
   },
   "scripts": {
-    "pretest": "npm install",
     "test": "mocha test/test.js",
     "posttest": "xo --space",
     "docs": "jsdoc2md jquery.once.js > API.md",

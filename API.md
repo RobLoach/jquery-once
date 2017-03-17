@@ -21,7 +21,7 @@ Filter elements that have yet to be processed by the given data ID.
 **Returns**: jQuery collection of elements that have now run once by
   the given ID.  
 **this**: <code>jQuery</code>  
-**Access:** public  
+**Access**: public  
 **See**
 
 - removeOnce
@@ -61,7 +61,7 @@ Removes the once data from elements, based on the given ID.
 **Returns**: jQuery collection of elements that were acted upon to remove their
    once data.  
 **this**: <code>jQuery</code>  
-**Access:** public  
+**Access**: public  
 **See**: once  
 
 | Param | Type | Default | Description |
@@ -87,7 +87,7 @@ Filters elements that have already been processed once.
 **Kind**: global function  
 **Returns**: jQuery collection of elements that have been run once.  
 **this**: <code>jQuery</code>  
-**Access:** public  
+**Access**: public  
 **See**: once  
 
 | Param | Type | Default | Description |
