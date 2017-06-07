@@ -34,10 +34,10 @@
     "jquery": "*"
   },
   "devDependencies": {
-    "@types/jquery": "^2.0.39",
+    "@types/jquery": "*",
     "jsdoc-to-markdown": "^3.0.0",
     "jsdom": "~9.12.0",
-    "mocha": "~3.2.0",
+    "mocha": "~3.4.2",
     "mocha-jsdom": "~1.1.0",
     "uglify-js": "~3.0.15",
     "xo": "^0.17.1"
