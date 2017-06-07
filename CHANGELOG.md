@@ -2,9 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [2.1.3] - November 22nd, 2016
+## [x.x.x] - Xxxxxxx xxst, xxxx
 ### Changed
 - Updated dependencies
+- Added TypeScript definition
+  - By [olavorn](https://github.com/olavorn)
 
 ## [2.1.2] - June 11th, 2016
 ### Changed
