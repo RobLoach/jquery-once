@@ -2,10 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [x.x.x] - Xxxxxxx xxst, xxxx
+## [2.2.0] - June 15th, 2017
+### Fixed
+- Fixed throwing `Error` to `TypeError` when passing an incorrect `string` parameter
+
 ### Changed
 - Updated dependencies
-- Added TypeScript definition
+- Added [TypeScript](http://www.typescriptlang.org/) definition
   - By [olavorn](https://github.com/olavorn)
 
 ## [2.1.2] - June 11th, 2016

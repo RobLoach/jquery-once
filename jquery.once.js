@@ -40,7 +40,7 @@
    *
    * @returns The valid ID name.
    *
-   * @throws Error when an ID is provided, but not a string.
+   * @throws TypeError when an ID is provided, but not a string.
    * @private
    */
   var checkId = function (id) {

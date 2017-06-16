@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "title": "jQuery Once",
   "description": "Act on jQuery elements only once.",
-  "version": "2.1.3",
+  "version": "2.2.0",
   "keywords": [
     "jquery",
     "jquery-plugin"
