@@ -40,11 +40,11 @@
     "mocha": "~3.4.2",
     "mocha-jsdom": "robloach/mocha-jsdom#update-jsdom",
     "uglify-js": "~3.0.15",
-    "xo": "^0.17.1"
+    "xo": "^0.18.2"
   },
   "scripts": {
     "test": "mocha test/test.js",
-    "posttest": "xo --space",
+    "posttest": "xo --space --no-esnext",
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs -o jquery.once.min.js --comments --source-map filename=jquery.once.min.js,url=jquery.once.min.js.map --mangle -- jquery.once.js",
     "package": "npm install && npm run test && npm run docs && npm run build",

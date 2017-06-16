@@ -46,7 +46,7 @@
   var checkId = function (id) {
     id = id || 'once';
     if (typeof id !== 'string') {
-      throw new Error('The jQuery Once id parameter must be a string');
+      throw new TypeError('The jQuery Once id parameter must be a string');
     }
     return id;
   };
