@@ -36,10 +36,10 @@
   "devDependencies": {
     "@types/jquery": "*",
     "jsdoc-to-markdown": "^3.0.0",
-    "jsdom": "~11.0.0",
+    "jsdom": "~11.1.0",
     "mocha": "~3.4.2",
     "mocha-jsdom": "robloach/mocha-jsdom#update-jsdom",
-    "uglify-js": "~3.0.15",
+    "uglify-js": "~3.0.25",
     "xo": "^0.18.2"
   },
   "scripts": {
