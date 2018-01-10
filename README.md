@@ -1,10 +1,9 @@
 # jQuery Once [![NPM version](https://img.shields.io/npm/v/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/RobLoach/jquery-once.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://img.shields.io/travis/RobLoach/jquery-once/master.svg)](http://travis-ci.org/RobLoach/jquery-once "Check this project's build status on TravisCI")
 [![NPM downloads](https://img.shields.io/npm/dm/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 [![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
+[![Greenkeeper badge](https://badges.greenkeeper.io/RobLoach/jquery-once.svg)](https://greenkeeper.io/)
 [![Coverage Status](https://coveralls.io/repos/RobLoach/jquery-once/badge.svg)](https://coveralls.io/r/RobLoach/jquery-once)
 
 > Act on [jQuery](http://jquery.com) elements only once.
