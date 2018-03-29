@@ -12,9 +12,9 @@
 #      docker-compose up
 #
 node:
-  # Build off of the Node:6 container:
+  # Build off of the Node:7 container:
   #   https://hub.docker.com/r/_/node/
-  image: node:6-slim
+  image: node:7-slim
   # Run the tests through npm
   command: npm test
   # Mount the current working to /app
