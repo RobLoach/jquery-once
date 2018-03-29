@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.2.1] - March 29th, 2018
+### Changed
+- Updated dependencies
+
 ## [2.2.0] - June 15th, 2017
 ### Fixed
 - Fixed throwing `Error` to `TypeError` when passing an incorrect `string` parameter
