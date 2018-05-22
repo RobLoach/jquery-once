@@ -38,7 +38,7 @@
    * @param {string} [id=once]
    *   A string representing the ID to check. Defaults to `'once'`.
    *
-   * @returns The valid ID name.
+   * @returns {number} The valid ID name.
    *
    * @throws TypeError when an ID is provided, but not a string.
    * @private
@@ -58,7 +58,7 @@
    *   The data ID used to determine whether the given elements have already
    *   been processed or not. Defaults to `'once'`.
    *
-   * @returns jQuery collection of elements that have now run once by
+   * @returns {jQuery} jQuery collection of elements that have now run once by
    *   the given ID.
    *
    * @example
@@ -108,7 +108,7 @@
    *   processed by the once function. The ID should be the same ID that was
    *   originally passed to the once() function. Defaults to `'once'`.
    *
-   * @returns jQuery collection of elements that were acted upon to remove their
+   * @returns {jQuery} jQuery collection of elements that were acted upon to remove their
    *    once data.
    *
    * @example
@@ -143,7 +143,7 @@
    *   been processed by the once function. The id should be the same id that
    *   was originally passed to the once() function. Defaults to 'once'.
    *
-   * @returns jQuery collection of elements that have been run once.
+   * @returns {jQuery} jQuery collection of elements that have been run once.
    *
    * @example
    * ``` javascript
