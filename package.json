@@ -38,7 +38,7 @@
     "jsdoc-to-markdown": "^4.0.1",
     "jsdom": "^11.10.0",
     "mocha": "^5.1.1",
-    "mocha-jsdom": "robloach/mocha-jsdom#update-jsdom",
+    "mocha-jsdom": "~2.0.0",
     "uglify-js": "~3.4.0",
     "xo": "*"
   },
