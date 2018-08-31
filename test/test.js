@@ -51,7 +51,7 @@ describe('jQuery Once', function () {
 
     // The data should result to the first once() call.
     var data = $('span').data('test2');
-    assert.equal(data, 'foo');
+    assert.strictEqual(data, 'foo');
   });
 
   it('is called only once with an ID', function () {
@@ -71,7 +71,7 @@ describe('jQuery Once', function () {
 
     // Verify that it was only called once.
     var count = $('span').data('count');
-    assert.equal(count, 1, 'It was called ' + count + ' times.');
+    assert.strictEqual(count, 1, 'It was called ' + count + ' times.');
   });
 
   it('is called only once without an ID', function () {
@@ -90,7 +90,7 @@ describe('jQuery Once', function () {
 
     // Verify that it was only called once.
     var count = $('span').data('once');
-    assert.equal(count, 1, 'It was called ' + count + ' times.');
+    assert.strictEqual(count, 1, 'It was called ' + count + ' times.');
   });
 
   it('retrieves empty once data correctly', function () {
@@ -129,7 +129,7 @@ describe('jQuery Once', function () {
 
     // Find the once'd elements.
     $('span').findOnce('test5').each(function () {
-      assert.equal($(this).data('foo'), 'bar', 'Found correct span data.');
+      assert.strictEqual($(this).data('foo'), 'bar', 'Found correct span data.');
     });
   });
 });

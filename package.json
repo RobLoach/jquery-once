@@ -36,15 +36,15 @@
   "devDependencies": {
     "@types/jquery": "*",
     "jsdoc-to-markdown": "^4.0.1",
-    "jsdom": "11.11.0",
-    "mocha": "^5.1.1",
-    "mocha-jsdom": "~2.0.0",
-    "uglify-js": "~3.4.0",
+    "jsdom": "~12.0.0",
+    "mocha": "^5.2.0",
+    "mocha-jsdom": "rstacruz/mocha-jsdom#fix-RobLoach-securityerror",
+    "uglify-js": "~3.4.9",
     "xo": "*"
   },
   "scripts": {
-    "test": "mocha test/test.js",
-    "posttest": "xo --space=2 --no-esnext",
+    "test": "mocha test/test.js --env node",
+    "posttest": "xo --space=2 --no-esnext jquery.once.js test",
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs -o jquery.once.min.js --comments --source-map filename=jquery.once.min.js,url=jquery.once.min.js.map --mangle -- jquery.once.js",
     "package": "npm install && npm run test && npm run docs && npm run build",
