@@ -14,7 +14,9 @@ describe('jQuery Once', function () {
   /**
    * Turn the Mocha test environment into a DOM environment with JSDom.
    */
-  jsdom();
+  jsdom({
+    url: 'http://localhost'
+  });
 
   /**
    * Before the tests initiate, load jQuery and jQuery Once.

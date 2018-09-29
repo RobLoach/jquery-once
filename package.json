@@ -38,7 +38,7 @@
     "jsdoc-to-markdown": "^4.0.1",
     "jsdom": "~12.0.0",
     "mocha": "^5.2.0",
-    "mocha-jsdom": "rstacruz/mocha-jsdom#fix-RobLoach-securityerror",
+    "mocha-jsdom": "*",
     "uglify-js": "~3.4.9",
     "xo": "*"
   },
