@@ -36,7 +36,7 @@
   "devDependencies": {
     "@types/jquery": "*",
     "jsdoc-to-markdown": "^4.0.1",
-    "jsdom": "~12.2.0",
+    "jsdom": "~13.0.0",
     "mocha": "^5.2.0",
     "mocha-jsdom": "*",
     "uglify-js": "~3.4.9",
