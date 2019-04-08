@@ -48,6 +48,7 @@
     if (typeof id !== 'string') {
       throw new TypeError('The jQuery Once id parameter must be a string');
     }
+
     return id;
   };
 
