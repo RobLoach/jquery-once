@@ -13,6 +13,8 @@ mocha.addFile(path.join(__dirname, 'test.js'));
 // Run the tests.
 mocha.run(function (failures) {
   process.on('exit', function () {
-    throw new Error(failures);
+    if (failures) {
+      throw new Error(failures);
+    }
   });
 });

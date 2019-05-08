@@ -2,7 +2,7 @@
   "name": "jquery-once",
   "title": "jQuery Once",
   "description": "Act on jQuery elements only once.",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "keywords": [
     "jquery",
     "jquery-plugin"
@@ -35,10 +35,12 @@
   },
   "devDependencies": {
     "@types/jquery": "*",
+    "coveralls": "^3.0.3",
     "jsdoc-to-markdown": "^4.0.1",
     "jsdom": "~15.0.0",
     "mocha": "^6.1.2",
     "mocha-jsdom": "*",
+    "nyc": "^14.1.0",
     "uglify-js": "~3.5.3",
     "xo": "*"
   },
@@ -47,9 +49,12 @@
     "posttest": "xo --space=2 --no-esnext jquery.once.js test",
     "docs": "jsdoc2md jquery.once.js > API.md",
     "build": "uglifyjs -o jquery.once.min.js --comments --source-map filename=jquery.once.min.js,url=jquery.once.min.js.map --mangle -- jquery.once.js",
-    "package": "npm install && npm run test && npm run docs && npm run build",
-    "coverage": "npm i istanbul && istanbul cover test",
-    "coveralls": "npm run coverage && npm i coveralls && cat ./coverage/lcov.info | coveralls"
+    "prepackage": "npm it",
+    "package": "npm run docs",
+    "postpackage": "npm run build",
+    "coverage": "nyc npm run test",
+    "precoveralls": "npm run coverage",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "files": [
     "jquery.once.js",

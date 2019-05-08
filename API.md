@@ -1,24 +1,24 @@
 ## Functions
 
 <dl>
-<dt><a href="#once">once([id])</a> ⇒</dt>
+<dt><a href="#once">once([id])</a> ⇒ <code>jQuery</code></dt>
 <dd><p>Filter elements that have yet to be processed by the given data ID.</p>
 </dd>
-<dt><a href="#removeOnce">removeOnce([id])</a> ⇒</dt>
+<dt><a href="#removeOnce">removeOnce([id])</a> ⇒ <code>jQuery</code></dt>
 <dd><p>Removes the once data from elements, based on the given ID.</p>
 </dd>
-<dt><a href="#findOnce">findOnce([id])</a> ⇒</dt>
+<dt><a href="#findOnce">findOnce([id])</a> ⇒ <code>jQuery</code></dt>
 <dd><p>Filters elements that have already been processed once.</p>
 </dd>
 </dl>
 
 <a name="once"></a>
 
-## once([id]) ⇒
+## once([id]) ⇒ <code>jQuery</code>
 Filter elements that have yet to be processed by the given data ID.
 
 **Kind**: global function  
-**Returns**: jQuery collection of elements that have now run once by
+**Returns**: <code>jQuery</code> - jQuery collection of elements that have now run once by
   the given ID.  
 **this**: <code>jQuery</code>  
 **Access**: public  
@@ -54,11 +54,11 @@ $('div.calendar').once().each(function () {
 ```
 <a name="removeOnce"></a>
 
-## removeOnce([id]) ⇒
+## removeOnce([id]) ⇒ <code>jQuery</code>
 Removes the once data from elements, based on the given ID.
 
 **Kind**: global function  
-**Returns**: jQuery collection of elements that were acted upon to remove their
+**Returns**: <code>jQuery</code> - jQuery collection of elements that were acted upon to remove their
    once data.  
 **this**: <code>jQuery</code>  
 **Access**: public  
@@ -81,11 +81,11 @@ $('div.calendar').removeOnce().each(function () {
 ```
 <a name="findOnce"></a>
 
-## findOnce([id]) ⇒
+## findOnce([id]) ⇒ <code>jQuery</code>
 Filters elements that have already been processed once.
 
 **Kind**: global function  
-**Returns**: jQuery collection of elements that have been run once.  
+**Returns**: <code>jQuery</code> - jQuery collection of elements that have been run once.  
 **this**: <code>jQuery</code>  
 **Access**: public  
 **See**: once  

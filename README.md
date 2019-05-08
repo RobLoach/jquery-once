@@ -4,7 +4,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 [![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
 [![Greenkeeper badge](https://badges.greenkeeper.io/RobLoach/jquery-once.svg)](https://greenkeeper.io/)
-[![Coverage Status](https://coveralls.io/repos/RobLoach/jquery-once/badge.svg)](https://coveralls.io/r/RobLoach/jquery-once)
+[![Coverage Status](https://coveralls.io/repos/github/RobLoach/jquery-once/badge.svg?branch=master)](https://coveralls.io/github/RobLoach/jquery-once?branch=master)
 
 > Act on [jQuery](http://jquery.com) elements only once.
 
