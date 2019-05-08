@@ -10,6 +10,8 @@
 /node_modules
 /vendor
 /composer.lock
+/package-lock.json
 
 # Code coverage with Istanbul
 /coverage
+/.nyc_output
