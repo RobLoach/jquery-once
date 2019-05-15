@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.2.3] - May 14th, 2019
+### Fixed
+- Fix CommonJS factory when export element is present
+  - By [Sam152](https://github.com/Sam152) from [#91](https://github.com/RobLoach/jquery-once/issues/91)
+
 ## [2.2.2] - May 8th, 2019
 ### Changed
 - Updated developer dependencies and documenation
