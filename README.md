@@ -19,8 +19,8 @@ Method | Installation
 [Composer](https://packagist.org/packages/robloach/jquery-once) | `composer require robloach/jquery-once`
 [Bower](http://bower.io/search/?q=jquery-once) | `bower install jquery-once`
 [Component](https://github.com/componentjs/component) | `component install RobLoach/jquery-once`
-[jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/npm/jquery-once@2.2.0/jquery.once.min.js`
-[cdnjs](https://cdnjs.com/libraries/jquery-once) | `//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.1/jquery.once.js`
+[jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/npm/jquery-once@2.2.3/jquery.once.min.js`
+[cdnjs](https://cdnjs.com/libraries/jquery-once) | `//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.2.3/jquery.once.js`
 
 ## Usage
 
