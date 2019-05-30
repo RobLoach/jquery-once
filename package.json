@@ -41,7 +41,7 @@
     "mocha": "^6.1.2",
     "mocha-jsdom": "*",
     "nyc": "^14.1.0",
-    "uglify-js": "~3.5.3",
+    "uglify-js": "~3.6.0",
     "xo": "*"
   },
   "scripts": {
