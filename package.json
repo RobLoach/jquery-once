@@ -35,13 +35,13 @@
   },
   "devDependencies": {
     "@types/jquery": "*",
-    "coveralls": "^3.0.3",
-    "jsdoc-to-markdown": "^5.0.0",
-    "jsdom": "~15.1.0",
-    "mocha": "^6.1.2",
+    "coveralls": "^3.0.7",
+    "jsdoc-to-markdown": "^5.0.2",
+    "jsdom": "~15.2.0",
+    "mocha": "^6.2.2",
     "mocha-jsdom": "*",
-    "nyc": "^14.1.0",
-    "uglify-js": "~3.6.0",
+    "nyc": "^14.1.1",
+    "uglify-js": "~3.6.4",
     "xo": "*"
   },
   "scripts": {
