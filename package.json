@@ -35,12 +35,10 @@
   },
   "devDependencies": {
     "@types/jquery": "*",
-    "coveralls": "^3.0.7",
     "jsdoc-to-markdown": "^5.0.2",
     "jsdom": "~15.2.0",
     "mocha": "^6.2.2",
     "mocha-jsdom": "*",
-    "nyc": "^14.1.1",
     "uglify-js": "~3.6.4",
     "xo": "*"
   },
@@ -51,10 +49,7 @@
     "build": "uglifyjs -o jquery.once.min.js --comments --source-map filename=jquery.once.min.js,url=jquery.once.min.js.map --mangle -- jquery.once.js",
     "prepackage": "npm it",
     "package": "npm run docs",
-    "postpackage": "npm run build",
-    "coverage": "nyc npm run test",
-    "precoveralls": "npm run coverage",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "postpackage": "npm run build"
   },
   "files": [
     "jquery.once.js",
