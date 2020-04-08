@@ -40,7 +40,7 @@
     "mocha": "^7.1.0",
     "mocha-jsdom": "*",
     "uglify-js": "~3.8.0",
-    "xo": "*"
+    "xo": ">=0.29.0"
   },
   "scripts": {
     "test": "mocha test/test.js --env node",
