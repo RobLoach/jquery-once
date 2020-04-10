@@ -31,7 +31,7 @@
     "node": ">=4"
   },
   "dependencies": {
-    "jquery": "*"
+    "jquery": ">=3.5.0"
   },
   "devDependencies": {
     "@types/jquery": "*",
