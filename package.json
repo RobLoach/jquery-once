@@ -39,7 +39,7 @@
     "jsdom": "~16.2.1",
     "mocha": "^7.1.0",
     "mocha-jsdom": "*",
-    "uglify-js": "~3.8.0",
+    "uglify-js": "~3.9.0",
     "xo": "*"
   },
   "scripts": {
