@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [unreleased]
+### Changed
+- Updated developer dependencies
+- Switched to GitHub Actions for testing
+
 ## [2.2.3] - May 14th, 2019
 ### Fixed
 - Fix CommonJS factory when export element is present
@@ -100,7 +105,10 @@ automatically build API documentation
 ### Added
 - Added jQuery Once
 
-[unreleased]: https://github.com/RobLoach/jquery-once/compare/2.2.0...HEAD
+[unreleased]: https://github.com/RobLoach/jquery-once/compare/2.2.3...HEAD
+[2.2.3]: https://github.com/RobLoach/jquery-once/compare/2.2.2...2.2.3
+[2.2.2]: https://github.com/RobLoach/jquery-once/compare/2.2.1...2.2.2
+[2.2.1]: https://github.com/RobLoach/jquery-once/compare/2.2.0...2.2.1
 [2.2.0]: https://github.com/RobLoach/jquery-once/compare/2.1.2...2.2.0
 [2.1.2]: https://github.com/RobLoach/jquery-once/compare/2.1.1...2.1.2
 [2.1.1]: https://github.com/RobLoach/jquery-once/compare/2.1.0...2.1.1

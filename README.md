@@ -1,6 +1,6 @@
 # jQuery Once [![NPM version](https://img.shields.io/npm/v/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 
-[![Build Status](https://img.shields.io/travis/RobLoach/jquery-once/master.svg)](http://travis-ci.org/RobLoach/jquery-once "Check this project's build status on TravisCI")
+![Testing](https://github.com/RobLoach/jquery-once/workflows/tests/badge.svg)
 [![NPM downloads](https://img.shields.io/npm/dm/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
 [![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
 [![Greenkeeper badge](https://badges.greenkeeper.io/RobLoach/jquery-once.svg)](https://greenkeeper.io/)
@@ -81,14 +81,6 @@ Versioning](http://semver.org/):
   git push origin 2.1.2
   npm publish
   ```
-
-### Docker
-
-It is possible to run tests through [Docker Compose](https://docs.docker.com/compose/):
-
-```
-docker-compose up
-```
 
 ## Change Log
 
