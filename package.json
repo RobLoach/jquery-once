@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/jquery": "*",
-    "jsdoc-to-markdown": "^5.0.3",
+    "jsdoc-to-markdown": "^6.0.1",
     "jsdom": "~16.2.2",
     "mocha": "^7.2.0",
     "mocha-jsdom": "*",
