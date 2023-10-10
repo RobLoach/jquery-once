@@ -1,15 +1,15 @@
-var assert = require('assert');
-var jsdom = require('mocha-jsdom');
+const assert = require('node:assert');
+const jsdom = require('mocha-jsdom');
 
 /**
  * Automated tests for jQuery Once.
  */
 /* globals describe, it, before, beforeEach */
-describe('jQuery Once', function () {
+describe('jQuery Once', () => {
   /**
    * The global instance of jQuery.
    */
-  var $;
+  let $;
 
   /**
    * Turn the Mocha test environment into a DOM environment with JSDom.
@@ -52,7 +52,7 @@ describe('jQuery Once', function () {
     $('span').once('test2').data('test2', 'bar');
 
     // The data should result to the first once() call.
-    var data = $('span').data('test2');
+    const data = $('span').data('test2');
     assert.strictEqual(data, 'foo');
   });
 
@@ -61,18 +61,18 @@ describe('jQuery Once', function () {
     $('span').data('count', 0);
 
     // Create the once() callback.
-    var callback = function () {
+    const callback = function () {
       // Increment the count variable stored in the data.
       $('span').data('count', $('span').data('count') + 1);
     };
 
     // Call once() a bunch of times.
-    for (var i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
       $('span').once('count').each(callback);
     }
 
     // Verify that it was only called once.
-    var count = $('span').data('count');
+    const count = $('span').data('count');
     assert.strictEqual(count, 1, 'It was called ' + count + ' times.');
   });
 
@@ -81,23 +81,23 @@ describe('jQuery Once', function () {
     $('span').data('once', 0);
 
     // Create the once() callback.
-    var callback = function () {
+    const callback = function () {
       $('span').data('once', $('span').data('once') + 1);
     };
 
     // Call once() a bunch of times.
-    for (var i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
       $('span').once().each(callback);
     }
 
     // Verify that it was only called once.
-    var count = $('span').data('once');
+    const count = $('span').data('once');
     assert.strictEqual(count, 1, 'It was called ' + count + ' times.');
   });
 
   it('retrieves empty once data correctly', function () {
     // Verify that the element starts without the class.
-    var hasData = $('span').data('jquery-once-test3');
+    let hasData = $('span').data('jquery-once-test3');
     assert(!hasData, 'Value not applied in the beginning.');
 
     // Create one once() call.
@@ -113,7 +113,7 @@ describe('jQuery Once', function () {
     $('span').once('test4');
 
     // Verify the data is applied.
-    var hasData = $('span').data('jquery-once-test4');
+    let hasData = $('span').data('jquery-once-test4');
     assert(hasData, 'The value is properly applied after once().');
 
     // Remove the once property.

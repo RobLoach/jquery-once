@@ -15,8 +15,6 @@
  * @see {@link http://github.com/umdjs/umd}
  */
 (function (factory) {
-  'use strict';
-
   if (typeof exports === 'object' && typeof exports.nodeName !== 'string') {
     // CommonJS
     factory(require('jquery'));
@@ -29,9 +27,7 @@
     /* globals jQuery */
     factory(jQuery);
   }
-})(function ($) {
-  'use strict';
-
+})($ => {
   /**
    * Ensures that the given ID is valid, returning 'once' if one is not given.
    *
@@ -43,8 +39,7 @@
    * @throws TypeError when an ID is provided, but not a string.
    * @private
    */
-  var checkId = function (id) {
-    id = id || 'once';
+  const checkId = function (id = 'once') {
     if (typeof id !== 'string') {
       throw new TypeError('The jQuery Once id parameter must be a string');
     }
@@ -92,7 +87,7 @@
    */
   $.fn.once = function (id) {
     // Build the jQuery Once data name from the provided ID.
-    var name = 'jquery-once-' + checkId(id);
+    const name = 'jquery-once-' + checkId(id);
 
     // Find elements that don't have the jQuery Once data applied to them yet.
     return this.filter(function () {
@@ -168,7 +163,7 @@
    */
   $.fn.findOnce = function (id) {
     // Filter the elements by which do have the data.
-    var name = 'jquery-once-' + checkId(id);
+    const name = 'jquery-once-' + checkId(id);
 
     return this.filter(function () {
       return $(this).data(name) === true;

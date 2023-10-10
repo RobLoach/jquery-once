@@ -1,11 +1,12 @@
 /**
  * Mocha test runner.
  */
-var path = require('path');
-var Mocha = require('mocha');
+const path = require('path');
+const Mocha = require('mocha');
+const process = require('process');
 
 // Create our mocha instance.
-var mocha = new Mocha();
+const mocha = new Mocha();
 
 // Add all the test files.
 mocha.addFile(path.join(__dirname, 'test.js'));
