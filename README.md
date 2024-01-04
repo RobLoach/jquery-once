@@ -2,8 +2,6 @@
 
 ![Testing](https://github.com/RobLoach/jquery-once/workflows/tests/badge.svg)
 [![NPM downloads](https://img.shields.io/npm/dm/jquery-once.svg)](https://npmjs.org/package/jquery-once "View this project on NPM")
-[![Dependency Status](https://img.shields.io/david/RobLoach/jquery-once.svg)](https://david-dm.org/RobLoach/jquery-once)
-[![Greenkeeper badge](https://badges.greenkeeper.io/RobLoach/jquery-once.svg)](https://greenkeeper.io/)
 
 > Act on [jQuery](http://jquery.com) elements only once.
 
