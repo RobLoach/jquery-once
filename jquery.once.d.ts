@@ -1,5 +1,5 @@
 /*!
- * jQuery Once v2.2.3 Typescript Definition - http://github.com/robloach/jquery-once
+ * jQuery Once v2.3.0 Typescript Definition - http://github.com/robloach/jquery-once
  * @license MIT, GPL-2.0
  *   http://opensource.org/licenses/MIT
  *   http://opensource.org/licenses/GPL-2.0
@@ -8,7 +8,7 @@
 
 ///<reference types="jquery" />
 
-interface JQuery{
+interface JQuery {
 
   /**
    * Filter elements that have yet to be processed by the given data ID.
@@ -48,7 +48,7 @@ interface JQuery{
    * @global
    * @public
    */
-  once(id?:string): JQuery;
+  once(id?: string): JQuery;
 
   /**
    * Removes the once data from elements, based on the given ID.
@@ -113,7 +113,7 @@ interface JQuery{
    * @global
    * @public
    */
-  findOnce(id:string): JQuery;
+  findOnce(id: string): JQuery;
 }
 
 

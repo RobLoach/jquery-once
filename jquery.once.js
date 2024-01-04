@@ -1,12 +1,12 @@
 /*!
- * jQuery Once v2.2.3 - http://github.com/robloach/jquery-once
+ * jQuery Once v2.3.0 - http://github.com/robloach/jquery-once
  * @license MIT, GPL-2.0
  *   http://opensource.org/licenses/MIT
  *   http://opensource.org/licenses/GPL-2.0
  */
 
 /**
- * Universal Module Definition
+ * jQuery Once: Universal Module Definition
  *
  * jQuery Once has a dependency on jQuery, so we wrap the code with a UMD
  * pattern in order to allow loading jQuery and jQuery Once through a module
@@ -34,7 +34,7 @@
    * @param {string} [id=once]
    *   A string representing the ID to check. Defaults to `'once'`.
    *
-   * @returns {number} The valid ID name.
+   * @returns {string} The valid ID name.
    *
    * @throws TypeError when an ID is provided, but not a string.
    * @private

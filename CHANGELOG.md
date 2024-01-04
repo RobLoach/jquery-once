@@ -2,12 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [2.3.0] - Unreleased
+## [2.3.0] - January 4th, 2024
 ### Changed
-- Updated developer dependencies
-- Switched to GitHub Actions for testing
-- Removed `use strict` directives
 - Switched from `var` to `let` and `const` for variable scope
+- Removed `use strict` directives
+- Updated developer dependencies
+- Minor updates to developer documentation
+- Switched to GitHub Actions for testing
 
 ## [2.2.3] - May 14th, 2019
 ### Fixed

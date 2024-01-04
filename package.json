@@ -16,8 +16,9 @@
   "main": "jquery.once.js",
   "contributors": [
     "JohnAlbin (https://github.com/JohnAlbin)",
-    "Rob Loach <robloach@gmail.com> (https://github.com/RobLoach)",
-    "theodoreb (https://github.com/theodoreb)"
+    "Rob Loach (https://github.com/RobLoach)",
+    "theodoreb (https://github.com/theodoreb)",
+    "Olavo Rocha Neto (https://github.com/olavorn)"
   ],
   "repository": {
     "type": "git",
@@ -64,5 +65,10 @@
       "jquery.once.min.js",
       "jquery.once.min.js.map"
     ]
+  },
+  "xo": {
+    "rules": {
+      "unicorn/prefer-module": 0
+    }
   }
 }
