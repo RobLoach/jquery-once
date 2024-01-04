@@ -16,8 +16,8 @@ Method | Installation
 [Composer](https://packagist.org/packages/robloach/jquery-once) | `composer require robloach/jquery-once`
 [Bower](http://bower.io/search/?q=jquery-once) | `bower install jquery-once`
 [Component](https://github.com/componentjs/component) | `component install RobLoach/jquery-once`
-[jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/npm/jquery-once@2.2.3/jquery.once.min.js`
-[cdnjs](https://cdnjs.com/libraries/jquery-once) | `//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.2.3/jquery.once.js`
+[jsDelivr](http://www.jsdelivr.com/#!jquery.once) | `//cdn.jsdelivr.net/npm/jquery-once@2.3.0/jquery.once.min.js`
+[cdnjs](https://cdnjs.com/libraries/jquery-once) | `//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.3.0/jquery.once.js`
 
 ## Usage
 
@@ -74,9 +74,9 @@ $('div.calendar').once().each(function() {
 Versioning](http://semver.org/):
   ```
   git add -A
-  git commit -m "2.1.2"
-  git tag 2.1.2
-  git push origin 2.1.2
+  git commit -m "2.3.0"
+  git tag 2.3.0
+  git push origin 2.3.0
   npm publish
   ```
 
