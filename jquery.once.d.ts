@@ -8,7 +8,7 @@
 
 ///<reference types="jquery" />
 
-interface JQuery{
+interface JQuery {
 
   /**
    * Filter elements that have yet to be processed by the given data ID.
@@ -48,7 +48,7 @@ interface JQuery{
    * @global
    * @public
    */
-  once(id?:string): JQuery;
+  once(id?: string): JQuery;
 
   /**
    * Removes the once data from elements, based on the given ID.
@@ -113,7 +113,7 @@ interface JQuery{
    * @global
    * @public
    */
-  findOnce(id:string): JQuery;
+  findOnce(id: string): JQuery;
 }
 
 

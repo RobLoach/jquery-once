@@ -6,7 +6,7 @@
  */
 
 /**
- * Universal Module Definition
+ * jQuery Once: Universal Module Definition
  *
  * jQuery Once has a dependency on jQuery, so we wrap the code with a UMD
  * pattern in order to allow loading jQuery and jQuery Once through a module
@@ -34,7 +34,7 @@
    * @param {string} [id=once]
    *   A string representing the ID to check. Defaults to `'once'`.
    *
-   * @returns {number} The valid ID name.
+   * @returns {string} The valid ID name.
    *
    * @throws TypeError when an ID is provided, but not a string.
    * @private
