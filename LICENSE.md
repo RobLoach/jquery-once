@@ -1,6 +1,6 @@
 # License
 
-Copyright &copy; 2016-2020 [Rob Loach](http://github.com/RobLoach)
+Copyright &copy; 2016-2024 [Rob Loach](http://github.com/RobLoach)
 
 ## GPL-2.0
 

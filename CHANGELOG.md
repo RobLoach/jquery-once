@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [2.3.0] - Unreleased
+## [2.3.0] - January 4th, 2024
 ### Changed
 - Updated developer dependencies
 - Switched to GitHub Actions for testing
